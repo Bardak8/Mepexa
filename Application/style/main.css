@@ -9,6 +9,7 @@
 
 h1 {
     font-size: 50px;
+    color: #FABD2F;
 }
 
 h2 {
@@ -113,7 +114,7 @@ body {
 }
 
 .feed {
-    margin: 100px;
+    margin: 70px;
 }
 
 /*---------------------------*/
@@ -174,11 +175,11 @@ body {
 
 /*----------SIDE BAR----------*/
 
-#side-bar {
-    display: flex;
-    flex-direction: row;
+#side_bar {
+
     justify-content: center;
     align-items: flex-start;
+    margin-top : 70px;
 }
 
 #main_menu img {
@@ -204,11 +205,11 @@ body {
 }
 
 #main_menu .highlight_bt {
-    border: 2px solid #148aa6;
+    border: 2px solid #FABD2F;
 }
 
 .highlight_bt > p {
-    color: #148aa6;
+    color: #FABD2F;
 }
 
 
@@ -217,3 +218,38 @@ body {
     opacity: 0.7;
 }
 
+
+
+/*-----------------------*/
+
+/*----------SEARCH BAR----------*/
+
+#searchTerm {
+    width: 10vw;
+    border: 1px solid #1A1A1A;
+    border-right: none;
+    padding: 5px;
+    height: 4vh;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    outline: none;
+    color: #666666;
+}
+
+#searchTerm:focus{
+    color: #262626
+}
+
+#searchButton {
+    width: 2vw;
+    height: 4vh;
+    border-top: 1px solid #1A1A1A;
+    border-right: 1px solid #1A1A1A;
+    border-bottom: 1px solid #1A1A1A;
+    background: #1A1A1A;
+    text-align: center;
+    color: #F2F2F2;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
