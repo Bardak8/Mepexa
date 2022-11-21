@@ -1,0 +1,143 @@
+#------------------------------------------------------------
+#        Script MySQL.
+#------------------------------------------------------------
+
+
+#------------------------------------------------------------
+# Table: Accounts
+#------------------------------------------------------------
+
+CREATE TABLE Accounts(
+        id_account         Int  Auto_increment  NOT NULL ,
+        name               Text NOT NULL ,
+        email              Text NOT NULL ,
+        encrypted_password Text NOT NULL
+	,CONSTRAINT Accounts_PK PRIMARY KEY (id_account)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Posts
+#------------------------------------------------------------
+
+CREATE TABLE Posts(
+        id_post    Int  Auto_increment  NOT NULL ,
+        title      Text NOT NULL ,
+        content    Text NOT NULL ,
+        media_path Text NOT NULL ,
+        id_account Int NOT NULL
+	,CONSTRAINT Posts_PK PRIMARY KEY (id_post)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: has_pending_request
+#------------------------------------------------------------
+
+CREATE TABLE has_pending_request(
+        id_account          Int NOT NULL ,
+        id_account_Accounts Int NOT NULL ,
+        statue              Int NOT NULL
+	,CONSTRAINT has_pending_request_PK PRIMARY KEY (id_account,id_account_Accounts)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: friends
+#------------------------------------------------------------
+
+CREATE TABLE friends(
+        id_account          Int NOT NULL ,
+        id_account_Accounts Int NOT NULL
+	,CONSTRAINT friends_PK PRIMARY KEY (id_account,id_account_Accounts)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Reactions
+#------------------------------------------------------------
+
+CREATE TABLE Reactions(
+        id_reaction Int  Auto_increment  NOT NULL ,
+        thumb_up    Bool NOT NULL ,
+        thumb_down  Bool NOT NULL ,
+        sad         Bool NOT NULL ,
+        love        Bool NOT NULL ,
+        laugh       Bool NOT NULL ,
+        id_account  Int NOT NULL ,
+        id_comment  Int ,
+        id_post     Int
+	,CONSTRAINT Reactions_PK PRIMARY KEY (id_reaction)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Comments
+#------------------------------------------------------------
+
+CREATE TABLE Comments(
+        id_comment          Int  Auto_increment  NOT NULL ,
+        content             Text NOT NULL ,
+        id_account          Int NOT NULL ,
+        id_post             Int NOT NULL ,
+        id_comment_Comments Int
+	,CONSTRAINT Comments_PK PRIMARY KEY (id_comment)
+)ENGINE=InnoDB;
+
+
+
+
+ALTER TABLE Posts
+	ADD CONSTRAINT Posts_Accounts0_FK
+	FOREIGN KEY (id_account)
+	REFERENCES Accounts(id_account);
+
+ALTER TABLE has_pending_request
+	ADD CONSTRAINT has_pending_request_Accounts0_FK
+	FOREIGN KEY (id_account)
+	REFERENCES Accounts(id_account);
+
+ALTER TABLE has_pending_request
+	ADD CONSTRAINT has_pending_request_Accounts1_FK
+	FOREIGN KEY (id_account_Accounts)
+	REFERENCES Accounts(id_account);
+
+ALTER TABLE friends
+	ADD CONSTRAINT friends_Accounts0_FK
+	FOREIGN KEY (id_account)
+	REFERENCES Accounts(id_account);
+
+ALTER TABLE friends
+	ADD CONSTRAINT friends_Accounts1_FK
+	FOREIGN KEY (id_account_Accounts)
+	REFERENCES Accounts(id_account);
+
+ALTER TABLE Reactions
+	ADD CONSTRAINT Reactions_Accounts0_FK
+	FOREIGN KEY (id_account)
+	REFERENCES Accounts(id_account);
+
+ALTER TABLE Reactions
+	ADD CONSTRAINT Reactions_Comments1_FK
+	FOREIGN KEY (id_comment)
+	REFERENCES Comments(id_comment);
+
+ALTER TABLE Reactions
+	ADD CONSTRAINT Reactions_Posts2_FK
+	FOREIGN KEY (id_post)
+	REFERENCES Posts(id_post);
+
+ALTER TABLE Comments
+	ADD CONSTRAINT Comments_Accounts0_FK
+	FOREIGN KEY (id_account)
+	REFERENCES Accounts(id_account);
+
+ALTER TABLE Comments
+	ADD CONSTRAINT Comments_Posts1_FK
+	FOREIGN KEY (id_post)
+	REFERENCES Posts(id_post);
+
+ALTER TABLE Comments
+	ADD CONSTRAINT Comments_Comments2_FK
+	FOREIGN KEY (id_comment_Comments)
+	REFERENCES Comments(id_comment);
