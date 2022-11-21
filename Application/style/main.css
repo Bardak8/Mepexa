@@ -1,0 +1,219 @@
+/* ----------Normalize CSS---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+p, a {
+    color: #ebdbb2;
+}
+
+/* --------------------------------- */
+
+
+/* ---------HEADER---------- */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 2vw;
+    margin-bottom: 1vh;
+    background-color: #262626;
+    height: 9vh;
+    border-bottom: 1px solid #ebdbb2;
+}
+
+#connexion-zone {
+    display: flex;
+    align-items: center;
+}
+
+#profile_picture {
+    object-fit: contain;
+    width: 2vw;
+    margin-right: 1vw;
+    border-radius: 50%;
+}
+
+
+/* --------------------------------- */
+
+
+/* ----------BODY---------- */
+
+
+body {
+    background-color: #282828;
+    color: #ebdbb2;
+    font-family: "noto sans", sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+/*----------GENERAL----------*/
+
+
+#post {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.post {
+    height: fit-content;
+    border: 1px solid #262626;
+    border-radius: 5px;
+    width: 65vw;
+    padding: 1%;
+    margin-bottom: 1vh;
+    transition: .5s ease-out;
+    background-color: #3c3836;
+}
+
+
+
+.post:hover:not(.infos, .post_page, .pinned_post) {
+    border: 1px solid #665C54;
+    cursor: pointer;
+}
+
+.post ul {
+    list-style-type: none;
+}
+
+.post_icon {
+    height: 32px;
+}
+
+.post a {
+    text-decoration: none;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.feed {
+    margin: 100px;
+}
+
+/*---------------------------*/
+
+/*----------TOP----------*/
+
+.post_upper {
+    display: flex;
+    align-items: center;
+}
+
+.post_upper > * {
+    margin-right: 0.75%;
+}
+
+.post_upper img {
+    border-radius: 50%;
+    margin-right: 1%;
+    height: 32px;
+}
+
+.post_upper > a {
+    display: contents;
+}
+
+.post_upper a:hover {
+    text-decoration: underline;
+}
+
+.post_upper > a p:hover {
+    text-decoration: underline;
+}
+
+.post_upper > p {
+    margin-left: 1vw;
+}
+
+
+/*-----------------------*/
+
+/*----------MID----------*/
+
+.post_content > img {
+    height: 660px;
+}
+
+.menu {
+    margin-left: 1vw;
+    margin-bottom: 1vh;
+    border-radius: 10px;
+    padding: 1vh 1vw;
+    width: 20vw;
+    background-color: #3c3836;
+}
+
+
+/*-----------------------*/
+
+/*----------SIDE BAR----------*/
+
+#side-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#main_menu img {
+    height: 60px;
+}
+
+#main_menu ul li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 1vh 0;
+}
+
+#main_menu h3 {
+    margin-left: 1vw;
+}
+
+#main_menu .button {
+    padding: 1vh 1vw;
+    width: 100%;
+    border-radius: 9999px;
+    border: 2px solid #F2F2F2;
+}
+
+#main_menu .highlight_bt {
+    border: 2px solid #148aa6;
+}
+
+.highlight_bt > p {
+    color: #148aa6;
+}
+
+
+#main_menu .button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
