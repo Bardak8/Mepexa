@@ -29,7 +29,7 @@
             <li><a href="">Privacy policy</a></li>
             <li><a href="">Auteurs</a></li>
             <br>
-            <li><p id="Mepexa">Mepexa Inc © 2022. Tous droits réservés</p></li>
+            <li><p id="Mepexa">Mepeжa Inc © 2022. Tous droits réservés</p></li>
         </ul>
     </div>
 </div>
