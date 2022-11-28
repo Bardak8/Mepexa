@@ -1,8 +1,8 @@
 <div id="header">
     <h1>Мережа</h1>
-    <form class="post search_result">
-        <input type="text" placeholder="searching-bar">
-        <input type="submit">
+    <form id="search_form">
+        <input type="text" placeholder="Your search..." id="search_bar">
+        <input type="submit" id="search_submit" value="Search">
     </form>
     <div id="connexion-zone">
         <?php if ($controller->IsConnected()) { ?>

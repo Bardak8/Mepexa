@@ -55,7 +55,7 @@ p, a {
 
 
 /* --------------------------------- */
-
+    
 
 /* ----------BODY---------- */
 
@@ -77,12 +77,12 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+    margin-top: 2vh;
 }
 
 .post {
     height: fit-content;
     border: 1px solid #262626;
-    border-radius: 10px;
     width: 65vw;
     padding: 1%;
     margin-bottom: 1vh;
@@ -112,10 +112,6 @@ body {
 
 .post a:hover {
     text-decoration: underline;
-}
-
-.feed {
-    margin: 70px;
 }
 
 /*---------------------------*/
@@ -164,7 +160,6 @@ body {
     padding: 1vh 1vw;
     width: 20vw;
     background-color: #3c3836;
-    border-radius: 10px;
 }
 
 
@@ -175,7 +170,6 @@ body {
 #side_bar {
     justify-content: center;
     align-items: flex-start;
-    margin-top : 70px;
 }
 
 #main_menu img {
@@ -196,7 +190,6 @@ body {
 #main_menu .button {
     padding: 1vh 1vw;
     width: 100%;
-    border-radius: 10px;
     border: 2px solid #665c54;
 }
 
@@ -224,32 +217,33 @@ body {
 
 /*----------SEARCH BAR----------*/
 
-#searchTerm {
-    width: 10vw;
-    border: 1px solid #1A1A1A;
-    border-right: none;
-    padding: 5px;
-    height: 4vh;
-    border-radius: 5px 0 0 5px;
-    font-size: 16px;
-    outline: none;
-    color: #666666;
+#search_form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    padding-top: 2vh;
 }
 
-#searchTerm:focus{
-    color: #262626
+#search_form > * {
+    height: 100%;
+    background-color: #3c3836;
+    border: 1px solid #665C54;
+    color: #ebdbb2;
 }
 
-#searchButton {
-    width: 2vw;
-    height: 4vh;
-    border-top: 1px solid #1A1A1A;
-    border-right: 1px solid #1A1A1A;
-    border-bottom: 1px solid #1A1A1A;
-    background: #1A1A1A;
-    text-align: center;
-    color: #F2F2F2;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-size: 20px;
+#search_form > #search_bar {
+    width: 70%;
+    padding-left: 1vw;
+}
+
+#search_form > #search_submit {
+    width: 10%;
+    transition: 0.25s ease;
+}
+
+#search_form > #search_submit:hover {
+    color: #FABD2F;
+    border: 1px solid #FABD2F;
 }

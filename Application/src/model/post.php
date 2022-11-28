@@ -14,12 +14,12 @@ class Post {
     private string $author;
     private string $title;
     private string $content;
-    private string $media_path;
+    private $media_path;
     private string $date;
 
 
     // Constructor
-    public function __construct(int $id, int $id_account, string $author, string $title, string $content, string $media_path, string $date) {
+    public function __construct(int $id, int $id_account, string $author, string $title, string $content, $media_path, string $date) {
         $this->id = $id;
         $this->id_account = $id_account;
         $this->author = $author;
