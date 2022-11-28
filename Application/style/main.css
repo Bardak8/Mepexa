@@ -72,7 +72,7 @@ body {
 /*----------GENERAL----------*/
 
 
-#post {
+#body {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -164,10 +164,10 @@ body {
 .menu {
     margin-left: 1vw;
     margin-bottom: 1vh;
-    border-radius: 10px;
     padding: 1vh 1vw;
     width: 20vw;
     background-color: #3c3836;
+    border-radius: 10px;
 }
 
 
@@ -176,7 +176,6 @@ body {
 /*----------SIDE BAR----------*/
 
 #side_bar {
-
     justify-content: center;
     align-items: flex-start;
     margin-top : 70px;
@@ -200,8 +199,8 @@ body {
 #main_menu .button {
     padding: 1vh 1vw;
     width: 100%;
-    border-radius: 9999px;
-    border: 2px solid #F2F2F2;
+    border-radius: 10px;
+    border: 2px solid #665c54;
 }
 
 #main_menu .highlight_bt {
@@ -216,6 +215,10 @@ body {
 #main_menu .button:hover {
     cursor: pointer;
     opacity: 0.7;
+}
+
+.menu {
+    border: 1px solid #665c54;
 }
 
 
