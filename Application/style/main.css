@@ -38,7 +38,7 @@ p, a {
     margin-bottom: 1vh;
     background-color: #262626;
     height: 9vh;
-    border-bottom: 1px solid #ebdbb2;
+    border-bottom: 1px solid #665C54;
 }
 
 #connexion-zone {
@@ -82,18 +82,19 @@ body {
 .post {
     height: fit-content;
     border: 1px solid #262626;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 65vw;
     padding: 1%;
     margin-bottom: 1vh;
-    transition: .2s ease-out;
+    transition: .2s ease;
     background-color: #3c3836;
+    outline: 1px solid #665C54;
 }
 
 
 
 .post:hover:not(.infos, .post_page, .pinned_post) {
-    border: 1px solid #665C54;
+    outline: 2px solid #665C54;
     cursor: pointer;
 }
 
