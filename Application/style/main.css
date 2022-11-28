@@ -86,7 +86,7 @@ body {
     width: 65vw;
     padding: 1%;
     margin-bottom: 1vh;
-    transition: .5s ease-out;
+    transition: .2s ease-out;
     background-color: #3c3836;
 }
 
@@ -146,10 +146,6 @@ body {
 
 .post_upper > a p:hover {
     text-decoration: underline;
-}
-
-.post_upper > p {
-    margin-left: 1vw;
 }
 
 
