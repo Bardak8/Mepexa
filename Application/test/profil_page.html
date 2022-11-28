@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/profil_page.css">
+</head>
+<body>
+
+<div id="header">
+    <h1>Мережа</h1>
+    <div id="search">
+        <div id="search_results">
+            <div class="post search_result" onclick="location.href=''">
+                <input type="text" placeholder="searching-bar">
+                <button>APPUYER ICI</button>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div id="connexion-zone">
+        <p>Pseudo</p>
+    </div>
+</div>
+<div id="container">
+    <div id="first_block">
+        <div id="info_account">
+            <ul>
+                <li class="informations">
+                    <p class="pseudo">Maxoulefoudu83</p>
+                    <p class="information">Password :</p>
+                    <p class="mail_adress">Mail address :</p>
+                    <p class="birthday">Birthday :</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="second_block">
+        <div id="request_part">
+            <div>
+                <h2 class="request">
+                    Request list
+                </h2>
+            </div>
+
+            <ul class="request_list">
+                <li>
+                    <a class="name_friend">Benjjj</a>
+                    <a class="name_friend">ObryMax</a>
+                    <a class="name_friend">Laulauuuuuu</a>
+                </li>
+            </ul>
+            <div id="friend_part">
+                <div>
+                    <h2 class="friend">
+                        Friend list
+                    </h2>
+                </div>
+
+                <ul class="friend_list">
+                    <li>
+                        <a class="name_friend">Benjjj</a>
+                        <a class="name_friend">ObryMax</a>
+                        <a class="name_friend">Laulauuuuuu</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="thread">
+            <div id="posts">
+
+                <div class="post" onclick="location.href='/post/{{.Id}}'">
+                    <ul>
+                        <li class="post_upper">
+                            <p>Published by <a href="/u/{{.AuthorName}}">Maxoulefoudu83</a> 28 Juillet 2022 </p>
+                        </li>
+                        <li class="post_title">
+                            <h2>Le plus grand penis du monde</h2>
+                        </li>
+
+                        <li class="post_content">
+                            <p>Ce n'est pas le mien</p>
+                        </li>
+                        <li class="post_content" style="display: flex; justify-content: center;">
+                            <img src="../style/image/default_image_post.png" alt="post content">
+                        </li>
+                        <li class="post_bottom">
+                            <div class="post_emote">
+                                <img class="post_icon " src="../style/image/thumb_up.png" alt="{{.Id}} upvote">
+                                <p>20</p>
+                            </div>
+                            <div class="post_emote">
+                                <img class="post_icon " src="../style/image/thumb_down.png" alt="{{.Id}} downvote">
+                                <p>22</p>
+                            </div>
+                            <div class="post_emote">
+                                <img class="post_icon " src="../style/image/heart.png" alt="{{.Id}} upvote">
+                                <p>32</p>
+                            </div>
+                            <div class="post_emote">
+                                <img class="post_icon " src="../style/image/laughing.png" alt="{{.Id}} downvote">
+                                <p>2</p>
+                            </div>
+                            <div class="post_emote">
+                                <img class="post_icon vote_bt upvote_bt" src="../style/image/sad.png" alt="{{.Id}} upvote">
+                                <p>12</p>
+                            </div>
+
+                            <a href="">123 Comments</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="empty">
+                    <h2>Wow ! Such empty...</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
