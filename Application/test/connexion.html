@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/connexion.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Мережа</h1>
+        <div id="search">
+            <div id="search_results">
+                <div class="post search_result" onclick="location.href=''">
+                    <input type="text" placeholder="searching-bar">
+                    <button>APPUYER ICI</button>
+                </div>
+            </div>
+        </div>
+        <div id="connexion-zone">
+            <img id="profile_picture" src="../style/image/default.png" alt="connexion">
+            <p>Pseudo</p>
+        </div>
+    </div>
+
+    <div class="popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Connexion</h2>
+            </div>
+            <div class="popup-body">
+                <p>Enter your pseudonyme and associate password :</p>
+                <form id="form" action="connexion.php" method="post">
+                    <div class="form_username">
+                        <label for="username">Pseudo/email :</label>
+                        <input type="text" name="username" id="username" >
+                    </div>
+                    <div class="form_password">
+                        <label for="password">Password : </label>
+                        <input type="password" name="password" id="password" >
+                    </div>
+                    <input id="submit" type="submit" value="Connexion">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

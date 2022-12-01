@@ -1,0 +1,174 @@
+
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48vw;
+    height: 50vh;
+    background-color: #3c3836;
+    z-index: 100;
+    border: 1px solid #ccc;
+}
+
+.popup-content{
+    display:flex;
+    flex-direction: row;
+    height:90%;
+}
+
+.popup-header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: #282828;
+
+}
+
+.popup-header h2 {
+    display:flex;
+    font-size: 2.2em;
+    align-items: center;
+    margin: 0;
+}
+.popup-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    height:100%;
+    width:100%;
+    padding-top:18px;
+    padding-left: 20px;
+    padding-right:20px;
+}
+
+#email{
+    border-radius:5px;
+    width:90%;
+    display: flex;
+    justify-content: start;
+    border: 2px solid #F2F2F2;
+    background-color:#3c3836;
+    height:130%;
+}
+
+#password{
+    border-radius:5px;
+    width:90%;
+    display: flex;
+    justify-content: start;
+    border: 2px solid #F2F2F2;
+    background-color:#3c3836;
+    height:130%;
+
+}
+
+#username{
+    border-radius:5px;
+    width:90%;
+    display: flex;
+    justify-content: start;
+    border: 2px solid #F2F2F2;
+    background-color:#3c3836;
+    height:130%
+}
+
+#passwordback{
+    border-radius:5px;
+    width:90%;
+    display: flex;
+    justify-content: start;
+    border: 2px solid #F2F2F2;
+    background-color:#3c3836;
+    height:130%;
+
+}
+#form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0 25px 0;
+    height:100%;
+    width:100%;
+}
+
+.form_password{
+    display:flex;
+    flex-direction: row ;
+    align-items: center;
+    text-align: start;
+    justify-content: space-between;
+    width: 90%;
+    color:#ebdbb2;
+}
+
+.form_username{
+    display:flex;
+    flex-direction: row ;
+    align-items: center;
+    text-align: start;
+    justify-content: space-between;
+    width: 90%;
+    color:#ebdbb2;
+}
+
+.form_email{
+    display:flex;
+    flex-direction: row ;
+    align-items: center;
+    text-align: start;
+    justify-content: space-evenly;
+    width: 90%;
+    color:#ebdbb2;
+}
+
+.form_passwordleretour{
+    display:flex;
+    flex-direction: row ;
+    align-items: center;
+    text-align: start;
+    justify-content: space-between;
+    width: 90%;
+    color:#ebdbb2;
+}
+
+
+
+
+label{
+    font-size: 1.2em;
+    color:#d5c4a1;
+    font-weight: 800;
+    width: 100%;
+}
+
+#submit{
+    position: relative;
+    left:22.5%;
+    width: 40%;
+    background-color: #3c3836;
+    color: #FABD2F;
+    border: 2px solid #FABD2F;
+    border-radius: 5px;
+    height:12%;
+
+}
+
+#imgsub {
+    height:45%;
+    border-radius:999%;
+}
+
+#divsub{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+}
