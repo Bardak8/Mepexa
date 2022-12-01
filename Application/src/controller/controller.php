@@ -9,7 +9,7 @@ use Application\Model\Account\Account;
 class Controller
 {
     private bool $connected = false;
-    private Account $account;
+    private ?Account $account = null;
 
 
     // Main functions

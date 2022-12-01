@@ -14,7 +14,7 @@ class Post {
     private string $author;
     private string $title;
     private string $content;
-    private $media_path;
+    private ?string $media_path;
     private string $date;
 
 

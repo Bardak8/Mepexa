@@ -1,29 +1,56 @@
 <?php ob_start(); ?>
 
-<div class="feed">
+<div id="feed">
 
 <?php foreach ($feed->GetPosts() as $post) { ?>
     
-<div class="post">
-    <ul>
-        <li class="post_upper" onclick="href=''">
-            <p>Published by <a href="/"> <?= $post->GetAuthor() ?> </a> <?= $post->GetDate() ?> </p>
-        </li>
-        <li class="post_title" onclick="href=''">
-            <h2><?= $post->GetTitle() ?></h2>
-        </li>
-        
-        <?php if ($post->GetMediaPath() != null) { ?>
-            <li class="post_content" style="display: flex; justify-content: center;" onclick="location.href=''">
-                <img class="post_image" src=" image/post-media/<?= $post->GetMediaPath() ?>" alt="post content">
+    <div class="post">
+        <ul>
+            <li class="post_upper" onclick="href=''">
+                <p>Published by <a href="/"> <?= $post->GetAuthor() ?> </a> <?= $post->GetDate() ?> </p>
             </li>
-        <?php } else { ?>
-            <li class="post_content" onclick="href=''">
-                <p><?= $post->GetContent() ?></p>
+            <li class="post_title" onclick="href=''">
+                <h2><?= $post->GetTitle() ?></h2>
             </li>
-        <?php } ?>
-    </ul>
-</div>
+            
+            <?php if ($post->GetMediaPath() != null) { ?>
+                <li class="post_content" style="display: flex; justify-content: center;" onclick="location.href=''">
+                    <img class="post_image" src=" image/post-media/<?= $post->GetMediaPath() ?>" alt="post content">
+                </li>
+            <?php } else { ?>
+                <li class="post_content" onclick="href=''">
+                    <p><?= $post->GetContent() ?></p>
+                </li>
+            <?php } ?>
+            <li class="post_footer">
+                <ul class="post_reactions">
+                    <li>
+                        <p onclick="">&#10084</p>
+                        <p>0</p>
+                    </li>
+                    <li>
+                        <p onclick="">&#128077</p>
+                        <p>0</p>
+                    </li>
+                    <li>
+                        <p onclick="">&#128078</p>
+                        <p>0</p>
+                    </li>
+                    <li>
+                        <p onclick="">&#128514</p>
+                        <p>0</p>
+                    </li>
+                    <li>
+                        <p onclick="">&#128546</p>
+                        <p>0</p>
+                    </li>
+                </ul>
+                <a href="">
+                    0 comments
+                </a>
+            </li>
+        </ul>
+    </div>
 
 <?php } ?>
 

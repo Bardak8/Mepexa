@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <title><?= $title ?></title>
         <link href="style/main.css" rel="stylesheet" />
+        <link href="style/post.css" rel="stylesheet" />
     </head>
 
     <body>

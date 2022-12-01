@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/post.css">
     <link rel="stylesheet" href="../style/profil_page.css">
 </head>
 <body>
@@ -25,103 +26,209 @@
         <p>Pseudo</p>
     </div>
 </div>
-<div id="container">
-    <div id="first_block">
-        <div id="info_account">
-            <ul>
-                <li class="informations">
-                    <p class="pseudo">Maxoulefoudu83</p>
-                    <p class="information">Password :</p>
-                    <p class="mail_adress">Mail address :</p>
-                    <p class="birthday">Birthday :</p>
+
+
+<div id="body">
+    <div id="info_account">
+        <p id="pseudo">MaxouLefouDu83</p>
+        <table>
+            <tr>
+                <td>Password :</td>
+                <td>
+                    **********
+                    <a href="" style="font-size: 10px; color: #efbc32">change password</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Email :</td>
+                <td>noupie@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Birthday :</td>
+                <td>01/02/1990</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <div id="friends_menu">
+            <h2 class="title">
+                Request list
+            </h2>
+
+            <ul id="request_list">
+                <li>
+                    <a href="">Benjjj</a>
+                    <div>
+                        <img src="../image/accept.svg" alt="accept" onclick="">
+                        <img src="../image/refuse.svg" alt="refuse" onclick="">
+                    </div>
+                </li>
+                <li>
+                    <a href="">ObryMax</a>
+                    <div>
+                        <p>pending...</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Laulauuuuuu</a>
+                    <div>
+                        <img src="../image/accept.svg" alt="accept" onclick="">
+                        <img src="../image/refuse.svg" alt="refuse" onclick="">
+                    </div>
+                </li>
+            </ul>
+
+            <h2 class="title">
+                Friend list
+            </h2>
+
+            <ul id="friend_list">
+                <li>
+                    <a href="">Benjjj</a>
+                </li>
+                <li>
+                    <a href="">ObryMax</a>
+                </li>
+                <li>
+                    <a href="">Laulauuuuuu</a>
                 </li>
             </ul>
         </div>
-    </div>
-    <div id="second_block">
-        <div id="request_part">
-            <div>
-                <h2 class="request">
-                    Request list
-                </h2>
+
+        <div class="feed">
+
+            <div class="post">
+                <ul>
+                    <li class="post_upper" onclick="href=''">
+                        <p>Published by <a href="/"> noupie </a> 24-11-2000 </p>
+                    </li>
+                    <li class="post_title" onclick="href=''">
+                        <h2>Very nice and gay</h2>
+                    </li>
+                    
+                    <li class="post_content" style="display: flex; justify-content: center;" onclick="location.href=''">
+                        <img class="post_image" src="../image/post-media/e729e050e5dd2cb4664533925c19ca83-2674277075.jpg" alt="post content">
+                    </li>
+                    <li class="post_footer">
+                        <ul class="post_reactions">
+                            <li>
+                                <p onclick="">&#10084</p>
+                                <p>24</p>
+                            </li>
+                            <li>
+                                <p onclick="">&#128077</p>
+                                <p>0</p>
+                            </li>
+                            <li>
+                                <p onclick="">&#128078</p>
+                                <p>0</p>
+                            </li>
+                            <li>
+                                <p onclick="">&#128514</p>
+                                <p>12</p>
+                            </li>
+                            <li>
+                                <p onclick="">&#128546</p>
+                                <p>45</p>
+                            </li>
+                        </ul>
+                        <a href="">
+                            448 comments
+                        </a>
+                    </li>
+                </ul>
             </div>
 
-            <ul class="request_list">
-                <li>
-                    <a class="name_friend">Benjjj</a>
-                    <a class="name_friend">ObryMax</a>
-                    <a class="name_friend">Laulauuuuuu</a>
-                </li>
-            </ul>
-            <div id="friend_part">
-                <div>
-                    <h2 class="friend">
-                        Friend list
-                    </h2>
-                </div>
+            <div class="post">
+                <ul>
+                    <li class="post_upper" onclick="href=''">
+                        <p>Published by <a href="/"> noupie </a> 24-11-2000 </p>
+                    </li>
+                    <li class="post_title" onclick="href=''">
+                        <h2>Very nice and gay</h2>
+                    </li>
+                    
+                    <li class="post_content" onclick="href=''">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem unde placeat corporis voluptatem, velit aperiam, inventore dolore nulla veniam illo possimus, nam rerum eveniet tempora numquam praesentium rem corrupti ipsa!</p>
+                    </li>
+                    <li class="post_footer">
+                        <ul class="post_reactions">
+                            <li>
+                                <p onclick="">&#10084</p>
+                                <p>24</p>
+                            </li>
+                            <li>
+                                <p onclick="">&#128077</p>
+                                <p>0</p>
+                            </li>
+                            <li>
+                                <p onclick="">&#128078</p>
+                                <p>0</p>
+                            </li>
+                            <li>
+                                <p onclick="">&#128514</p>
+                                <p>12</p>
+                            </li>
+                            <li>
+                                <p onclick="">&#128546</p>
+                                <p>45</p>
+                            </li>
+                        </ul>
+                        <a href="">
+                            448 comments
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-                <ul class="friend_list">
-                    <li>
-                        <a class="name_friend">Benjjj</a>
-                        <a class="name_friend">ObryMax</a>
-                        <a class="name_friend">Laulauuuuuu</a>
+            <div class="post">
+                <ul>
+                    <li class="post_upper" onclick="href=''">
+                        <p>Published by <a href="/"> noupie </a> 24-11-2000 </p>
+                    </li>
+                    <li class="post_title" onclick="href=''">
+                        <h2>Very nice and gay</h2>
+                    </li>
+                    
+                    <li class="post_content" style="display: flex; justify-content: center;" onclick="location.href=''">
+                        <img class="post_image" src="../image/post-media/e729e050e5dd2cb4664533925c19ca83-2674277075.jpg" alt="post content">
+                    </li>
+                    <li class="post_footer">
+                        <ul class="post_reactions">
+                            <li>
+                                <p onclick="">&#10084</p>
+                                <p>24</p>
+                            </li>
+                            <li>
+                                <p onclick="">&#128077</p>
+                                <p>0</p>
+                            </li>
+                            <li>
+                                <p onclick="">&#128078</p>
+                                <p>0</p>
+                            </li>
+                            <li>
+                                <p onclick="">&#128514</p>
+                                <p>12</p>
+                            </li>
+                            <li>
+                                <p onclick="">&#128546</p>
+                                <p>45</p>
+                            </li>
+                        </ul>
+                        <a href="">
+                            448 comments
+                        </a>
                     </li>
                 </ul>
             </div>
 
         </div>
-        <div id="thread">
-            <div id="posts">
-
-                <div class="post" onclick="location.href='/post/{{.Id}}'">
-                    <ul>
-                        <li class="post_upper">
-                            <p>Published by <a href="/u/{{.AuthorName}}">Maxoulefoudu83</a> 28 Juillet 2022 </p>
-                        </li>
-                        <li class="post_title">
-                            <h2>Le plus grand penis du monde</h2>
-                        </li>
-
-                        <li class="post_content">
-                            <p>Ce n'est pas le mien</p>
-                        </li>
-                        <li class="post_content" style="display: flex; justify-content: center;">
-                            <img src="../style/image/default_image_post.png" alt="post content">
-                        </li>
-                        <li class="post_bottom">
-                            <div class="post_emote">
-                                <img class="post_icon " src="../style/image/thumb_up.png" alt="{{.Id}} upvote">
-                                <p>20</p>
-                            </div>
-                            <div class="post_emote">
-                                <img class="post_icon " src="../style/image/thumb_down.png" alt="{{.Id}} downvote">
-                                <p>22</p>
-                            </div>
-                            <div class="post_emote">
-                                <img class="post_icon " src="../style/image/heart.png" alt="{{.Id}} upvote">
-                                <p>32</p>
-                            </div>
-                            <div class="post_emote">
-                                <img class="post_icon " src="../style/image/laughing.png" alt="{{.Id}} downvote">
-                                <p>2</p>
-                            </div>
-                            <div class="post_emote">
-                                <img class="post_icon vote_bt upvote_bt" src="../style/image/sad.png" alt="{{.Id}} upvote">
-                                <p>12</p>
-                            </div>
-
-                            <a href="">123 Comments</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div id="empty">
-                    <h2>Wow ! Such empty...</h2>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
+
+
 </div>
 </body>
 </html>
