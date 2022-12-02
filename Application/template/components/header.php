@@ -1,5 +1,5 @@
 <div id="header">
-    <h1>Мережа</h1>
+    <h1 onclick="location.href='/'">Мережа</h1>
     <form id="search_form">
         <input type="text" placeholder="Your search..." id="search_bar">
         <input type="submit" id="search_submit" value="Search">

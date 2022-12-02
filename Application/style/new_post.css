@@ -1,0 +1,38 @@
+#new_post {
+    height: fit-content;
+    border: 1px solid #262626;
+    width: 65vw;
+    padding: 1%;
+    margin-bottom: 1vh;
+    background-color: #3c3836;
+    outline: 1px solid #665C54;
+}
+
+#new_post label {
+    font-weight: bold;
+}
+
+#new_post input, #new_post textarea {
+    width: 100%;
+    border: 2px solid #665c54;
+    background-color: #3c3836;
+    color: #ebdbb2;
+    padding: 0.2vh 0.2vw;
+    margin-bottom: 2vh;
+}
+
+#new_post input:focus, #new_post textarea:focus {
+    outline: none;
+    border: 2px solid #FABD2F;
+}
+
+#new_post > input {
+    border: 2px solid #FABD2F;
+    color: #FABD2F;
+}
+
+
+#new_post > input:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
