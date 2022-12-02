@@ -113,14 +113,19 @@ body {
     margin-left: 1vw;
 }
 
-#main_menu .button {
+.menu .button {
     padding: 1vh 1vw;
     width: 100%;
     border: 2px solid #665c54;
+    background-color: #3c3836;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
 }
 
-#main_menu .highlight_bt {
+.menu .highlight_bt {
     border: 2px solid #FABD2F;
+    color: #FABD2F;
 }
 
 .highlight_bt > p {
@@ -128,13 +133,50 @@ body {
 }
 
 
-#main_menu .button:hover {
+.menu .button:hover {
     cursor: pointer;
     opacity: 0.7;
 }
 
 .menu {
     border: 1px solid #665c54;
+}
+
+
+.menu.sign img {
+    height: 60px;
+}
+
+.menu.sign div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 1vh 0;
+}
+
+.menu.sign input:not(.button) {
+    border: 2px solid #665c54;
+    background-color: #3c3836;
+    color: #ebdbb2;
+    padding: 0.1vh 0.1vw;
+}
+
+.menu.sign h3 {
+    margin-left: 1vw;
+    color: #FABD2F;
+}
+
+.menu.sign form, .menu.sign table, .menu.sign tbody, .menu.sign tr, .menu.sign td {
+    width: 100%;
+}
+
+.menu.sign input:not(.button), .menu.sign label {
+    font-size: 16px;
+    margin: 0.5vh 0;
+}
+
+.menu.sign input:focus {
+    outline: 1px solid #FABD2F;
 }
 
 
@@ -171,5 +213,10 @@ body {
 
 #search_form > #search_submit:hover {
     color: #FABD2F;
+    border: 1px solid #FABD2F;
+}
+
+#search_form > #search_bar:focus {
+    outline: none;
     border: 1px solid #FABD2F;
 }
