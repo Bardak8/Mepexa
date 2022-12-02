@@ -10,25 +10,25 @@
                     <p>Your personnal Mepexa home page. Come here to consult all your favorites posts.</p>
                 </li>
                 <li>
-                    <div id="create_post_bt" class="button highlight_bt" onclick="location.href='/signup'">
+                    <div id="create_post_bt" class="button highlight_bt" onclick="open_signup_menu()">
                         <p>Sign up</p>
                     </div>
                 </li>
                 <li>
-                    <div id="signup" class="button" onclick="location.href='/signin'">
-                        <p>Sign in</p>
+                    <div id="signup" class="button" onclick="open_signin_menu()">
+                        <p>Login</p>
                     </div>
                 </li>
             </ul>
         </div>
     </div>
 
-    <div class="menu sign">
+    <div id="signup_menu" class="menu sign">
         <div>
             <img src="../image/v2.png" alt="mepexa logo" style="border-radius: 999999px;">
             <h3>Sign up</h3>
         </div>
-        <form method="POST">
+        <form action="" method="POST">
             <table>
                 <tr>
                     <td>
@@ -63,19 +63,19 @@
                     </td>
                 </tr>
             </table>
-            <input class="button highlight_bt" type="submit" value="Sign-up">
-            <div class="button" type="submit">
+            <input class="button highlight_bt" type="submit" value="Sign up">
+            <div class="button" type="submit" onclick="open_main_menu()">
                 <p>Back</p>
             </div>
         </form>
     </div>
 
-    <div class="menu sign">
+    <div id="signin_menu" class="menu sign">
         <div>
             <img src="../image/v2.png" alt="mepexa logo" style="border-radius: 999999px;">
             <h3>Sign in</h3>
         </div>
-        <form method="POST">
+        <form action="" method="POST">
             <table>
                 <tr>
                     <td>
@@ -94,8 +94,8 @@
                     </td>
                 </tr>
             </table>
-            <input class="button highlight_bt" type="submit" value="Sign-in">
-            <div class="button" type="submit">
+            <input class="button highlight_bt" type="submit" value="Login">
+            <div class="button" type="submit" onclick="open_main_menu()">
                 <p>Back</p>
             </div>
         </form>
@@ -103,9 +103,9 @@
 
     <div id="second-menu" class="menu">
         <ul>
-            <li><a href="">Report a problem</a></li>
-            <li><a href="">Privacy policy</a></li>
-            <li><a href="">Auteurs</a></li>
+            <li><a href="haha, no">Report a problem</a></li>
+            <li><a href="no privacy, no policy">Privacy policy</a></li>
+            <li><a href="">Authors</a></li>
             <br>
             <li><p id="Mepexa">Mepeжa Inc © 2022. Tous droits réservés</p></li>
         </ul>

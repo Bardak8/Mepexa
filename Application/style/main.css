@@ -171,12 +171,15 @@ body {
 }
 
 .menu.sign input:not(.button), .menu.sign label {
-    font-size: 16px;
     margin: 0.5vh 0;
 }
 
 .menu.sign input:focus {
     outline: 1px solid #FABD2F;
+}
+
+#signup_menu, #signin_menu {
+    display: none;
 }
 
 
