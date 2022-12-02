@@ -10,7 +10,7 @@ class DatabaseConnection
     {
         if ($this->database === null) {
             // TODO: Move to config file, this shits is obviously not secure
-            $this->database = new \PDO('mysql:host=localhost;dbname=mapexa;charset=utf8', 'root', '');  
+            $this->database = new \PDO('mysql:host=mepexa;dbname=mapexa;charset=utf8', 'root', '');
         }
 
         return $this->database;

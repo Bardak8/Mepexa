@@ -6,4 +6,4 @@
 <a href="/">Homepage</a>
 <?php $content = ob_get_clean(); ?>
 
-<?php require('template/base.php') ?>
+<?php require('base.php') ?>

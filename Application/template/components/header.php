@@ -1,8 +1,10 @@
+<link href="">
+
 <div id="header">
     <h1>Мережа</h1>
-    <form id="search_form">
+    <form id="search_form" action="" >
         <input type="text" placeholder="Your search..." id="search_bar">
-        <input type="submit" id="search_submit" value="Search">
+        <input type="submit" id="search_submit" value="Search" onclick="open_search_result()>
     </form>
     <div id="connexion-zone">
         <?php if ($controller->IsConnected()) { ?>

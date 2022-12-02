@@ -1,0 +1,7 @@
+body {
+    background-color: #3c3836;
+    background-image: url("../image/error.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y : -3vh;
+}
