@@ -2,7 +2,9 @@
 namespace Application\Model\Account;
 
 require_once('src/pdo/database.php');
+require_once('src/model/log.php');
 
+use Application\Model\Log\Log;
 use Application\Pdo\Database\DatabaseConnection;
 
 class Account {
@@ -23,12 +25,13 @@ class Account {
 
     
     // Main methods
-    public static function GetAccountByName(string $pseudo) : Account {
+    public static function GetAccountByName(string $pseudo) : ?Account {
         $query = "SELECT * FROM accounts WHERE name = :pseudo";
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
 
         if ($statement === false) {
-            throw new \Exception("Error while preparing the query");
+            new Log("Error while preparing the query in Account::GetAccountByName");
+            return null;
         }
 
         $statement->execute([
@@ -40,7 +43,8 @@ class Account {
         if ($result) {
             return new Account($result['id_account'], $result['name'], $result['email'], $result['encrypted_password']);
         } else {
-            throw new \Exception("Error while fetching the result");
+            new Log("No account found with pseudo: " . $pseudo . " in Account::GetAccountByName");
+            return null;
         }
     }
 

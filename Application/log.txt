@@ -1,0 +1,3 @@
+2022-12-02 15:25:41 - Controller created
+2022-12-02 15:25:41 - Connection attempt of "Ben"
+2022-12-02 15:25:41 - Connection of "Ben" successful
