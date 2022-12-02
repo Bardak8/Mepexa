@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta charset="utf-8" />
         <title><?= $title ?></title>
@@ -15,4 +16,5 @@
             <?php require('template/components/side_bar.php') ?>
         </div>
     </body>
+    
 </html>

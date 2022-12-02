@@ -24,6 +24,11 @@ class Controller
         }
     }
 
+    public function Disconnect() {
+        $this->connected = false;
+        $this->account = null;
+    }
+
     // Getters
     public function GetPseudo() {
         return $this->pseudo;

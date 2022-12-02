@@ -34,6 +34,8 @@
 #friends_menu {
     border: 1px solid #665c54;
     width: 25vw;
+    
+    background-color: #3c3836;
 } 
 
 #friends_menu > *:not(:last-child) {

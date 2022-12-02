@@ -17,6 +17,6 @@ class Homepage
         $feed = new Feed();
         $feed->GenerateFeed($controller->GetAccount()->GetId());
 
-        require('template/homepage.php');
+        require('template/feed.php');
     }
 }
