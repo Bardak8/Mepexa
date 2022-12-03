@@ -1,9 +1,13 @@
 <div id="header">
-    <h1 onclick="location.href='/'">Мережа</h1>
-    <form id="search_form">
-        <input type="text" placeholder="Your search..." id="search_bar">
-        <input type="submit" id="search_submit" value="Search">
+    <h1 onclick="location.href='/'">
+        Мережа
+    </h1>
+
+    <form id="search_form" action="">
+        <input type="text" placeholder="Your search..." id="search_bar"/>
+        <input type="submit" id="search_submit" value="Search" onclick="open_search_result()"/>
     </form>
+
     <div id="connexion-zone">
         <?php if ($controller->IsConnected()) { ?>
             <img id="profile_picture" src="../style/image/default.png" alt="connexion">

@@ -1,0 +1,19 @@
+
+#searching_zone {
+    width: 70vw;
+    height: 80vh;
+    margin: auto;
+    margin-top: 7vh;
+    background-color: #3c3836;
+    border: 1px solid #ccc;
+}
+
+.main_title_search {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: #282828;
+}

@@ -10,10 +10,10 @@
     </head>
 
     <body>
-        <?php require('template/components/header.php') ?>
+        <?php require('components/header.php') ?>
         <div id="body">
             <?= $content ?>
-            <?php require('template/components/side_bar.php') ?>
+            <?php require('components/side_bar.php') ?>
         </div>
     </body>
     

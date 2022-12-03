@@ -13,9 +13,11 @@ try {
     $controller = new Controller();
     $controller->Connect('Ben', '123456789');
 
+    // new post page
     if (isset($_GET['new'])) {
         NewPost::execute($controller);
-    } 
+    }
+    // post upload
     elseif (isset($_POST['post_title']) && isset($_POST['post_content']) ) {
         NewPost::UploadPost(
             $controller, $_POST['post_title'], 
@@ -24,7 +26,8 @@ try {
         );
         var_dump($_POST);
         Homepage::execute($controller);
-    } 
+    }
+    // homepage
     else {
         Homepage::execute($controller);
     }
