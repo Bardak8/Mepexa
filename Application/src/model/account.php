@@ -69,6 +69,27 @@ class Account {
         }
     }
 
+    public static function CreateAccount(string $name, string $email, string $password, string $password_verif )
+    {
+        $query = "INSERT into accounts ($name, $email, $password, Values (:name, :email, :password)";
+        $statement = (new DatabaseConnection())->getConnection()->prepare($query);
+
+        if ($statement === false) {
+            throw new \Exception("Error while preparing the query");
+        }
+
+        $statement->execute([
+            'name' => $name,
+            'email' => $email,
+            'password' => $password
+        ]);
+
+        $statement->fetch();
+
+
+
+    }
+
     public function CompareEncryptedPassword(string $psw) {
         return ($this->encrypted_passord == $psw);
     }
