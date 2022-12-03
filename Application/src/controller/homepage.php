@@ -15,7 +15,10 @@ class Homepage
         $title = "Мережа";
 
         $feed = new Feed();
-        $feed->GenerateFeed($controller->GetAccount()->GetId());
+        
+        if ($controller->IsConnected()) {
+            $feed->GenerateFeed($controller->GetAccount()->GetId());
+        }
 
         require('template/feed.php');
     }
