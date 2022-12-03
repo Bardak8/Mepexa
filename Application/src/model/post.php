@@ -92,7 +92,27 @@ class Feed {
         $this->posts = [];
     }
 
+    // this function is absolutly not a feed generator
     public function GenerateFeed(int $id_account)
+    {
+        $query = "SELECT * FROM posts WHERE id_account = :id_account ORDER BY id_post DESC";
+        $statement = $this->connection->prepare($query);
+
+        if ($statement === false) {
+            throw new \Exception("Error while fetching posts");
+            return;
+        }
+
+        $statement->execute(['id_account' => $id_account]);
+
+        while (($row = $statement->fetch())) {
+            $author = Account::GetAccountById($row['id_account'])->GetName();
+
+            $this->posts[] = new Post($row['id_post'], $row['id_account'], $author, $row['title'], $row['content'], $row['media_path'], $row['post_date']);
+        }
+    }
+
+    public function GetsPostsFromUser(int $id_account)
     {
         $query = "SELECT * FROM posts WHERE id_account = :id_account ORDER BY id_post DESC";
         $statement = $this->connection->prepare($query);

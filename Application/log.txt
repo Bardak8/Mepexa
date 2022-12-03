@@ -427,3 +427,660 @@
 2022-12-03 18:32:26 - Controller created
 2022-12-03 18:32:26 - Connection attempt of "Ben"
 2022-12-03 18:32:26 - Connection of "Ben" successful
+2022-12-03 20:10:27 - Controller created
+2022-12-03 20:10:27 - Connection attempt of "Ben"
+2022-12-03 20:10:27 - Connection of "Ben" successful
+2022-12-03 20:10:31 - Controller created
+2022-12-03 20:10:31 - Connection attempt of "Ben"
+2022-12-03 20:10:31 - Connection of "Ben" successful
+2022-12-03 20:18:34 - Controller created
+2022-12-03 20:18:34 - Connection attempt of "Ben"
+2022-12-03 20:18:34 - Connection of "Ben" successful
+2022-12-03 20:18:37 - Controller created
+2022-12-03 20:18:37 - Connection attempt of "Ben"
+2022-12-03 20:18:37 - Connection of "Ben" successful
+2022-12-03 20:18:46 - Controller created
+2022-12-03 20:18:46 - Connection attempt of "Ben"
+2022-12-03 20:18:46 - Connection of "Ben" successful
+2022-12-03 20:19:06 - Controller created
+2022-12-03 20:19:06 - Connection attempt of "Ben"
+2022-12-03 20:19:06 - Connection of "Ben" successful
+2022-12-03 20:29:12 - Controller created
+2022-12-03 20:29:12 - Connection attempt of "Ben"
+2022-12-03 20:29:12 - Connection of "Ben" successful
+2022-12-03 20:29:50 - Controller created
+2022-12-03 20:29:50 - Connection attempt of "Ben"
+2022-12-03 20:29:50 - Connection of "Ben" successful
+2022-12-03 20:30:26 - Controller created
+2022-12-03 20:30:26 - Connection attempt of "Ben"
+2022-12-03 20:30:26 - Connection of "Ben" successful
+2022-12-03 20:30:29 - Controller created
+2022-12-03 20:30:29 - Connection attempt of "Ben"
+2022-12-03 20:30:29 - Connection of "Ben" successful
+2022-12-03 20:32:43 - Controller created
+2022-12-03 20:32:43 - Connection attempt of "Ben"
+2022-12-03 20:32:43 - Connection of "Ben" successful
+2022-12-03 20:33:15 - Controller created
+2022-12-03 20:33:15 - Connection attempt of "Ben"
+2022-12-03 20:33:15 - Connection of "Ben" successful
+2022-12-03 20:33:28 - Controller created
+2022-12-03 20:33:28 - Connection attempt of "Ben"
+2022-12-03 20:33:28 - Connection of "Ben" successful
+2022-12-03 20:33:41 - Controller created
+2022-12-03 20:33:41 - Connection attempt of "Ben"
+2022-12-03 20:33:41 - Connection of "Ben" successful
+2022-12-03 20:33:43 - Controller created
+2022-12-03 20:33:43 - Connection attempt of "Ben"
+2022-12-03 20:33:43 - Connection of "Ben" successful
+2022-12-03 20:33:45 - Controller created
+2022-12-03 20:33:45 - Connection attempt of "Ben"
+2022-12-03 20:33:45 - Connection of "Ben" successful
+2022-12-03 20:37:27 - Controller created
+2022-12-03 20:37:27 - Connection attempt of "Ben"
+2022-12-03 20:37:27 - Connection of "Ben" successful
+2022-12-03 20:37:50 - Controller created
+2022-12-03 20:37:50 - Connection attempt of "Ben"
+2022-12-03 20:37:50 - Connection of "Ben" successful
+2022-12-03 20:38:09 - Controller created
+2022-12-03 20:38:09 - Connection attempt of "Ben"
+2022-12-03 20:38:09 - Connection of "Ben" successful
+2022-12-03 20:46:27 - Controller created
+2022-12-03 20:46:27 - Connection attempt of "Ben"
+2022-12-03 20:46:27 - Connection of "Ben" successful
+2022-12-03 20:46:27 - FriendList created
+2022-12-03 20:47:03 - Controller created
+2022-12-03 20:47:03 - Connection attempt of "Ben"
+2022-12-03 20:47:03 - Connection of "Ben" successful
+2022-12-03 20:47:04 - FriendList created
+2022-12-03 20:47:17 - Controller created
+2022-12-03 20:47:17 - Connection attempt of "Ben"
+2022-12-03 20:47:17 - Connection of "Ben" successful
+2022-12-03 20:47:17 - FriendList created
+2022-12-03 20:47:18 - Controller created
+2022-12-03 20:47:18 - Connection attempt of "Ben"
+2022-12-03 20:47:18 - Connection of "Ben" successful
+2022-12-03 20:47:18 - No account found with pseudo: 6 in Account::GetAccountByName
+2022-12-03 20:47:31 - Controller created
+2022-12-03 20:47:31 - Connection attempt of "Ben"
+2022-12-03 20:47:31 - Connection of "Ben" successful
+2022-12-03 20:47:31 - FriendList created
+2022-12-03 20:47:49 - Controller created
+2022-12-03 20:47:49 - Connection attempt of "Ben"
+2022-12-03 20:47:49 - Connection of "Ben" successful
+2022-12-03 20:47:50 - No account found with pseudo: 6 in Account::GetAccountByName
+2022-12-03 20:48:31 - Controller created
+2022-12-03 20:48:31 - Connection attempt of "Ben"
+2022-12-03 20:48:31 - Connection of "Ben" successful
+2022-12-03 20:48:31 - FriendList created
+2022-12-03 20:48:32 - Controller created
+2022-12-03 20:48:32 - Connection attempt of "Ben"
+2022-12-03 20:48:32 - Connection of "Ben" successful
+2022-12-03 20:48:32 - FriendList created
+2022-12-03 20:48:34 - Controller created
+2022-12-03 20:48:34 - Connection attempt of "Ben"
+2022-12-03 20:48:34 - Connection of "Ben" successful
+2022-12-03 20:48:35 - FriendList created
+2022-12-03 20:48:35 - Controller created
+2022-12-03 20:48:35 - Connection attempt of "Ben"
+2022-12-03 20:48:35 - Connection of "Ben" successful
+2022-12-03 20:48:35 - FriendList created
+2022-12-03 20:48:37 - Controller created
+2022-12-03 20:48:37 - Connection attempt of "Ben"
+2022-12-03 20:48:37 - Connection of "Ben" successful
+2022-12-03 20:48:37 - FriendList created
+2022-12-03 20:48:39 - Controller created
+2022-12-03 20:48:39 - Connection attempt of "Ben"
+2022-12-03 20:48:39 - Connection of "Ben" successful
+2022-12-03 20:48:39 - FriendList created
+2022-12-03 20:48:40 - Controller created
+2022-12-03 20:48:40 - Connection attempt of "Ben"
+2022-12-03 20:48:40 - Connection of "Ben" successful
+2022-12-03 20:48:40 - FriendList created
+2022-12-03 20:55:08 - Controller created
+2022-12-03 20:55:08 - Connection attempt of "Ben"
+2022-12-03 20:55:08 - Connection of "Ben" successful
+2022-12-03 20:55:08 - FriendList created
+2022-12-03 20:55:08 - PendingRequestList created
+2022-12-03 20:56:37 - Controller created
+2022-12-03 20:56:37 - Connection attempt of "Ben"
+2022-12-03 20:56:37 - Connection of "Ben" successful
+2022-12-03 20:56:37 - FriendList created
+2022-12-03 20:56:37 - PendingRequestList created
+2022-12-03 21:00:25 - Controller created
+2022-12-03 21:00:25 - Connection attempt of "Ben"
+2022-12-03 21:00:25 - Connection of "Ben" successful
+2022-12-03 21:00:25 - FriendList created
+2022-12-03 21:00:25 - PendingRequestList created
+2022-12-03 21:03:44 - Controller created
+2022-12-03 21:03:44 - Connection attempt of "Ben"
+2022-12-03 21:03:44 - Connection of "Ben" successful
+2022-12-03 21:03:44 - FriendList created
+2022-12-03 21:03:44 - PendingRequestList created
+2022-12-03 21:03:44 - PendingRequestList created
+2022-12-03 21:03:45 - Controller created
+2022-12-03 21:03:45 - Connection attempt of "Ben"
+2022-12-03 21:03:45 - Connection of "Ben" successful
+2022-12-03 21:03:45 - FriendList created
+2022-12-03 21:03:45 - PendingRequestList created
+2022-12-03 21:03:45 - PendingRequestList created
+2022-12-03 21:04:05 - Controller created
+2022-12-03 21:04:05 - Connection attempt of "Ben"
+2022-12-03 21:04:05 - Connection of "Ben" successful
+2022-12-03 21:04:05 - FriendList created
+2022-12-03 21:04:05 - PendingRequestList created
+2022-12-03 21:04:05 - PendingRequestList created
+2022-12-03 21:04:30 - Controller created
+2022-12-03 21:04:30 - Connection attempt of "Ben"
+2022-12-03 21:04:30 - Connection of "Ben" successful
+2022-12-03 21:04:30 - FriendList created
+2022-12-03 21:04:30 - PendingRequestList created
+2022-12-03 21:04:30 - PendingRequestList created
+2022-12-03 21:07:17 - Controller created
+2022-12-03 21:07:17 - Connection attempt of "Ben"
+2022-12-03 21:07:17 - Connection of "Ben" successful
+2022-12-03 21:07:17 - FriendList created
+2022-12-03 21:07:17 - PendingRequestList created
+2022-12-03 21:07:17 - PendingRequestList created
+2022-12-03 21:07:19 - Controller created
+2022-12-03 21:07:19 - Connection attempt of "Ben"
+2022-12-03 21:07:19 - Connection of "Ben" successful
+2022-12-03 21:07:19 - FriendList created
+2022-12-03 21:07:19 - PendingRequestList created
+2022-12-03 21:07:19 - PendingRequestList created
+2022-12-03 21:10:16 - Controller created
+2022-12-03 21:10:16 - Connection attempt of "Ben"
+2022-12-03 21:10:16 - Connection of "Ben" successful
+2022-12-03 21:10:16 - FriendList created
+2022-12-03 21:10:16 - PendingRequestList created
+2022-12-03 21:10:16 - PendingRequestList created
+2022-12-03 21:10:27 - Controller created
+2022-12-03 21:10:27 - Connection attempt of "Ben"
+2022-12-03 21:10:27 - Connection of "Ben" successful
+2022-12-03 21:10:27 - FriendList created
+2022-12-03 21:10:27 - PendingRequestList created
+2022-12-03 21:10:34 - Controller created
+2022-12-03 21:10:34 - Connection attempt of "Ben"
+2022-12-03 21:10:34 - Connection of "Ben" successful
+2022-12-03 21:10:34 - FriendList created
+2022-12-03 21:10:34 - PendingRequestList created
+2022-12-03 21:10:34 - PendingRequestList created
+2022-12-03 21:10:50 - Controller created
+2022-12-03 21:10:50 - Connection attempt of "Ben"
+2022-12-03 21:10:50 - Connection of "Ben" successful
+2022-12-03 21:10:50 - FriendList created
+2022-12-03 21:10:50 - PendingRequestList created
+2022-12-03 21:10:50 - PendingRequestList created
+2022-12-03 21:10:58 - Controller created
+2022-12-03 21:10:58 - Connection attempt of "Ben"
+2022-12-03 21:10:58 - Connection of "Ben" successful
+2022-12-03 21:10:58 - FriendList created
+2022-12-03 21:10:58 - PendingRequestList created
+2022-12-03 21:10:58 - PendingRequestList created
+2022-12-03 21:11:30 - Controller created
+2022-12-03 21:11:30 - Connection attempt of "Ben"
+2022-12-03 21:11:30 - Connection of "Ben" successful
+2022-12-03 21:11:30 - FriendList created
+2022-12-03 21:11:31 - PendingRequestList created
+2022-12-03 21:11:31 - PendingRequestList created
+2022-12-03 21:12:28 - Controller created
+2022-12-03 21:12:28 - Connection attempt of "Ben"
+2022-12-03 21:12:28 - Connection of "Ben" successful
+2022-12-03 21:12:29 - FriendList created
+2022-12-03 21:12:29 - PendingRequestList created
+2022-12-03 21:12:29 - PendingRequestList created
+2022-12-03 21:12:42 - Controller created
+2022-12-03 21:12:42 - Connection attempt of "Ben"
+2022-12-03 21:12:42 - Connection of "Ben" successful
+2022-12-03 21:12:42 - FriendList created
+2022-12-03 21:12:42 - PendingRequestList created
+2022-12-03 21:12:42 - PendingRequestList created
+2022-12-03 21:13:06 - Controller created
+2022-12-03 21:13:06 - Connection attempt of "Ben"
+2022-12-03 21:13:06 - Connection of "Ben" successful
+2022-12-03 21:13:06 - FriendList created
+2022-12-03 21:13:06 - PendingRequestList created
+2022-12-03 21:13:06 - PendingRequestList created
+2022-12-03 21:13:17 - Controller created
+2022-12-03 21:13:17 - Connection attempt of "Ben"
+2022-12-03 21:13:17 - Connection of "Ben" successful
+2022-12-03 21:13:17 - FriendList created
+2022-12-03 21:13:17 - PendingRequestList created
+2022-12-03 21:13:17 - PendingRequestList created
+2022-12-03 21:13:46 - Controller created
+2022-12-03 21:13:46 - Connection attempt of "Ben"
+2022-12-03 21:13:46 - Connection of "Ben" successful
+2022-12-03 21:13:46 - FriendList created
+2022-12-03 21:13:46 - PendingRequestList created
+2022-12-03 21:13:46 - PendingRequestList created
+2022-12-03 21:13:53 - Controller created
+2022-12-03 21:13:53 - Connection attempt of "Ben"
+2022-12-03 21:13:53 - Connection of "Ben" successful
+2022-12-03 21:13:53 - FriendList created
+2022-12-03 21:13:53 - PendingRequestList created
+2022-12-03 21:13:53 - PendingRequestList created
+2022-12-03 21:14:46 - Controller created
+2022-12-03 21:14:46 - Connection attempt of "Ben"
+2022-12-03 21:14:46 - Connection of "Ben" successful
+2022-12-03 21:14:46 - FriendList created
+2022-12-03 21:14:46 - PendingRequestList created
+2022-12-03 21:14:46 - PendingRequestList created
+2022-12-03 21:16:18 - Controller created
+2022-12-03 21:16:18 - Connection attempt of "Ben"
+2022-12-03 21:16:18 - Connection of "Ben" successful
+2022-12-03 21:16:19 - FriendList created
+2022-12-03 21:16:19 - PendingRequestList created
+2022-12-03 21:16:19 - PendingRequestList created
+2022-12-03 21:16:34 - Controller created
+2022-12-03 21:16:34 - Connection attempt of "Ben"
+2022-12-03 21:16:34 - Connection of "Ben" successful
+2022-12-03 21:16:34 - FriendList created
+2022-12-03 21:16:34 - PendingRequestList created
+2022-12-03 21:16:34 - PendingRequestList created
+2022-12-03 21:16:49 - Controller created
+2022-12-03 21:16:49 - Connection attempt of "Ben"
+2022-12-03 21:16:49 - Connection of "Ben" successful
+2022-12-03 21:16:49 - FriendList created
+2022-12-03 21:16:49 - PendingRequestList created
+2022-12-03 21:16:49 - PendingRequestList created
+2022-12-03 21:17:54 - Controller created
+2022-12-03 21:17:54 - Connection attempt of "Ben"
+2022-12-03 21:17:54 - Connection of "Ben" successful
+2022-12-03 21:17:54 - FriendList created
+2022-12-03 21:17:54 - PendingRequestList created
+2022-12-03 21:17:54 - PendingRequestList created
+2022-12-03 21:18:00 - Controller created
+2022-12-03 21:18:00 - Connection attempt of "Ben"
+2022-12-03 21:18:00 - Connection of "Ben" successful
+2022-12-03 21:18:00 - FriendList created
+2022-12-03 21:18:00 - PendingRequestList created
+2022-12-03 21:18:00 - PendingRequestList created
+2022-12-03 21:19:13 - Controller created
+2022-12-03 21:19:13 - Connection attempt of "Ben"
+2022-12-03 21:19:13 - Connection of "Ben" successful
+2022-12-03 21:19:22 - Controller created
+2022-12-03 21:19:22 - Connection attempt of "Ben"
+2022-12-03 21:19:22 - Connection of "Ben" successful
+2022-12-03 21:19:22 - FriendList created
+2022-12-03 21:19:22 - PendingRequestList created
+2022-12-03 21:19:22 - PendingRequestList created
+2022-12-03 21:19:24 - Controller created
+2022-12-03 21:19:24 - Connection attempt of "Ben"
+2022-12-03 21:19:24 - Connection of "Ben" successful
+2022-12-03 21:19:24 - FriendList created
+2022-12-03 21:19:24 - PendingRequestList created
+2022-12-03 21:19:24 - PendingRequestList created
+2022-12-03 21:19:26 - Controller created
+2022-12-03 21:19:26 - Connection attempt of "Ben"
+2022-12-03 21:19:26 - Connection of "Ben" successful
+2022-12-03 21:19:26 - FriendList created
+2022-12-03 21:19:26 - PendingRequestList created
+2022-12-03 21:19:26 - PendingRequestList created
+2022-12-03 21:19:28 - Controller created
+2022-12-03 21:19:28 - Connection attempt of "Ben"
+2022-12-03 21:19:28 - Connection of "Ben" successful
+2022-12-03 21:19:28 - FriendList created
+2022-12-03 21:19:28 - PendingRequestList created
+2022-12-03 21:19:28 - PendingRequestList created
+2022-12-03 21:19:31 - Controller created
+2022-12-03 21:19:31 - Connection attempt of "Ben"
+2022-12-03 21:19:31 - Connection of "Ben" successful
+2022-12-03 21:19:31 - FriendList created
+2022-12-03 21:19:31 - PendingRequestList created
+2022-12-03 21:19:31 - PendingRequestList created
+2022-12-03 21:19:32 - Controller created
+2022-12-03 21:19:32 - Connection attempt of "Ben"
+2022-12-03 21:19:32 - Connection of "Ben" successful
+2022-12-03 21:19:32 - FriendList created
+2022-12-03 21:19:32 - PendingRequestList created
+2022-12-03 21:19:32 - PendingRequestList created
+2022-12-03 21:19:54 - Controller created
+2022-12-03 21:19:54 - Connection attempt of "Ben"
+2022-12-03 21:19:54 - Connection of "Ben" successful
+2022-12-03 21:19:54 - FriendList created
+2022-12-03 21:19:54 - PendingRequestList created
+2022-12-03 21:19:54 - PendingRequestList created
+2022-12-03 21:19:58 - Controller created
+2022-12-03 21:19:58 - Connection attempt of "Ben"
+2022-12-03 21:19:58 - Connection of "Ben" successful
+2022-12-03 21:19:58 - FriendList created
+2022-12-03 21:19:58 - PendingRequestList created
+2022-12-03 21:19:59 - PendingRequestList created
+2022-12-03 21:20:07 - Controller created
+2022-12-03 21:20:07 - Connection attempt of "Ben"
+2022-12-03 21:20:07 - Connection of "Ben" successful
+2022-12-03 21:20:07 - FriendList created
+2022-12-03 21:20:08 - PendingRequestList created
+2022-12-03 21:20:08 - PendingRequestList created
+2022-12-03 21:20:11 - Controller created
+2022-12-03 21:20:11 - Connection attempt of "Ben"
+2022-12-03 21:20:11 - Connection of "Ben" successful
+2022-12-03 21:20:11 - FriendList created
+2022-12-03 21:20:11 - PendingRequestList created
+2022-12-03 21:20:11 - PendingRequestList created
+2022-12-03 21:20:23 - Controller created
+2022-12-03 21:20:23 - Connection attempt of "Ben"
+2022-12-03 21:20:23 - Connection of "Ben" successful
+2022-12-03 21:20:23 - FriendList created
+2022-12-03 21:20:23 - PendingRequestList created
+2022-12-03 21:20:23 - PendingRequestList created
+2022-12-03 21:20:27 - Controller created
+2022-12-03 21:20:27 - Connection attempt of "Ben"
+2022-12-03 21:20:27 - Connection of "Ben" successful
+2022-12-03 21:20:28 - FriendList created
+2022-12-03 21:20:28 - PendingRequestList created
+2022-12-03 21:20:28 - PendingRequestList created
+2022-12-03 21:20:30 - Controller created
+2022-12-03 21:20:30 - Connection attempt of "Ben"
+2022-12-03 21:20:30 - Connection of "Ben" successful
+2022-12-03 21:20:30 - FriendList created
+2022-12-03 21:20:30 - PendingRequestList created
+2022-12-03 21:20:31 - PendingRequestList created
+2022-12-03 21:20:45 - Controller created
+2022-12-03 21:20:45 - Connection attempt of "Ben"
+2022-12-03 21:20:45 - Connection of "Ben" successful
+2022-12-03 21:20:45 - FriendList created
+2022-12-03 21:20:45 - PendingRequestList created
+2022-12-03 21:20:45 - PendingRequestList created
+2022-12-03 21:20:48 - Controller created
+2022-12-03 21:20:48 - Connection attempt of "Ben"
+2022-12-03 21:20:48 - Connection of "Ben" successful
+2022-12-03 21:20:48 - FriendList created
+2022-12-03 21:20:48 - PendingRequestList created
+2022-12-03 21:20:48 - PendingRequestList created
+2022-12-03 21:20:52 - Controller created
+2022-12-03 21:20:52 - Connection attempt of "Ben"
+2022-12-03 21:20:52 - Connection of "Ben" successful
+2022-12-03 21:20:52 - FriendList created
+2022-12-03 21:20:52 - PendingRequestList created
+2022-12-03 21:20:52 - PendingRequestList created
+2022-12-03 21:20:53 - Controller created
+2022-12-03 21:20:53 - Connection attempt of "Ben"
+2022-12-03 21:20:53 - Connection of "Ben" successful
+2022-12-03 21:20:53 - FriendList created
+2022-12-03 21:20:53 - PendingRequestList created
+2022-12-03 21:20:53 - PendingRequestList created
+2022-12-03 21:20:56 - Controller created
+2022-12-03 21:20:56 - Connection attempt of "Ben"
+2022-12-03 21:20:56 - Connection of "Ben" successful
+2022-12-03 21:20:56 - FriendList created
+2022-12-03 21:20:56 - PendingRequestList created
+2022-12-03 21:20:56 - PendingRequestList created
+2022-12-03 21:21:00 - Controller created
+2022-12-03 21:21:00 - Connection attempt of "Ben"
+2022-12-03 21:21:00 - Connection of "Ben" successful
+2022-12-03 21:21:00 - FriendList created
+2022-12-03 21:21:00 - PendingRequestList created
+2022-12-03 21:21:00 - PendingRequestList created
+2022-12-03 21:21:02 - Controller created
+2022-12-03 21:21:02 - Connection attempt of "Ben"
+2022-12-03 21:21:02 - Connection of "Ben" successful
+2022-12-03 21:21:02 - FriendList created
+2022-12-03 21:21:02 - PendingRequestList created
+2022-12-03 21:21:02 - PendingRequestList created
+2022-12-03 21:21:05 - Controller created
+2022-12-03 21:21:05 - Connection attempt of "Ben"
+2022-12-03 21:21:05 - Connection of "Ben" successful
+2022-12-03 21:21:05 - FriendList created
+2022-12-03 21:21:05 - PendingRequestList created
+2022-12-03 21:21:05 - PendingRequestList created
+2022-12-03 21:21:08 - Controller created
+2022-12-03 21:21:08 - Connection attempt of "Ben"
+2022-12-03 21:21:08 - Connection of "Ben" successful
+2022-12-03 21:21:08 - FriendList created
+2022-12-03 21:21:08 - PendingRequestList created
+2022-12-03 21:21:08 - PendingRequestList created
+2022-12-03 21:21:10 - Controller created
+2022-12-03 21:21:10 - Connection attempt of "Ben"
+2022-12-03 21:21:10 - Connection of "Ben" successful
+2022-12-03 21:21:10 - FriendList created
+2022-12-03 21:21:10 - PendingRequestList created
+2022-12-03 21:21:10 - PendingRequestList created
+2022-12-03 21:21:38 - Controller created
+2022-12-03 21:21:38 - Connection attempt of "Ben"
+2022-12-03 21:21:38 - Connection of "Ben" successful
+2022-12-03 21:21:38 - FriendList created
+2022-12-03 21:21:38 - PendingRequestList created
+2022-12-03 21:21:38 - PendingRequestList created
+2022-12-03 21:21:39 - Controller created
+2022-12-03 21:21:39 - Connection attempt of "Ben"
+2022-12-03 21:21:39 - Connection of "Ben" successful
+2022-12-03 21:21:39 - FriendList created
+2022-12-03 21:21:39 - PendingRequestList created
+2022-12-03 21:21:39 - PendingRequestList created
+2022-12-03 21:22:06 - Controller created
+2022-12-03 21:22:06 - Connection attempt of "Ben"
+2022-12-03 21:22:06 - Connection of "Ben" successful
+2022-12-03 21:22:06 - FriendList created
+2022-12-03 21:22:06 - PendingRequestList created
+2022-12-03 21:22:06 - PendingRequestList created
+2022-12-03 21:22:25 - Controller created
+2022-12-03 21:22:25 - Connection attempt of "Ben"
+2022-12-03 21:22:25 - Connection of "Ben" successful
+2022-12-03 21:22:25 - FriendList created
+2022-12-03 21:22:25 - PendingRequestList created
+2022-12-03 21:22:25 - PendingRequestList created
+2022-12-03 21:22:31 - Controller created
+2022-12-03 21:22:31 - Connection attempt of "Ben"
+2022-12-03 21:22:31 - Connection of "Ben" successful
+2022-12-03 21:22:31 - FriendList created
+2022-12-03 21:22:31 - PendingRequestList created
+2022-12-03 21:22:31 - PendingRequestList created
+2022-12-03 21:22:37 - Controller created
+2022-12-03 21:22:37 - Connection attempt of "Ben"
+2022-12-03 21:22:37 - Connection of "Ben" successful
+2022-12-03 21:22:37 - FriendList created
+2022-12-03 21:22:37 - PendingRequestList created
+2022-12-03 21:22:37 - PendingRequestList created
+2022-12-03 21:22:55 - Controller created
+2022-12-03 21:22:55 - Connection attempt of "Ben"
+2022-12-03 21:22:55 - Connection of "Ben" successful
+2022-12-03 21:22:55 - FriendList created
+2022-12-03 21:22:55 - PendingRequestList created
+2022-12-03 21:22:55 - PendingRequestList created
+2022-12-03 21:23:10 - Controller created
+2022-12-03 21:23:10 - Connection attempt of "LaurieLOtarie"
+2022-12-03 21:23:10 - Connection of "LaurieLOtarie" successful
+2022-12-03 21:23:10 - FriendList created
+2022-12-03 21:23:10 - PendingRequestList created
+2022-12-03 21:23:10 - PendingRequestList created
+2022-12-03 21:23:17 - Controller created
+2022-12-03 21:23:17 - Connection attempt of "LaurieLOtarie"
+2022-12-03 21:23:17 - Connection of "LaurieLOtarie" successful
+2022-12-03 21:23:17 - FriendList created
+2022-12-03 21:23:17 - PendingRequestList created
+2022-12-03 21:23:17 - PendingRequestList created
+2022-12-03 21:24:08 - Controller created
+2022-12-03 21:24:08 - Connection attempt of "Ben"
+2022-12-03 21:24:08 - Connection of "Ben" successful
+2022-12-03 21:24:08 - FriendList created
+2022-12-03 21:24:08 - PendingRequestList created
+2022-12-03 21:24:08 - PendingRequestList created
+2022-12-03 21:24:08 - Controller created
+2022-12-03 21:24:08 - Connection attempt of "Ben"
+2022-12-03 21:24:08 - Connection of "Ben" successful
+2022-12-03 21:25:16 - Controller created
+2022-12-03 21:25:16 - Connection attempt of "Ben"
+2022-12-03 21:25:16 - Connection of "Ben" successful
+2022-12-03 21:25:21 - Controller created
+2022-12-03 21:25:21 - Connection attempt of "Ben"
+2022-12-03 21:25:21 - Connection of "Ben" successful
+2022-12-03 21:25:53 - Controller created
+2022-12-03 21:25:53 - Connection attempt of "Ben"
+2022-12-03 21:25:53 - Connection of "Ben" successful
+2022-12-03 21:26:24 - Controller created
+2022-12-03 21:26:24 - Connection attempt of "Ben"
+2022-12-03 21:26:24 - Connection of "Ben" successful
+2022-12-03 21:27:28 - Controller created
+2022-12-03 21:27:28 - Connection attempt of "Ben"
+2022-12-03 21:27:28 - Connection of "Ben" successful
+2022-12-03 21:27:30 - Controller created
+2022-12-03 21:27:30 - Connection attempt of "Ben"
+2022-12-03 21:27:30 - Connection of "Ben" successful
+2022-12-03 21:27:30 - FriendList created
+2022-12-03 21:27:30 - PendingRequestList created
+2022-12-03 21:27:30 - PendingRequestList created
+2022-12-03 21:27:30 - Controller created
+2022-12-03 21:27:30 - Connection attempt of "Ben"
+2022-12-03 21:27:30 - Connection of "Ben" successful
+2022-12-03 21:27:30 - FriendList created
+2022-12-03 21:27:30 - PendingRequestList created
+2022-12-03 21:27:30 - PendingRequestList created
+2022-12-03 21:27:39 - Controller created
+2022-12-03 21:27:39 - Connection attempt of "Ben"
+2022-12-03 21:27:39 - Connection of "Ben" successful
+2022-12-03 21:27:39 - FriendList created
+2022-12-03 21:27:39 - PendingRequestList created
+2022-12-03 21:27:39 - PendingRequestList created
+2022-12-03 21:27:40 - Controller created
+2022-12-03 21:27:40 - Connection attempt of "Ben"
+2022-12-03 21:27:40 - Connection of "Ben" successful
+2022-12-03 21:27:40 - FriendList created
+2022-12-03 21:27:40 - PendingRequestList created
+2022-12-03 21:27:40 - PendingRequestList created
+2022-12-03 21:27:41 - Controller created
+2022-12-03 21:27:41 - Connection attempt of "Ben"
+2022-12-03 21:27:41 - Connection of "Ben" successful
+2022-12-03 21:27:42 - Controller created
+2022-12-03 21:27:42 - Connection attempt of "Ben"
+2022-12-03 21:27:42 - Connection of "Ben" successful
+2022-12-03 21:27:42 - FriendList created
+2022-12-03 21:27:42 - PendingRequestList created
+2022-12-03 21:27:42 - PendingRequestList created
+2022-12-03 21:27:43 - Controller created
+2022-12-03 21:27:43 - Connection attempt of "Ben"
+2022-12-03 21:27:43 - Connection of "Ben" successful
+2022-12-03 21:27:43 - FriendList created
+2022-12-03 21:27:43 - PendingRequestList created
+2022-12-03 21:27:43 - PendingRequestList created
+2022-12-03 21:27:44 - Controller created
+2022-12-03 21:27:44 - Connection attempt of "Ben"
+2022-12-03 21:27:44 - Connection of "Ben" successful
+2022-12-03 21:27:44 - FriendList created
+2022-12-03 21:27:44 - PendingRequestList created
+2022-12-03 21:27:44 - PendingRequestList created
+2022-12-03 21:27:45 - Controller created
+2022-12-03 21:27:45 - Connection attempt of "Ben"
+2022-12-03 21:27:45 - Connection of "Ben" successful
+2022-12-03 21:27:45 - FriendList created
+2022-12-03 21:27:45 - PendingRequestList created
+2022-12-03 21:27:45 - PendingRequestList created
+2022-12-03 21:29:27 - Controller created
+2022-12-03 21:29:27 - Connection attempt of "Ben"
+2022-12-03 21:29:27 - Connection of "Ben" successful
+2022-12-03 21:29:28 - FriendList created
+2022-12-03 21:29:28 - PendingRequestList created
+2022-12-03 21:29:28 - PendingRequestList created
+2022-12-03 21:29:36 - Controller created
+2022-12-03 21:29:36 - Connection attempt of "Ben"
+2022-12-03 21:29:36 - Connection of "Ben" successful
+2022-12-03 21:29:36 - FriendList created
+2022-12-03 21:29:36 - PendingRequestList created
+2022-12-03 21:29:36 - PendingRequestList created
+2022-12-03 21:29:37 - Controller created
+2022-12-03 21:29:37 - Connection attempt of "Ben"
+2022-12-03 21:29:37 - Connection of "Ben" successful
+2022-12-03 21:30:08 - Controller created
+2022-12-03 21:30:08 - Connection attempt of "Ben"
+2022-12-03 21:30:08 - Connection of "Ben" successful
+2022-12-03 21:30:08 - FriendList created
+2022-12-03 21:30:08 - PendingRequestList created
+2022-12-03 21:30:08 - PendingRequestList created
+2022-12-03 21:30:09 - Controller created
+2022-12-03 21:30:09 - Connection attempt of "Ben"
+2022-12-03 21:30:09 - Connection of "Ben" successful
+2022-12-03 21:30:09 - FriendList created
+2022-12-03 21:30:09 - PendingRequestList created
+2022-12-03 21:30:09 - PendingRequestList created
+2022-12-03 21:30:11 - Controller created
+2022-12-03 21:30:11 - Connection attempt of "Ben"
+2022-12-03 21:30:11 - Connection of "Ben" successful
+2022-12-03 21:30:23 - Controller created
+2022-12-03 21:30:23 - Connection attempt of "Ben"
+2022-12-03 21:30:23 - Connection of "Ben" successful
+2022-12-03 21:30:24 - Controller created
+2022-12-03 21:30:24 - Connection attempt of "Ben"
+2022-12-03 21:30:24 - Connection of "Ben" successful
+2022-12-03 21:30:24 - FriendList created
+2022-12-03 21:30:24 - PendingRequestList created
+2022-12-03 21:30:24 - PendingRequestList created
+2022-12-03 21:30:26 - Controller created
+2022-12-03 21:30:26 - Connection attempt of "Ben"
+2022-12-03 21:30:26 - Connection of "Ben" successful
+2022-12-03 21:30:26 - FriendList created
+2022-12-03 21:30:26 - PendingRequestList created
+2022-12-03 21:30:26 - PendingRequestList created
+2022-12-03 21:30:27 - Controller created
+2022-12-03 21:30:27 - Connection attempt of "Ben"
+2022-12-03 21:30:27 - Connection of "Ben" successful
+2022-12-03 21:30:27 - FriendList created
+2022-12-03 21:30:27 - PendingRequestList created
+2022-12-03 21:30:27 - PendingRequestList created
+2022-12-03 21:30:29 - Controller created
+2022-12-03 21:30:29 - Connection attempt of "Ben"
+2022-12-03 21:30:29 - Connection of "Ben" successful
+2022-12-03 21:30:31 - Controller created
+2022-12-03 21:30:31 - Connection attempt of "Ben"
+2022-12-03 21:30:31 - Connection of "Ben" successful
+2022-12-03 21:30:31 - FriendList created
+2022-12-03 21:30:31 - PendingRequestList created
+2022-12-03 21:30:31 - PendingRequestList created
+2022-12-03 21:30:32 - Controller created
+2022-12-03 21:30:32 - Connection attempt of "Ben"
+2022-12-03 21:30:32 - Connection of "Ben" successful
+2022-12-03 21:30:32 - FriendList created
+2022-12-03 21:30:32 - PendingRequestList created
+2022-12-03 21:30:32 - PendingRequestList created
+2022-12-03 21:31:22 - Controller created
+2022-12-03 21:31:22 - Connection attempt of "Ben"
+2022-12-03 21:31:22 - Connection of "Ben" successful
+2022-12-03 21:31:22 - FriendList created
+2022-12-03 21:31:22 - PendingRequestList created
+2022-12-03 21:31:22 - PendingRequestList created
+2022-12-03 21:31:25 - Controller created
+2022-12-03 21:31:25 - Connection attempt of "Ben"
+2022-12-03 21:31:25 - Connection of "Ben" successful
+2022-12-03 21:31:27 - Controller created
+2022-12-03 21:31:27 - Connection attempt of "Ben"
+2022-12-03 21:31:27 - Connection of "Ben" successful
+2022-12-03 21:31:27 - FriendList created
+2022-12-03 21:31:27 - PendingRequestList created
+2022-12-03 21:31:27 - PendingRequestList created
+2022-12-03 21:31:38 - Controller created
+2022-12-03 21:31:38 - Connection attempt of "Ben"
+2022-12-03 21:31:38 - Connection of "Ben" successful
+2022-12-03 21:31:43 - Controller created
+2022-12-03 21:31:43 - Connection attempt of "Ben"
+2022-12-03 21:31:43 - Connection of "Ben" successful
+2022-12-03 21:31:43 - FriendList created
+2022-12-03 21:31:43 - PendingRequestList created
+2022-12-03 21:31:43 - PendingRequestList created
+2022-12-03 21:31:51 - Controller created
+2022-12-03 21:31:51 - Connection attempt of "Ben"
+2022-12-03 21:31:51 - Connection of "Ben" successful
+2022-12-03 21:31:51 - FriendList created
+2022-12-03 21:31:51 - PendingRequestList created
+2022-12-03 21:31:51 - PendingRequestList created
+2022-12-03 21:32:00 - Controller created
+2022-12-03 21:32:00 - Connection attempt of "Ben"
+2022-12-03 21:32:00 - Connection of "Ben" successful
+2022-12-03 21:32:00 - FriendList created
+2022-12-03 21:32:00 - PendingRequestList created
+2022-12-03 21:32:00 - PendingRequestList created
+2022-12-03 21:32:02 - Controller created
+2022-12-03 21:32:02 - Connection attempt of "Ben"
+2022-12-03 21:32:03 - Connection of "Ben" successful
+2022-12-03 21:32:03 - FriendList created
+2022-12-03 21:32:03 - PendingRequestList created
+2022-12-03 21:32:03 - PendingRequestList created
+2022-12-03 21:32:07 - Controller created
+2022-12-03 21:32:07 - Connection attempt of "Ben"
+2022-12-03 21:32:07 - Connection of "Ben" successful
+2022-12-03 21:32:07 - FriendList created
+2022-12-03 21:32:07 - PendingRequestList created
+2022-12-03 21:32:07 - PendingRequestList created
+2022-12-03 21:32:08 - Controller created
+2022-12-03 21:32:08 - Connection attempt of "Ben"
+2022-12-03 21:32:08 - Connection of "Ben" successful
+2022-12-03 21:32:08 - FriendList created
+2022-12-03 21:32:08 - PendingRequestList created
+2022-12-03 21:32:08 - PendingRequestList created

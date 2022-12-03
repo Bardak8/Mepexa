@@ -10,8 +10,8 @@
 
     <div id="connexion-zone">
         <?php if ($controller->IsConnected()) { ?>
-            <img id="profile_picture" src="../style/image/default.png" alt="connexion">
-            <p>
+            <img id="profile_picture" src="../style/image/default.png" alt="connexion" onclick='location.href="?u=<?= $controller->GetAccount()->GetName() ?>"'>
+            <p onclick='location.href="?u=<?= $controller->GetAccount()->GetName() ?>"'>
                 <?= $controller->GetAccount()->GetName(); ?>
             </p>
         <?php } else { ?>

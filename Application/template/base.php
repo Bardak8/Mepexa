@@ -14,7 +14,11 @@
         <?php require('components/header.php') ?>
         <div id="body">
             <?= $content ?>
-            <?php require('components/side_bar.php') ?>
+            <?php 
+            if (!isset($_GET['u'])) {   // if user is on a profile page, don't show the sodebar
+                require('components/side_bar.php');
+            } 
+            ?>
         </div>
     </body>
     

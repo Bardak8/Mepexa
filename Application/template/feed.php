@@ -7,7 +7,7 @@
     <div class="post">
         <ul>
             <li class="post_upper" onclick="href=''">
-                <p>Published by <a href="/"> <?= $post->GetAuthor() ?> </a> <?= $post->GetDate() ?> </p>
+                <p>Published by <a href="/?u=<?= $post->GetAuthor() ?>"> <?= $post->GetAuthor() ?> </a> <?= $post->GetDate() ?> </p>
             </li>
             <li class="post_title" onclick="href=''">
                 <h2><?= $post->GetTitle() ?></h2>
