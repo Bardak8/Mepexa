@@ -15,7 +15,7 @@
             
             <?php if ($post->GetMediaPath() != null) { ?>
                 <li class="post_content" style="display: flex; justify-content: center;" onclick="location.href=''">
-                    <img class="post_image" src=" image/post-media/<?= $post->GetMediaPath() ?>" alt="post content">
+                    <img class="post_image" src=" uploads/<?= $post->GetMediaPath() ?>" alt="post content">
                 </li>
             <?php } else { ?>
                 <li class="post_content" onclick="href=''">

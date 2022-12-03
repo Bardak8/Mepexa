@@ -3,7 +3,7 @@
 <link href="style/new_post.css" rel="stylesheet" />
 
 
-<form id="new_post" action="/" method="POST">
+<form id="new_post" action="/" method="POST" enctype="multipart/form-data" >
     <h1>
         New post
     </h1>
@@ -20,7 +20,7 @@
 
         <li>
             <label for="post_media">Media :</label>
-            <input type="file" name="post_media" id="post_media">
+            <input type="file" name="post_media" id="post_media" accept="image/*">
         </li>
     </ul>
 

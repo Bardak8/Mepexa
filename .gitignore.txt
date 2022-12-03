@@ -1,0 +1,2 @@
+Application/log.txt
+Application/uploads/

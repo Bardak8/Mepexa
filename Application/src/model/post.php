@@ -6,10 +6,11 @@ require_once('src/model/account.php');
 
 use Application\Pdo\Database\DatabaseConnection;
 use Application\Model\Account\Account;
+use Application\Model\Log\Log;
 
 class Post {
     // Variables
-    private int $id;
+    private ?int $id;
     private int $id_account;
     private string $author;
     private string $title;
@@ -19,7 +20,7 @@ class Post {
 
 
     // Constructor
-    public function __construct(int $id, int $id_account, string $author, string $title, string $content, $media_path, string $date) {
+    public function __construct(?int $id, int $id_account, string $author, string $title, string $content, $media_path, ?string $date) {
         $this->id = $id;
         $this->id_account = $id_account;
         $this->author = $author;
@@ -27,6 +28,27 @@ class Post {
         $this->content = $content;
         $this->media_path = $media_path;
         $this->date = $date;
+    }
+
+    public static function UploadNewPost(int $id_account, string $title, string $content, string $media_path) {
+        new Log("Post::UploadNewPost() of account [" . $id_account ."]");
+        // INSERT INTO `posts` (`id_post`, `title`, `content`, `media_path`, `id_account`, `post_date`) 
+        // VALUES (NULL, 'ceci est le titre', 'lorem ipsum ', NULL, '', NULL)
+        $db = new DatabaseConnection();
+        $connection = $db->getConnection();
+
+        $statement = $connection->prepare("INSERT INTO `posts` (`id_post`, `title`, `content`, `media_path`, `id_account`, `post_date`) VALUES (NULL, :title, :content, :media_path, :id_account, :post_date)");
+        $statement->bindParam(':title', $title);
+        $statement->bindParam(':content', $content);
+        if ($media_path === '') {
+            $statement->bindValue(':media_path', null, \PDO::PARAM_NULL);
+        } else {
+            $statement->bindParam(':media_path', $media_path);
+        }
+        $statement->bindParam(':id_account', $id_account);
+        $statement->bindValue(':post_date', date('Y-m-d H:i:s'));
+
+        $statement->execute();
     }
 
 
