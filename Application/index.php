@@ -4,6 +4,7 @@ require_once('src/controller/homepage.php');
 require_once('src/controller/profile_page.php');
 require_once('src/controller/controller.php');
 require_once('src/controller/new_post.php');
+require_once('src/controller/search_page.php');
 require_once('src/model/log.php');
 require_once('src/model/post.php');
 require_once('src/model/account.php');
@@ -12,6 +13,7 @@ use Application\Controller\Homepage\Homepage;
 use Application\Controller\ProfilePage\ProfilePage;
 use Application\Controller\Controller\Controller;
 use Application\Controller\NewPost\NewPost;
+use Application\Controller\SearchPage\Searching;
 use Application\Model\Post\Post;
 use Application\Model\Log\Log;
 use Application\Model\Account\Account;
@@ -95,13 +97,18 @@ try {
         $profile_page = new ProfilePage(Account::GetAccountByName($_GET['u']));
         $profile_page->execute($controller);
     }
+    // searching page
+    elseif (isset($_GET['search_terms'])) {
+        Searching::execute($controller);
+    }
     // homepage
     else {
         Homepage::execute($controller);
     }
 
+
 } catch (Exception $e) {
     $errorMessage = $e->getMessage();
 
-    require('template/error.php');
+    header("Location: index.php?error=" . $errorMessage);
 }
