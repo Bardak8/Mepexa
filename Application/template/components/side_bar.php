@@ -56,7 +56,7 @@
                 <img src="../image/v2.png" alt="mepexa logo" style="border-radius: 999999px;">
                 <h3>Sign up</h3>
             </div>
-            <form action="" method="POST">
+            <form action="/" method="POST">
                 <table>
                     <tr>
                         <td>

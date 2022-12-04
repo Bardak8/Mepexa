@@ -12,15 +12,15 @@ class Account {
     private int $id;
     private string $name;
     private string $email;
-    private string $encrypted_passord;
+    private string $encrypted_password;
 
     
     // Constructor
-    public function __construct(int $id, string $name, string $email, string $encrypted_passord) {
+    public function __construct(int $id, string $name, string $email, string $encrypted_password) {
         $this->id = $id;
         $this->name = $name;
         $this->email = $email;
-        $this->encrypted_passord = $encrypted_passord;
+        $this->encrypted_password = $encrypted_password;
     }
 
     
@@ -69,29 +69,31 @@ class Account {
         }
     }
 
-    public static function CreateAccount(string $name, string $email, string $password, string $password_verif )
+    public static function CreateAccount(string $name, string $email, string $encrypted_password )
     {
-        $query = "INSERT into accounts ($name, $email, $password, Values (:name, :email, :password)";
+        $query = "INSERT INTO accounts (id_account, name, email, encrypted_password) VALUES (NULL, :name, :email, :encrypted_password)";
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
+        var_dump($statement);
 
         if ($statement === false) {
             throw new \Exception("Error while preparing the query");
         }
 
-        $statement->execute([
+        $result = $statement->execute([
             'name' => $name,
             'email' => $email,
-            'password' => $password
+            'encrypted_password' => $encrypted_password
         ]);
 
-        $statement->fetch();
-
-
-
+        var_dump($result);
+        if (!$result) {
+            new Log("Error while fetching the result in Account::CreateAccount");
+            throw new \Exception("Error while fetching the result");
+        }
     }
 
     public function CompareEncryptedPassword(string $psw) {
-        return ($this->encrypted_passord == $psw);
+        return ($this->encrypted_password == $psw);
     }
 
 

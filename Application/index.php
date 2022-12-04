@@ -21,12 +21,27 @@ use Application\Model\Account\Account;
 
 try {   
     $controller = new Controller();
-    $controller->Connect('Ben', '123456789');
-
     // new post page
     if (isset($_GET['new'])) {
         NewPost::execute($controller);
     }
+    elseif(isset($_POST['username']) &&  isset($_POST['email']) && isset($_POST['password']) && isset($_POST['password_confirm'])) {
+        $password = $_POST['password'];
+        if ($password != $_POST['password_confirm']){
+            throw new \Exception("Passwords don't match");
+        } else {
+            $account = Account::GetAccountByName($_POST['username']);
+            if ($account != null){
+                throw new \Exception("Account already exists");
+            } else {
+                password_hash($password, PASSWORD_DEFAULT);
+                Account::CreateAccount( $_POST['username'], $_POST['email'], $_POST['password']);
+                header('Location: /');
+            }
+        }
+    }
+
+
     // post upload (to move somewhere else ...)
     elseif (!empty($_POST['post_title']) && isset($_POST['post_content']) ) {
         if ( !$controller->IsConnected()) {
