@@ -1098,3 +1098,193 @@
 2022-12-03 22:14:40 - Controller created
 2022-12-03 22:14:40 - Connection attempt of "Ben"
 2022-12-03 22:14:40 - Connection of "Ben" successful
+2022-12-04 00:21:56 - Controller created
+2022-12-04 00:21:56 - Connection attempt of "Ben"
+2022-12-04 00:24:15 - Controller created
+2022-12-04 00:24:15 - Connection attempt of "Ben"
+2022-12-04 00:24:15 - Connection of "Ben" successful
+2022-12-04 00:24:33 - Controller created
+2022-12-04 00:24:33 - Connection attempt of "Ben"
+2022-12-04 00:24:33 - Connection of "Ben" successful
+2022-12-04 00:24:33 - FriendList created
+2022-12-04 00:24:33 - PendingRequestList created
+2022-12-04 00:24:33 - PendingRequestList created
+2022-12-04 00:24:58 - Controller created
+2022-12-04 00:24:58 - FriendList created
+2022-12-04 00:24:58 - PendingRequestList created
+2022-12-04 00:24:58 - PendingRequestList created
+2022-12-04 00:25:00 - Controller created
+2022-12-04 00:25:00 - FriendList created
+2022-12-04 00:25:00 - PendingRequestList created
+2022-12-04 00:25:00 - PendingRequestList created
+2022-12-04 00:25:02 - Controller created
+2022-12-04 00:25:02 - FriendList created
+2022-12-04 00:25:02 - PendingRequestList created
+2022-12-04 00:25:02 - PendingRequestList created
+2022-12-04 00:25:02 - Controller created
+2022-12-04 00:25:02 - FriendList created
+2022-12-04 00:25:02 - PendingRequestList created
+2022-12-04 00:25:03 - PendingRequestList created
+2022-12-04 00:25:03 - Controller created
+2022-12-04 00:25:03 - FriendList created
+2022-12-04 00:25:03 - PendingRequestList created
+2022-12-04 00:25:03 - PendingRequestList created
+2022-12-04 00:25:03 - Controller created
+2022-12-04 00:25:03 - FriendList created
+2022-12-04 00:25:03 - PendingRequestList created
+2022-12-04 00:25:03 - PendingRequestList created
+2022-12-04 00:25:05 - Controller created
+2022-12-04 00:25:05 - Controller created
+2022-12-04 00:41:57 - Controller created
+2022-12-04 00:42:04 - Controller created
+2022-12-04 00:42:16 - Controller created
+2022-12-04 00:42:16 - Connection attempt of "Ben"
+2022-12-04 00:42:16 - Connection of "Ben" successful
+2022-12-04 00:42:18 - Controller created
+2022-12-04 00:42:18 - Connection attempt of "Ben"
+2022-12-04 00:42:18 - Connection of "Ben" successful
+2022-12-04 00:42:28 - Controller created
+2022-12-04 00:42:28 - Connection attempt of "Ben"
+2022-12-04 00:42:28 - Connection of "Ben" successful
+2022-12-04 00:42:28 - Account [3] is uploading a new post
+2022-12-04 00:42:28 - Uploading file for account [3] on server...
+2022-12-04 00:42:28 - /!\ File not uploaded for account : 3 on server
+2022-12-04 00:42:28 - Post::UploadNewPost() of account [3]
+2022-12-04 00:42:58 - Controller created
+2022-12-04 00:43:03 - Controller created
+2022-12-04 00:43:06 - Controller created
+2022-12-04 00:43:12 - Controller created
+2022-12-04 13:56:39 - Controller created
+2022-12-04 13:56:54 - Controller created
+2022-12-04 13:57:38 - Controller created
+2022-12-04 13:57:43 - Controller created
+2022-12-04 13:57:43 - No account found with pseudo: AA in Account::GetAccountByName
+2022-12-04 13:59:03 - Controller created
+2022-12-04 13:59:07 - Controller created
+2022-12-04 13:59:07 - No account found with pseudo: AA in Account::GetAccountByName
+2022-12-04 13:59:07 - Error while fetching the result in Account::CreateAccount
+2022-12-04 13:59:55 - Controller created
+2022-12-04 13:59:59 - Controller created
+2022-12-04 13:59:59 - No account found with pseudo: AA in Account::GetAccountByName
+2022-12-04 13:59:59 - Error while fetching the result in Account::CreateAccount
+2022-12-04 14:00:51 - Controller created
+2022-12-04 14:00:56 - Controller created
+2022-12-04 14:00:56 - No account found with pseudo: AA in Account::GetAccountByName
+2022-12-04 14:00:56 - Error while fetching the result in Account::CreateAccount
+2022-12-04 14:02:01 - Controller created
+2022-12-04 14:02:06 - Controller created
+2022-12-04 14:02:06 - No account found with pseudo: AA in Account::GetAccountByName
+2022-12-04 14:02:06 - Error while fetching the result in Account::CreateAccount
+2022-12-04 14:04:19 - Controller created
+2022-12-04 14:04:23 - Controller created
+2022-12-04 14:04:23 - No account found with pseudo: AA in Account::GetAccountByName
+2022-12-04 14:04:23 - Error while fetching the result in Account::CreateAccount
+2022-12-04 14:06:47 - Controller created
+2022-12-04 14:06:52 - Controller created
+2022-12-04 14:06:52 - No account found with pseudo: AA in Account::GetAccountByName
+2022-12-04 14:06:52 - Error while fetching the result in Account::CreateAccount
+2022-12-04 14:09:20 - Controller created
+2022-12-04 14:09:25 - Controller created
+2022-12-04 14:09:25 - No account found with pseudo: AA in Account::GetAccountByName
+2022-12-04 14:09:25 - Error while fetching the result in Account::CreateAccount
+2022-12-04 14:10:56 - Controller created
+2022-12-04 14:11:01 - Controller created
+2022-12-04 14:11:01 - No account found with pseudo: AA in Account::GetAccountByName
+2022-12-04 14:11:01 - Error while fetching the result in Account::CreateAccount
+2022-12-04 14:12:06 - Controller created
+2022-12-04 14:12:10 - Controller created
+2022-12-04 14:12:10 - No account found with pseudo: AA in Account::GetAccountByName
+2022-12-04 14:12:10 - Error while fetching the result in Account::CreateAccount
+2022-12-04 14:12:20 - Controller created
+2022-12-04 14:12:25 - Controller created
+2022-12-04 14:12:25 - No account found with pseudo: AA in Account::GetAccountByName
+2022-12-04 14:12:25 - Error while fetching the result in Account::CreateAccount
+2022-12-04 14:12:40 - Controller created
+2022-12-04 14:12:46 - Controller created
+2022-12-04 14:12:46 - No account found with pseudo: AA in Account::GetAccountByName
+2022-12-04 14:12:46 - Error while fetching the result in Account::CreateAccount
+2022-12-04 14:14:23 - Controller created
+2022-12-04 14:14:31 - Controller created
+2022-12-04 14:14:32 - No account found with pseudo: AA in Account::GetAccountByName
+2022-12-04 14:14:32 - Error while fetching the result in Account::CreateAccount
+2022-12-04 14:17:21 - Controller created
+2022-12-04 14:17:25 - Controller created
+2022-12-04 14:17:25 - Error while fetching the result in Account::CreateAccount
+2022-12-04 14:25:37 - Controller created
+2022-12-04 14:25:41 - Controller created
+2022-12-04 14:25:41 - No account found with pseudo: AA in Account::GetAccountByName
+2022-12-04 14:25:41 - Error while fetching the result in Account::CreateAccount
+2022-12-04 14:25:55 - Controller created
+2022-12-04 14:25:59 - Controller created
+2022-12-04 14:25:59 - No account found with pseudo: AA in Account::GetAccountByName
+2022-12-04 14:25:59 - Error while fetching the result in Account::CreateAccount
+2022-12-04 14:27:54 - Controller created
+2022-12-04 14:27:58 - Controller created
+2022-12-04 14:27:58 - No account found with pseudo: AA in Account::GetAccountByName
+2022-12-04 14:27:58 - Error while fetching the result in Account::CreateAccount
+2022-12-04 14:28:18 - Controller created
+2022-12-04 14:28:21 - Controller created
+2022-12-04 14:28:21 - No account found with pseudo: AA in Account::GetAccountByName
+2022-12-04 14:28:21 - Error while fetching the result in Account::CreateAccount
+2022-12-04 14:29:22 - Controller created
+2022-12-04 14:29:26 - Controller created
+2022-12-04 14:29:26 - Error while fetching the result in Account::CreateAccount
+2022-12-04 14:29:28 - Controller created
+2022-12-04 14:29:29 - Controller created
+2022-12-04 14:29:30 - Controller created
+2022-12-04 14:30:46 - Controller created
+2022-12-04 14:30:46 - No account found with pseudo: dardas in Account::GetAccountByName
+2022-12-04 14:30:46 - Error while fetching the result in Account::CreateAccount
+2022-12-04 14:33:02 - Controller created
+2022-12-04 14:33:02 - No account found with pseudo: dardas in Account::GetAccountByName
+2022-12-04 14:33:41 - Controller created
+2022-12-04 14:33:41 - No account found with pseudo: dardas in Account::GetAccountByName
+2022-12-04 14:33:54 - Controller created
+2022-12-04 14:33:54 - No account found with pseudo: dardas in Account::GetAccountByName
+2022-12-04 14:38:54 - Controller created
+2022-12-04 14:38:54 - No account found with pseudo: dardas in Account::GetAccountByName
+2022-12-04 14:39:45 - Controller created
+2022-12-04 14:39:45 - No account found with pseudo: dardas in Account::GetAccountByName
+2022-12-04 14:39:45 - Controller created
+2022-12-04 14:39:57 - Controller created
+2022-12-04 14:39:57 - No account found with pseudo: aze in Account::GetAccountByName
+2022-12-04 14:39:57 - Controller created
+2022-12-04 14:41:35 - Controller created
+2022-12-04 14:41:35 - No account found with pseudo: aze in Account::GetAccountByName
+2022-12-04 14:45:19 - Controller created
+2022-12-04 14:45:23 - Controller created
+2022-12-04 14:45:23 - No account found with pseudo: aze in Account::GetAccountByName
+2022-12-04 14:46:08 - Controller created
+2022-12-04 14:46:16 - Controller created
+2022-12-04 14:46:16 - No account found with pseudo: aze in Account::GetAccountByName
+2022-12-04 14:47:15 - Controller created
+2022-12-04 14:47:21 - Controller created
+2022-12-04 14:47:21 - No account found with pseudo: aze in Account::GetAccountByName
+2022-12-04 14:47:56 - Controller created
+2022-12-04 14:48:00 - Controller created
+2022-12-04 14:48:00 - No account found with pseudo: aze in Account::GetAccountByName
+2022-12-04 14:57:10 - Controller created
+2022-12-04 14:57:14 - Controller created
+2022-12-04 14:57:14 - No account found with pseudo: aze in Account::GetAccountByName
+2022-12-04 14:57:14 - Error while fetching the result in Account::CreateAccount
+2022-12-04 15:00:40 - Controller created
+2022-12-04 15:00:44 - Controller created
+2022-12-04 15:00:44 - Error while fetching the result in Account::CreateAccount
+2022-12-04 15:02:24 - Controller created
+2022-12-04 15:03:37 - Controller created
+2022-12-04 15:03:37 - Connection attempt of "Ben"
+2022-12-04 15:03:38 - Connection of "Ben" successful
+2022-12-04 15:03:50 - Controller created
+2022-12-04 15:03:50 - Connection attempt of "Ben"
+2022-12-04 15:03:50 - Connection of "Ben" successful
+2022-12-04 15:03:55 - Controller created
+2022-12-04 15:03:55 - Connection attempt of "Ben"
+2022-12-04 15:03:55 - Connection of "Ben" successful
+2022-12-04 15:03:55 - Account [3] is uploading a new post
+2022-12-04 15:03:55 - Uploading file for account [3] on server...
+2022-12-04 15:03:55 - /!\ File not uploaded for account : 3 on server
+2022-12-04 15:03:55 - Post::UploadNewPost() of account [3]
+2022-12-04 15:14:16 - Controller created
+2022-12-04 15:14:31 - Controller created
+2022-12-04 15:14:31 - No account found with pseudo: azer in Account::GetAccountByName
+2022-12-04 15:14:32 - Controller created
