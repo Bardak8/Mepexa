@@ -17,3 +17,11 @@
     border-bottom: 1px solid #ccc;
     background-color: #282828;
 }
+
+#search_result {
+    margin: 2vw;
+}
+
+#side_bar {
+    display: none;  /* best fckng code line */
+}

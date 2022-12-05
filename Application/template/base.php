@@ -7,6 +7,7 @@
         <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
         <link href="style/main.css" rel="stylesheet" />
         <link href="style/post.css" rel="stylesheet" />
+        <link href="style/searching_page.css" rel="stylesheet" />
         <script src="script/main.js"></script>
     </head>
 

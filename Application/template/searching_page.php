@@ -1,39 +1,40 @@
-<?php $title = "La page de recherche"; ?>
+
 
 <?php ob_start(); ?>
 
-<h1>Une erreur est survenue : </h1>
+<link href="style/searching_page.css" rel="stylesheet" />
 
 
-<div id="body">
-    <?php
-    require_once('../src/controller/homepage.php');
-    require_once('../src/controller/controller.php');
-    $bdd = new \PDO('mysql:host=mepexa;dbname=mapexa;charset=utf8', 'root', '');
 
-    $results = $bdd->query('SELECT * FROM accounts');
-    if(isset($_GET['q']) AND !empty($_GET['q'])) {
-        $q = htmlspecialchars($_GET['q']);
-        $results = $bdd->query('SELECT * FROM accounts WHERE name LIKE "%'.$q.'%" ');
-        if($results->rowCount() == 0) {
-            $results = $bdd->query('SELECT * FROM accounts WHERE name LIKE "%'.$q.'%" ORDER BY id DESC');
-        }
-    }
-    ?>
 
-    <?php if($results->rowCount() > 0) { ?>
-        <h1>Une erreur est survenue : </h1>
-        <ul>
-            <?php while($a = $results->fetch()) { ?>
-                <li><?= $a['name'] ?></li>
-            <?php } ?>
-        </ul>
-    <?php } else { ?>
-        <h1>Une erreur est survenue : </h1>
-        Aucun résultat pour: <?= $q ?>...
-    <?php } ?>
+<div id="searching_zone" >
+
+    <div class="main_title_search">
+        <?php if(empty($search_terms)) { ?>
+        <h2>No results</h2>
+        <?php } else { ?>
+        <h2>Results for "<?= $search_terms ?>"</h2>
+        <?php } ?>
+    </div>
+
+    <div id="search_result">
+        <?php if($results->rowCount() > 0) { ?>
+            <ul>
+                <?php foreach ($results as $result) { ?>
+
+                        <li><a href="/?u=<?=$result['name'] ?>"><?= $result['name'] ?></a></li>
+
+                <?php } ?>
+            </ul>
+        <?php } elseif (empty($search_terms)) { ?>
+            Waiting for your search...
+        <?php } else { ?>
+            Aucun résultat pour: <?= $q ?>...
+        <?php } ?>
+    </div>
 </div>
 
-<?php $content = ob_get_clean(); ?>
-
-<?php require('base.php') ?>
+<?php
+$content = ob_get_clean();
+require('template/base.php')
+?>

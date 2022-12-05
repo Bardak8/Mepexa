@@ -3,9 +3,9 @@
         Мережа
     </h1>
 
-    <form id="search_form" action="">
-        <input type="text" placeholder="Your search..." id="search_bar"/>
-        <input type="submit" id="search_submit" value="Search" onclick="open_search_result()"/>
+    <form id="search_form" METHOD="get" action="/">
+        <input type="text" placeholder="Your search..." id="search_bar" name="search_terms"/>
+        <input type="submit" id="search_submit" value="Search" />
     </form>
 
     <div id="connexion-zone">
