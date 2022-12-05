@@ -21,6 +21,7 @@ use Application\Model\Account\Account;
 
 try {   
     $controller = new Controller();
+    $controller->Connect('Ben', '123456789');
     // new post page
     if (isset($_GET['new'])) {
         NewPost::execute($controller);
@@ -123,5 +124,5 @@ try {
 } catch (Exception $e) {
     $errorMessage = $e->getMessage();
 
-    header("Location: index.php?error=" . $errorMessage);
+    require('template/error.php');
 }

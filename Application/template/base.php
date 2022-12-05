@@ -7,7 +7,6 @@
         <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
         <link href="style/main.css" rel="stylesheet" />
         <link href="style/post.css" rel="stylesheet" />
-        <link href="style/searching_page.css" rel="stylesheet" />
         <script src="script/main.js"></script>
     </head>
 
@@ -16,7 +15,7 @@
         <div id="body">
             <?= $content ?>
             <?php 
-            if (!isset($_GET['u'])) {   // if user is on a profile page, don't show the sodebar
+            if (!isset($_GET['u']) && !isset($_GET['search_terms'])) {   // if user is on a profile page, don't show the sodebar
                 require('components/side_bar.php');
             } 
             ?>
