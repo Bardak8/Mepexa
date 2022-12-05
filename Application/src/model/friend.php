@@ -9,6 +9,7 @@ use Application\Pdo\Database\DatabaseConnection;
 use Application\Model\Log\Log;
 use Application\Model\Account\Account;
 
+// to remove
 class Friend {
     private Account $persona1;
     private Account $persona2;

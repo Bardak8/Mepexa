@@ -37,8 +37,6 @@ try {
         $file_id = "";
         $errors= array();
 
-        var_dump($_POST);
-
         if (isset($_FILES['post_media'])) { // this shits sucks, i give up, fuck it
             new Log("Uploading file for account [" . $controller->GetAccount()->GetId() . "] on server...");
 
@@ -55,7 +53,7 @@ try {
             
             
             if($file_size > 2097140) {
-                $errors[]='File size must be less than 16 MB';
+                $errors[]='File size must be less than 2MB';
             }
 
             $file_id = uniqid('u' . $controller->GetAccount()->GetId() . '_') . '.' . $file_ext;

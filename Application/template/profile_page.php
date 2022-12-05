@@ -47,6 +47,8 @@
                 </li>
             <?php } ?>
 
+
+
             <?php foreach ($receive_requests->GetPendingRequests() as $request) { ?>
                 <li>
                     <a href="?u=<?= $request->GetReceiver()->GetName() ?>">

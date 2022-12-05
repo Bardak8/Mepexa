@@ -19,7 +19,7 @@
                 require('components/side_bar.php');
             } 
             ?>
-        </div>
+        </div>  
     </body>
     
 </html>
