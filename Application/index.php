@@ -61,7 +61,10 @@ try {
             throw new \Exception("Account doesn't exist");
         }
     }
-
+    elseif(isset($_POST['disconnect'])) {
+        session_destroy();
+        header('Location: /');
+    }
 
     // post upload (to move somewhere else ...)
     elseif (!empty($_POST['post_title']) && isset($_POST['post_content']) ) {

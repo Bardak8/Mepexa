@@ -30,15 +30,6 @@ class Controller
         }
     }
 
-
-
-    public function Disconnet(string $pseudo) {
-        new Log('Disconnection attempt of "' . $pseudo . '"');
-
-        $this->account = null;
-        $this->connected = false;
-    }
-
     // Getters
     public function GetPseudo() {
         return $this->pseudo;

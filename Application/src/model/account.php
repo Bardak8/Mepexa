@@ -75,7 +75,6 @@ class Account {
     {
         $query = "INSERT INTO accounts (id_account, name, email, encrypted_password) VALUES (NULL, :name, :email, :encrypted_password)";
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
-        var_dump($statement);
 
         if ($statement === false) {
             throw new \Exception("Error while preparing the query");
@@ -97,6 +96,7 @@ class Account {
     public function CompareEncryptedPassword(string $psw) {
         return ($this->encrypted_password == $psw);
     }
+
 
     public static function ConnectAccount(string $name, string $psw) : ?Account {
         $account = Account::GetAccountByName($name);
