@@ -19,12 +19,13 @@ class Searching
         $title = "Searching page";
 
 
-        $bdd = new \PDO('mysql:host=mepexa;dbname=mapexa2;charset=utf8', 'root', '');
+        $db = new DatabaseConnection();
+        $connection = $db->getConnection();
 
-        $results = $bdd->query('SELECT * FROM accounts');
+        $results = $connection->query('SELECT * FROM accounts');
         if (isset($_GET['search_terms']) and !empty($_GET['search_terms'])) {
             $q = htmlspecialchars($_GET['search_terms']);
-            $results = $bdd->query('SELECT name FROM accounts WHERE name LIKE "%' . $q . '%" ');
+            $results = $connection->query('SELECT name FROM accounts WHERE name LIKE "%' . $q . '%" ');
             if ($results->rowCount() == 0) {
                 $result = null;
             }

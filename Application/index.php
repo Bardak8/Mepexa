@@ -113,6 +113,9 @@ try {
     }
     // searching page
     elseif (isset($_GET['search_terms'])) {
+        if (empty($_GET['search_terms'])) {
+            Homepage::execute($controller);
+        }
         Searching::execute($controller);
     }
     // homepage
