@@ -29,7 +29,7 @@ class Friend {
 }
 
 class FriendList {
-    private Account $account;
+    public Account $account;
     private array $friends = [];
 
     public function __construct(Account $account) {
@@ -63,4 +63,6 @@ class FriendList {
     public function GetFriends() : array {
         return $this->friends;
     }
+
+
 }
