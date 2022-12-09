@@ -7,6 +7,7 @@ require_once('src/model/post.php');
 use Application\Model\Post\Feed; 
 use Application\Controller\Controller\Controller;
 use Application\Model\Account\Account;
+use Application\Pdo\Database\DatabaseConnection;
 
 class Homepage
 {
@@ -17,9 +18,13 @@ class Homepage
         $feed = new Feed();
         
         if ($controller->IsConnected()) {
-            $feed->GenerateFeed($controller->GetAccount()->GetId());
+            $feed->GenerateFeed($controller->GetAccount());
         }
 
+
+
         require('template/feed.php');
+
+
     }
 }

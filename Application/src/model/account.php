@@ -3,9 +3,11 @@ namespace Application\Model\Account;
 
 require_once('src/pdo/database.php');
 require_once('src/model/log.php');
+require_once('src/controller/controller.php');
 
 use Application\Model\Log\Log;
 use Application\Pdo\Database\DatabaseConnection;
+use Application\Controller\Controller\Controller;
 
 class Account {
     // Variables
@@ -73,7 +75,6 @@ class Account {
     {
         $query = "INSERT INTO accounts (id_account, name, email, encrypted_password) VALUES (NULL, :name, :email, :encrypted_password)";
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
-        var_dump($statement);
 
         if ($statement === false) {
             throw new \Exception("Error while preparing the query");
@@ -97,6 +98,20 @@ class Account {
     }
 
 
+    public static function ConnectAccount(string $name, string $psw) : ?Account {
+        $account = Account::GetAccountByName($name);
+        if ($account) {
+            if ($account->CompareEncryptedPassword($psw)) {
+                return $account;
+            } else {
+                new Log("Wrong password for account: " . $name . " in Account::ConnectAccount");
+                return null;
+            }
+        } else {
+            new Log("No account found with pseudo: " . $name . " in Account::ConnectAccount");
+            return null;
+        }
+    }
     // Getters
     public function GetId() {
         return $this->id;

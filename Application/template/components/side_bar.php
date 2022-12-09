@@ -17,9 +17,11 @@
                         </div>
                     </li>
                     <li>
-                        <div id="signup" class="button" onclick="">
-                            <p>Disconnect</p>
-                        </div>
+                        <form action="" method="post" id="signup">
+                            <button type="submit" name="disconnect" id="signup" class="button" onclick="">
+                                <p>Disconnect</p>
+                            </button>
+                        </form>
                     </li>
                 </ul>
             </div>

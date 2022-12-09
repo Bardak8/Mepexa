@@ -20,27 +20,13 @@ class Controller
 
 
     // Main functions
-    public function Connect(string $pseudo, string $encrypted_password) {
+    public function Connect(string $pseudo) {
         new Log('Connection attempt of "' . $pseudo . '"');
         
-        $account = Account::GetAccountByName($pseudo);
-        if ($account === null) { return; }
-
-        if ($account->CompareEncryptedPassword($encrypted_password)) {
-            $this->connected = true;
-            $this->account = $account;
-            new Log('Connection of "' . $pseudo . '" successful');
-        } else {
-            new Log('Connection of "' . $pseudo . '" failed : wrong password');
-            throw new \Exception("Wrong password");
-        }
-    }
-
-    public function Disconnect() {
-        if ($this->connected) {
-            new Log('Disconnection of "' . $this->account->getName() . '"');
-            $this->connected = false;
-            $this->account = null;
+        $this->account = Account::GetAccountByName($pseudo);
+        if ($this->account === null) {
+            new Log('Connection failed');
+            return false;
         }
     }
 
@@ -50,7 +36,7 @@ class Controller
     }
 
     public function IsConnected() {
-        return $this->connected;
+        return isset($_SESSION['username']);
     }
 
     public function GetAccount() {

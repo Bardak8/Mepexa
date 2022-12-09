@@ -22,9 +22,20 @@ use Application\Model\Account\Account;
 use Application\Model\PendingRequest\PendingRequest;
 use Application\Model\Friend\Friend;
 
-try {   
+try {
+    session_start();
     $controller = new Controller();
-    $controller->Connect('Ben', '123456789');
+    $method = $_SERVER['REQUEST_METHOD'];
+    $uri = $_SERVER['REQUEST_URI'];
+    $connection = isset($_SESSION['username']);
+    if (!$connection && $uri !== '/'&& $method === 'GET') {
+        header('Location: /');
+        exit();
+    }
+
+    if ($connection) {
+        $controller -> Connect($_SESSION['username']);
+    }
     // new post page
     if (isset($_GET['new'])) {
         NewPost::execute($controller);
@@ -43,6 +54,19 @@ try {
                 header('Location: /');
             }
         }
+    }
+    elseif(isset($_POST['username']) && isset($_POST['password'])) {
+        if(Account::ConnectAccount($_POST['username'], $_POST['password']) !== null){
+            $_SESSION["username"] = $_POST['username'];
+
+            header('Location: /');
+        } else {
+            throw new \Exception("Account doesn't exist");
+        }
+    }
+    elseif(isset($_POST['disconnect'])) {
+        session_destroy();
+        header('Location: /');
     }
 
     // post upload (to move somewhere else ...)
