@@ -8,6 +8,8 @@ require_once('src/controller/search_page.php');
 require_once('src/model/log.php');
 require_once('src/model/post.php');
 require_once('src/model/account.php');
+require_once('src/model/friend.php');
+require_once('src/model/pending_request.php');
 
 use Application\Controller\Homepage\Homepage;
 use Application\Controller\ProfilePage\ProfilePage;
@@ -17,7 +19,8 @@ use Application\Controller\SearchPage\Searching;
 use Application\Model\Post\Post;
 use Application\Model\Log\Log;
 use Application\Model\Account\Account;
-
+use Application\Model\PendingRequest\PendingRequest;
+use Application\Model\Friend\Friend;
 
 try {
     session_start();
@@ -131,7 +134,23 @@ try {
     }
     // profile page
     elseif (isset($_GET['u'])) {
-        $profile_page = new ProfilePage(Account::GetAccountByName($_GET['u']));
+        if (isset($_POST['friend_request'])) {
+            var_dump($_POST);
+            echo $controller->GetAccount()->GetId();
+            if ($_POST['friend_request'] == 'accept') {
+                PendingRequest::AcceptRequest($_POST['request_id'], $controller->GetAccount()->GetId());
+            } elseif ($_POST['friend_request'] == 'refuse') {
+                PendingRequest::DeclineRequest($_POST['request_id'], $controller->GetAccount()->GetId());
+            } elseif ($_POST['friend_request'] == 'delete') {
+                Friend::RemoveFriend($_POST['request_id'], $controller->GetAccount()->GetId());
+            } elseif ($_POST['friend_request'] == 'new') {
+                PendingRequest::NewRequest($_POST['request_id'], $controller->GetAccount()->GetId());
+            } else {
+                throw new \Exception("Invalid friend request");
+            }
+        }
+
+        $profile_page = new ProfilePage(Account::GetAccountByName($_GET['u']), $controller);
         $profile_page->execute($controller);
     }
     // searching page
