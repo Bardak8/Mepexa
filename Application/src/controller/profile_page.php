@@ -52,7 +52,7 @@ class ProfilePage
             if ($friends->IsFriend($controller->GetAccount())) {
                 $is_friend = true;
             }
-
+            
             foreach ($sended_requests->GetPendingRequests() as $request) {
                 if ($request->GetSender()->GetId() == $controller->GetAccount()->GetId()) {
                     $has_pending_request = true;
