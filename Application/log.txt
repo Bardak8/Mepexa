@@ -2586,3 +2586,60 @@
 2022-12-08 16:37:49 - Controller created
 2022-12-08 16:37:49 - Connection attempt of "Ben"
 2022-12-08 16:37:49 - FriendList created
+2022-12-09 22:32:55 - Controller created
+2022-12-09 22:32:59 - Controller created
+2022-12-09 22:32:59 - Controller created
+2022-12-09 22:32:59 - Connection attempt of "Ben"
+2022-12-09 22:32:59 - FriendList created
+2022-12-09 22:41:22 - Controller created
+2022-12-09 22:41:22 - Connection attempt of "Ben"
+2022-12-09 22:41:22 - FriendList created
+2022-12-09 22:42:51 - Controller created
+2022-12-09 22:42:51 - Connection attempt of "Ben"
+2022-12-09 22:42:51 - FriendList created
+2022-12-09 22:42:53 - Controller created
+2022-12-09 22:42:53 - Connection attempt of "Ben"
+2022-12-09 22:42:54 - Controller created
+2022-12-09 22:42:54 - Connection attempt of "Ben"
+2022-12-09 22:42:54 - FriendList created
+2022-12-09 22:42:57 - Controller created
+2022-12-09 22:42:57 - Connection attempt of "Ben"
+2022-12-09 22:42:57 - FriendList created
+2022-12-09 22:42:57 - PendingRequestList created
+2022-12-09 22:42:57 - PendingRequestList created
+2022-12-09 22:43:01 - Controller created
+2022-12-09 22:43:01 - Connection attempt of "Ben"
+2022-12-09 22:43:01 - No account found with pseudo: frffrfr in Account::GetAccountByName
+2022-12-09 22:43:26 - Controller created
+2022-12-09 22:43:26 - Connection attempt of "Ben"
+2022-12-09 22:43:26 - No account found with pseudo: frffrfr in Account::GetAccountByName
+2022-12-09 23:02:36 - Controller created
+2022-12-09 23:02:36 - Connection attempt of "Ben"
+2022-12-09 23:02:36 - FriendList created
+2022-12-09 23:03:34 - Controller created
+2022-12-09 23:03:34 - Connection attempt of "Ben"
+2022-12-09 23:03:34 - FriendList created
+2022-12-09 23:10:42 - Controller created
+2022-12-09 23:10:42 - Connection attempt of "Ben"
+2022-12-09 23:10:42 - FriendList created
+2022-12-09 23:11:52 - Controller created
+2022-12-09 23:11:52 - Connection attempt of "Ben"
+2022-12-09 23:11:52 - FriendList created
+2022-12-09 23:14:50 - Controller created
+2022-12-09 23:14:50 - Connection attempt of "Ben"
+2022-12-09 23:14:50 - FriendList created
+2022-12-09 23:17:15 - Controller created
+2022-12-09 23:17:15 - Connection attempt of "Ben"
+2022-12-09 23:17:15 - FriendList created
+2022-12-09 23:17:15 - PendingRequestList created
+2022-12-09 23:17:15 - PendingRequestList created
+2022-12-09 23:17:16 - Controller created
+2022-12-09 23:17:16 - Connection attempt of "Ben"
+2022-12-09 23:17:16 - FriendList created
+2022-12-09 23:17:16 - PendingRequestList created
+2022-12-09 23:17:16 - PendingRequestList created
+2022-12-09 23:20:20 - Controller created
+2022-12-09 23:20:20 - Connection attempt of "Ben"
+2022-12-09 23:20:20 - FriendList created
+2022-12-09 23:20:20 - PendingRequestList created
+2022-12-09 23:20:20 - PendingRequestList created

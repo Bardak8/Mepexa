@@ -141,6 +141,8 @@ try {
         }
         Searching::execute($controller);
     }
+
+
     // homepage
     else {
         Homepage::execute($controller);
