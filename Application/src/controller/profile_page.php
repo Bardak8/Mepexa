@@ -28,6 +28,8 @@ class ProfilePage
     public function execute(Controller $controller)
     {
         $private = false;   // if user watch his own profile page, variable should be rename
+        $has_pending_request = false;   // if user already sent request
+        $is_friend = false;             // if user is already friend
 
         if ($controller->IsConnected()) {
             if ($controller->GetAccount()->GetId() == $this->account->GetId()) {
@@ -37,6 +39,7 @@ class ProfilePage
 
         $title = "Мережа - " . $this->account->GetName();
 
+        
         $feed = new Feed();
         $feed->GetsPostsFromUser($this->account->GetId());
         $account = $this->account;
@@ -44,6 +47,26 @@ class ProfilePage
         $friends = new FriendList($this->account);
         $sended_requests = new PendingRequestList($this->account, false);
         $receive_requests = new PendingRequestList($this->account, true);
+
+        if (!$private) {
+            if ($friends->IsFriend($controller->GetAccount())) {
+                $is_friend = true;
+            }
+
+            foreach ($sended_requests->GetPendingRequests() as $request) {
+                if ($request->GetSender()->GetId() == $controller->GetAccount()->GetId()) {
+                    $has_pending_request = true;
+                    break;
+                }
+            }
+
+            foreach ($receive_requests->GetPendingRequests() as $request) {
+                if ($request->GetReceiver()->GetId() == $controller->GetAccount()->GetId()) {
+                    $has_pending_request = true;
+                    break;
+                }
+            }
+        }
 
         require('template/profile_page.php');
     }
