@@ -86,7 +86,6 @@ class Account {
             'encrypted_password' => $encrypted_password
         ]);
 
-        var_dump($result);
         if (!$result) {
             new Log("Error while fetching the result in Account::CreateAccount");
             throw new \Exception("Error while fetching the result");

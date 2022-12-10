@@ -2227,6 +2227,9 @@
 2022-12-05 13:21:00 - Connection attempt of "Ben"
 2022-12-05 13:23:11 - Controller created
 2022-12-05 13:23:11 - Connection attempt of "Ben"
+2022-12-05 13:24:03 - Controller created
+2022-12-05 13:24:03 - Connection attempt of "Ben"
+2022-12-05 13:24:03 - Controller created
 2022-12-08 12:52:31 - Controller created
 2022-12-08 12:52:45 - Controller created
 2022-12-08 12:52:45 - Wrong password for account: Ben in Account::ConnectAccount
@@ -2586,3 +2589,213 @@
 2022-12-08 16:37:49 - Controller created
 2022-12-08 16:37:49 - Connection attempt of "Ben"
 2022-12-08 16:37:49 - FriendList created
+2022-12-09 22:29:16 - Controller created
+2022-12-09 22:29:45 - Controller created
+2022-12-09 22:29:48 - Controller created
+2022-12-09 22:29:48 - Controller created
+2022-12-09 22:29:49 - Controller created
+2022-12-09 22:29:59 - Controller created
+2022-12-09 22:29:59 - Controller created
+2022-12-09 22:29:59 - Connection attempt of "Ben"
+2022-12-09 22:29:59 - FriendList created
+2022-12-09 23:44:39 - Controller created
+2022-12-09 23:44:39 - Connection attempt of "Ben"
+2022-12-09 23:44:39 - FriendList created
+2022-12-09 23:44:41 - Controller created
+2022-12-09 23:44:41 - Connection attempt of "Ben"
+2022-12-09 23:44:41 - FriendList created
+2022-12-09 23:45:16 - Controller created
+2022-12-09 23:45:16 - Connection attempt of "Ben"
+2022-12-09 23:49:03 - Controller created
+2022-12-09 23:49:03 - Connection attempt of "Ben"
+2022-12-09 23:49:25 - Controller created
+2022-12-09 23:49:25 - Connection attempt of "Ben"
+2022-12-09 23:52:13 - Controller created
+2022-12-09 23:52:13 - Connection attempt of "Ben"
+2022-12-09 23:54:27 - Controller created
+2022-12-09 23:54:27 - Connection attempt of "Ben"
+2022-12-09 23:56:33 - Controller created
+2022-12-09 23:56:33 - Connection attempt of "Ben"
+2022-12-10 00:06:41 - Controller created
+2022-12-10 00:06:41 - Connection attempt of "Ben"
+2022-12-10 00:06:56 - Controller created
+2022-12-10 00:06:56 - Connection attempt of "Ben"
+2022-12-10 00:22:02 - Controller created
+2022-12-10 00:22:02 - Connection attempt of "Ben"
+2022-12-10 00:23:03 - Controller created
+2022-12-10 00:23:03 - Connection attempt of "Ben"
+2022-12-10 00:23:44 - Controller created
+2022-12-10 00:23:44 - Connection attempt of "Ben"
+2022-12-10 00:23:44 - Controller created
+2022-12-10 00:23:44 - Connection attempt of "Ben"
+2022-12-10 00:24:12 - Controller created
+2022-12-10 00:24:12 - Connection attempt of "Ben"
+2022-12-10 00:24:13 - Controller created
+2022-12-10 00:24:13 - Connection attempt of "Ben"
+2022-12-10 00:24:13 - Controller created
+2022-12-10 00:24:13 - Connection attempt of "Ben"
+2022-12-10 00:25:24 - Controller created
+2022-12-10 00:25:24 - Connection attempt of "Ben"
+2022-12-10 00:25:57 - Controller created
+2022-12-10 00:25:57 - Connection attempt of "Ben"
+2022-12-10 00:26:03 - Controller created
+2022-12-10 00:26:03 - Connection attempt of "Ben"
+2022-12-10 00:26:31 - Controller created
+2022-12-10 00:26:31 - Connection attempt of "Ben"
+2022-12-10 00:26:31 - Account [3] is uploading a new post
+2022-12-10 00:26:31 - Uploading file for account [3] on server...
+2022-12-10 00:26:31 - /!\ File not uploaded for account : 3 on server
+2022-12-10 00:26:31 - Post::UploadNewPost() of account [3]
+2022-12-10 00:26:31 - FriendList created
+2022-12-10 00:26:37 - Controller created
+2022-12-10 00:26:37 - Connection attempt of "Ben"
+2022-12-10 00:26:50 - Controller created
+2022-12-10 00:26:50 - Connection attempt of "Ben"
+2022-12-10 00:26:50 - Account [3] is uploading a new post
+2022-12-10 00:26:50 - Uploading file for account [3] on server...
+2022-12-10 00:26:50 - File uploaded for account : 3 on server successfully : u3_6393d24adbc33.jpg
+2022-12-10 00:26:50 - Post::UploadNewPost() of account [3]
+2022-12-10 00:26:50 - FriendList created
+2022-12-10 00:26:52 - Controller created
+2022-12-10 00:26:52 - Connection attempt of "Ben"
+2022-12-10 00:26:52 - FriendList created
+2022-12-10 00:26:54 - Controller created
+2022-12-10 00:26:54 - Connection attempt of "Ben"
+2022-12-10 00:26:55 - FriendList created
+2022-12-10 00:27:07 - Controller created
+2022-12-10 00:27:07 - Connection attempt of "Ben"
+2022-12-10 00:30:43 - Controller created
+2022-12-10 00:30:43 - Connection attempt of "Ben"
+2022-12-10 00:30:43 - FriendList created
+2022-12-10 00:30:44 - Controller created
+2022-12-10 00:30:44 - Connection attempt of "Ben"
+2022-12-10 00:30:44 - FriendList created
+2022-12-10 00:30:48 - Controller created
+2022-12-10 00:30:48 - Connection attempt of "Ben"
+2022-12-10 00:30:52 - Controller created
+2022-12-10 00:30:52 - Connection attempt of "Ben"
+2022-12-10 00:30:52 - FriendList created
+2022-12-10 00:30:55 - Controller created
+2022-12-10 00:30:55 - Connection attempt of "Ben"
+2022-12-10 00:30:55 - FriendList created
+2022-12-10 00:30:56 - Controller created
+2022-12-10 00:30:56 - Connection attempt of "Ben"
+2022-12-10 00:30:56 - FriendList created
+2022-12-10 00:31:00 - Controller created
+2022-12-10 00:31:00 - Connection attempt of "Ben"
+2022-12-10 00:31:04 - Controller created
+2022-12-10 00:31:04 - Connection attempt of "Ben"
+2022-12-10 00:31:04 - FriendList created
+2022-12-10 00:31:08 - Controller created
+2022-12-10 00:31:08 - Connection attempt of "Ben"
+2022-12-10 00:31:08 - FriendList created
+2022-12-10 00:31:34 - Controller created
+2022-12-10 00:31:34 - Connection attempt of "Ben"
+2022-12-10 00:31:34 - FriendList created
+2022-12-10 00:31:49 - Controller created
+2022-12-10 00:31:49 - Connection attempt of "Ben"
+2022-12-10 00:31:49 - FriendList created
+2022-12-10 00:31:52 - Controller created
+2022-12-10 00:31:52 - Connection attempt of "Ben"
+2022-12-10 00:31:52 - FriendList created
+2022-12-10 00:31:52 - Controller created
+2022-12-10 00:31:52 - Connection attempt of "Ben"
+2022-12-10 00:31:52 - FriendList created
+2022-12-10 00:32:02 - Controller created
+2022-12-10 00:32:02 - Connection attempt of "Ben"
+2022-12-10 00:32:02 - FriendList created
+2022-12-10 00:32:47 - Controller created
+2022-12-10 00:32:47 - Connection attempt of "Ben"
+2022-12-10 00:32:47 - FriendList created
+2022-12-10 00:32:51 - Controller created
+2022-12-10 00:32:51 - Connection attempt of "Ben"
+2022-12-10 00:32:51 - FriendList created
+2022-12-10 00:32:56 - Controller created
+2022-12-10 00:32:56 - Connection attempt of "Ben"
+2022-12-10 00:32:56 - FriendList created
+2022-12-10 00:34:42 - Controller created
+2022-12-10 00:34:42 - Connection attempt of "Ben"
+2022-12-10 00:34:42 - FriendList created
+2022-12-10 00:34:45 - Controller created
+2022-12-10 00:34:45 - Connection attempt of "Ben"
+2022-12-10 00:34:53 - Controller created
+2022-12-10 00:34:53 - Connection attempt of "Ben"
+2022-12-10 00:34:53 - FriendList created
+2022-12-10 00:34:58 - Controller created
+2022-12-10 00:34:58 - Connection attempt of "Ben"
+2022-12-10 00:35:04 - Controller created
+2022-12-10 00:35:04 - Connection attempt of "Ben"
+2022-12-10 00:35:04 - FriendList created
+2022-12-10 00:35:21 - Controller created
+2022-12-10 00:35:21 - Connection attempt of "Ben"
+2022-12-10 00:35:44 - Controller created
+2022-12-10 00:35:44 - Connection attempt of "Ben"
+2022-12-10 00:35:44 - FriendList created
+2022-12-10 00:36:29 - Controller created
+2022-12-10 00:36:29 - Connection attempt of "Ben"
+2022-12-10 00:36:29 - FriendList created
+2022-12-10 00:36:30 - Controller created
+2022-12-10 00:36:30 - Connection attempt of "Ben"
+2022-12-10 00:36:36 - Controller created
+2022-12-10 00:36:36 - Connection attempt of "Ben"
+2022-12-10 00:36:36 - FriendList created
+2022-12-10 00:36:37 - Controller created
+2022-12-10 00:36:37 - Connection attempt of "Ben"
+2022-12-10 00:36:43 - Controller created
+2022-12-10 00:36:43 - Connection attempt of "Ben"
+2022-12-10 00:36:43 - FriendList created
+2022-12-10 00:36:54 - Controller created
+2022-12-10 00:36:54 - Connection attempt of "Ben"
+2022-12-10 00:37:24 - Controller created
+2022-12-10 00:37:24 - Connection attempt of "Ben"
+2022-12-10 00:37:26 - Controller created
+2022-12-10 00:37:26 - Connection attempt of "Ben"
+2022-12-10 00:37:26 - FriendList created
+2022-12-10 00:37:28 - Controller created
+2022-12-10 00:37:28 - Connection attempt of "Ben"
+2022-12-10 00:37:28 - FriendList created
+2022-12-10 00:37:32 - Controller created
+2022-12-10 00:37:32 - Connection attempt of "Ben"
+2022-12-10 00:37:34 - Controller created
+2022-12-10 00:37:34 - Connection attempt of "Ben"
+2022-12-10 00:37:34 - FriendList created
+2022-12-10 00:37:47 - Controller created
+2022-12-10 00:37:47 - Connection attempt of "Ben"
+2022-12-10 00:37:47 - FriendList created
+2022-12-10 00:38:25 - Controller created
+2022-12-10 00:38:25 - Connection attempt of "Ben"
+2022-12-10 00:39:07 - Controller created
+2022-12-10 00:39:07 - Connection attempt of "Ben"
+2022-12-10 00:39:09 - Controller created
+2022-12-10 00:39:09 - Connection attempt of "Ben"
+2022-12-10 00:39:09 - FriendList created
+2022-12-10 00:39:13 - Controller created
+2022-12-10 00:39:13 - Connection attempt of "Ben"
+2022-12-10 00:39:16 - Controller created
+2022-12-10 00:39:16 - Connection attempt of "Ben"
+2022-12-10 00:39:16 - FriendList created
+2022-12-10 00:39:41 - Controller created
+2022-12-10 00:39:41 - Connection attempt of "Ben"
+2022-12-10 00:39:41 - FriendList created
+2022-12-10 00:39:46 - Controller created
+2022-12-10 00:39:46 - Connection attempt of "Ben"
+2022-12-10 00:39:46 - Controller created
+2022-12-10 00:39:46 - Connection attempt of "Ben"
+2022-12-10 00:39:56 - Controller created
+2022-12-10 00:39:56 - Connection attempt of "Ben"
+2022-12-10 00:39:56 - FriendList created
+2022-12-10 00:40:41 - Controller created
+2022-12-10 00:40:41 - Connection attempt of "Ben"
+2022-12-10 00:40:42 - FriendList created
+2022-12-10 00:40:46 - Controller created
+2022-12-10 00:40:46 - Connection attempt of "Ben"
+2022-12-10 00:40:48 - Controller created
+2022-12-10 00:40:48 - Connection attempt of "Ben"
+2022-12-10 00:40:48 - FriendList created
+2022-12-10 00:40:53 - Controller created
+2022-12-10 00:40:53 - Connection attempt of "Ben"
+2022-12-10 00:40:56 - Controller created
+2022-12-10 00:40:56 - Connection attempt of "Ben"
+2022-12-10 00:40:56 - FriendList created
+2022-12-10 00:40:59 - Controller created
+2022-12-10 00:40:59 - Connection attempt of "Ben"

@@ -1,27 +1,23 @@
-<?php ob_start(); ?>
-
+<?php
+ob_start(); ?>
 <div id="feed">
-
-<?php foreach ($feed->GetPosts() as $post) { ?>
-    
-    <div class="post" onclick="location.href='/?post=<?= $post->GetId()?> '">
+    <div class="post">
         <ul>
-            <li class="post_upper" ">
+            <li class="post_upper" onclick="href='/'">
                 <p>Published by <a href="/?u=<?= $post->GetAuthor() ?>"> <?= $post->GetAuthor() ?> </a> <?= $post->GetDate() ?> </p>
             </li>
-            <li class="post_title" >
+            <li class="post_title" onclick="href='/'">
                 <h2><?= $post->GetTitle() ?></h2>
             </li>
-            
+
             <?php if ($post->GetMediaPath() != null) { ?>
-                <li class="post_content" style="display: flex; justify-content: center;" >
+                <li class="post_content" style="display: flex; justify-content: center;" onclick="location.href='/'">
                     <img class="post_image" src=" uploads/<?= $post->GetMediaPath() ?>" alt="post content">
                 </li>
-            <?php } else { ?>
-                <li class="post_content" >
+            <?php }?>
+                <li class="post_content" onclick="href='/'">
                     <p><?= $post->GetContent() ?></p>
                 </li>
-            <?php } ?>
             <li class="post_footer">
                 <ul class="post_reactions">
                     <li>
@@ -51,12 +47,12 @@
             </li>
         </ul>
     </div>
-
-<?php } ?>
-
 </div>
 
-<?php 
-    $content = ob_get_clean();
-    require('template/base.php') 
+<?php
+$content = ob_get_clean();
+require('template/base.php')
 ?>
+
+
+

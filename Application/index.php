@@ -8,6 +8,8 @@ require_once('src/controller/search_page.php');
 require_once('src/model/log.php');
 require_once('src/model/post.php');
 require_once('src/model/account.php');
+require_once('src/controller/post_page.php');
+
 
 use Application\Controller\Homepage\Homepage;
 use Application\Controller\ProfilePage\ProfilePage;
@@ -17,6 +19,7 @@ use Application\Controller\SearchPage\Searching;
 use Application\Model\Post\Post;
 use Application\Model\Log\Log;
 use Application\Model\Account\Account;
+use Application\Controller\Post_Page\Post_Page;
 
 
 try {
@@ -52,6 +55,14 @@ try {
             }
         }
     }
+    elseif(isset($_GET['post'])) {
+        $post = Post::GetPostById($_GET['post']);
+        if ($post == null) {
+            throw new \Exception("Post not found");
+        }
+        Post_Page::execute($controller, $post);
+    }
+
     elseif(isset($_POST['username']) && isset($_POST['password'])) {
         if(Account::ConnectAccount($_POST['username'], $_POST['password']) !== null){
             $_SESSION["username"] = $_POST['username'];
