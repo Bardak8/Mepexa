@@ -1252,3 +1252,202 @@
 2022-12-05 09:00:40 - Controller created
 2022-12-05 09:00:40 - Connection attempt of "Ben"
 2022-12-05 09:00:40 - Connection of "Ben" successful
+2022-12-09 23:16:51 - Controller created
+2022-12-09 23:17:13 - Controller created
+2022-12-09 23:17:13 - Controller created
+2022-12-09 23:17:17 - Controller created
+2022-12-09 23:17:19 - Controller created
+2022-12-09 23:17:31 - Controller created
+2022-12-09 23:17:38 - Controller created
+2022-12-09 23:17:38 - Controller created
+2022-12-09 23:17:38 - Connection attempt of "Ben"
+2022-12-09 23:17:38 - FriendList created
+2022-12-09 23:17:42 - Controller created
+2022-12-09 23:17:42 - Connection attempt of "Ben"
+2022-12-09 23:17:42 - Controller created
+2022-12-09 23:17:49 - Controller created
+2022-12-09 23:17:49 - Controller created
+2022-12-09 23:17:49 - Connection attempt of "Ben"
+2022-12-09 23:17:49 - FriendList created
+2022-12-09 23:17:50 - Controller created
+2022-12-09 23:17:50 - Connection attempt of "Ben"
+2022-12-09 23:17:50 - FriendList created
+2022-12-09 23:18:19 - Controller created
+2022-12-09 23:18:19 - Connection attempt of "Ben"
+2022-12-09 23:18:19 - FriendList created
+2022-12-09 23:18:22 - Controller created
+2022-12-09 23:18:22 - Connection attempt of "Ben"
+2022-12-09 23:18:24 - Controller created
+2022-12-09 23:18:24 - Connection attempt of "Ben"
+2022-12-09 23:18:24 - FriendList created
+2022-12-09 23:18:24 - PendingRequestList created
+2022-12-09 23:18:24 - PendingRequestList created
+2022-12-09 23:18:28 - Controller created
+2022-12-09 23:18:28 - Connection attempt of "Ben"
+2022-12-09 23:18:28 - FriendList created
+2022-12-09 23:18:28 - PendingRequestList created
+2022-12-09 23:18:28 - PendingRequestList created
+2022-12-09 23:18:30 - Controller created
+2022-12-09 23:18:30 - Connection attempt of "Ben"
+2022-12-09 23:18:30 - FriendList created
+2022-12-09 23:18:30 - PendingRequestList created
+2022-12-09 23:18:30 - PendingRequestList created
+2022-12-09 23:19:26 - Controller created
+2022-12-09 23:19:26 - Connection attempt of "Ben"
+2022-12-09 23:19:26 - FriendList created
+2022-12-09 23:19:26 - PendingRequestList created
+2022-12-09 23:19:26 - PendingRequestList created
+2022-12-09 23:19:29 - Controller created
+2022-12-09 23:19:29 - Connection attempt of "Ben"
+2022-12-09 23:19:29 - FriendList created
+2022-12-09 23:19:29 - PendingRequestList created
+2022-12-09 23:19:29 - PendingRequestList created
+2022-12-09 23:19:30 - Controller created
+2022-12-09 23:19:30 - Connection attempt of "Ben"
+2022-12-09 23:19:30 - FriendList created
+2022-12-09 23:19:31 - PendingRequestList created
+2022-12-09 23:19:31 - PendingRequestList created
+2022-12-09 23:20:00 - Controller created
+2022-12-09 23:20:00 - Connection attempt of "Ben"
+2022-12-09 23:20:00 - FriendList created
+2022-12-09 23:20:00 - PendingRequestList created
+2022-12-09 23:20:00 - PendingRequestList created
+2022-12-09 23:20:02 - Controller created
+2022-12-09 23:20:02 - Connection attempt of "Ben"
+2022-12-09 23:20:02 - FriendList created
+2022-12-09 23:20:31 - Controller created
+2022-12-09 23:20:31 - Connection attempt of "Ben"
+2022-12-09 23:20:31 - FriendList created
+2022-12-09 23:20:31 - PendingRequestList created
+2022-12-09 23:20:31 - PendingRequestList created
+2022-12-09 23:20:34 - Controller created
+2022-12-09 23:20:34 - Connection attempt of "Ben"
+2022-12-09 23:20:34 - FriendList created
+2022-12-09 23:20:34 - PendingRequestList created
+2022-12-09 23:20:34 - PendingRequestList created
+2022-12-09 23:22:05 - Controller created
+2022-12-09 23:22:05 - Connection attempt of "Ben"
+2022-12-09 23:22:06 - FriendList created
+2022-12-09 23:22:18 - Controller created
+2022-12-09 23:22:18 - Connection attempt of "Ben"
+2022-12-09 23:22:18 - FriendList created
+2022-12-09 23:22:18 - PendingRequestList created
+2022-12-09 23:22:18 - PendingRequestList created
+2022-12-09 23:22:20 - Controller created
+2022-12-09 23:22:20 - Connection attempt of "Ben"
+2022-12-09 23:22:21 - FriendList created
+2022-12-09 23:22:21 - PendingRequestList created
+2022-12-09 23:22:21 - PendingRequestList created
+2022-12-09 23:22:23 - Controller created
+2022-12-09 23:22:23 - Connection attempt of "Ben"
+2022-12-09 23:22:23 - FriendList created
+2022-12-09 23:22:23 - PendingRequestList created
+2022-12-09 23:22:23 - PendingRequestList created
+2022-12-09 23:22:25 - Controller created
+2022-12-09 23:22:25 - Connection attempt of "Ben"
+2022-12-09 23:22:25 - FriendList created
+2022-12-09 23:22:27 - Controller created
+2022-12-09 23:22:27 - Connection attempt of "Ben"
+2022-12-09 23:22:27 - Controller created
+2022-12-09 23:22:35 - Controller created
+2022-12-09 23:22:35 - Controller created
+2022-12-09 23:22:35 - Connection attempt of "Kheir"
+2022-12-09 23:22:35 - FriendList created
+2022-12-09 23:22:39 - Controller created
+2022-12-09 23:22:39 - Connection attempt of "Kheir"
+2022-12-09 23:22:51 - Controller created
+2022-12-09 23:22:51 - Connection attempt of "Kheir"
+2022-12-09 23:22:51 - Account [5] is uploading a new post
+2022-12-09 23:22:51 - Uploading file for account [5] on server...
+2022-12-09 23:22:51 - /!\ File not uploaded for account : 5 on server
+2022-12-09 23:22:51 - Post::UploadNewPost() of account [5]
+2022-12-09 23:22:51 - FriendList created
+2022-12-09 23:23:00 - Controller created
+2022-12-09 23:23:00 - Connection attempt of "Kheir"
+2022-12-09 23:23:22 - Controller created
+2022-12-09 23:23:22 - Connection attempt of "Kheir"
+2022-12-09 23:23:22 - Account [5] is uploading a new post
+2022-12-09 23:23:22 - Uploading file for account [5] on server...
+2022-12-09 23:23:22 - File uploaded for account : 5 on server successfully : u5_6393c36aaf59b.jpg
+2022-12-09 23:23:22 - Post::UploadNewPost() of account [5]
+2022-12-09 23:23:22 - FriendList created
+2022-12-09 23:24:54 - Controller created
+2022-12-09 23:24:54 - Connection attempt of "Kheir"
+2022-12-09 23:24:54 - FriendList created
+2022-12-09 23:24:56 - Controller created
+2022-12-09 23:24:56 - Connection attempt of "Kheir"
+2022-12-09 23:24:56 - Controller created
+2022-12-09 23:25:09 - Controller created
+2022-12-09 23:25:09 - Controller created
+2022-12-09 23:25:09 - Connection attempt of "Ben"
+2022-12-09 23:25:09 - FriendList created
+2022-12-09 23:41:04 - Controller created
+2022-12-09 23:41:04 - Connection attempt of "Ben"
+2022-12-09 23:41:15 - Controller created
+2022-12-09 23:41:15 - Connection attempt of "Ben"
+2022-12-09 23:41:15 - Account [3] is uploading a new post
+2022-12-09 23:41:15 - Uploading file for account [3] on server...
+2022-12-09 23:41:15 - File uploaded for account : 3 on server successfully : u3_6393c79bdf719.jpg
+2022-12-09 23:41:15 - Post::UploadNewPost() of account [3]
+2022-12-09 23:41:15 - FriendList created
+2022-12-09 23:41:27 - Controller created
+2022-12-09 23:41:27 - Connection attempt of "Ben"
+2022-12-09 23:41:27 - FriendList created
+2022-12-09 23:52:52 - Controller created
+2022-12-09 23:52:52 - Connection attempt of "Ben"
+2022-12-09 23:52:52 - FriendList created
+2022-12-09 23:53:09 - Controller created
+2022-12-09 23:53:09 - Connection attempt of "Ben"
+2022-12-09 23:53:09 - FriendList created
+2022-12-09 23:53:55 - Controller created
+2022-12-09 23:53:55 - Connection attempt of "Ben"
+2022-12-09 23:53:55 - FriendList created
+2022-12-09 23:54:08 - Controller created
+2022-12-09 23:54:08 - Connection attempt of "Ben"
+2022-12-09 23:54:16 - Controller created
+2022-12-09 23:54:16 - Connection attempt of "Ben"
+2022-12-09 23:54:17 - Controller created
+2022-12-09 23:54:17 - Connection attempt of "Ben"
+2022-12-09 23:54:23 - Controller created
+2022-12-09 23:54:23 - Connection attempt of "Ben"
+2022-12-09 23:54:23 - FriendList created
+2022-12-09 23:54:34 - Controller created
+2022-12-09 23:54:34 - Connection attempt of "Ben"
+2022-12-09 23:54:56 - Controller created
+2022-12-09 23:54:56 - Connection attempt of "Ben"
+2022-12-09 23:54:56 - FriendList created
+2022-12-09 23:55:47 - Controller created
+2022-12-09 23:55:47 - Connection attempt of "Ben"
+2022-12-09 23:55:47 - FriendList created
+2022-12-09 23:57:06 - Controller created
+2022-12-09 23:57:06 - Connection attempt of "Ben"
+2022-12-09 23:57:06 - FriendList created
+2022-12-09 23:57:11 - Controller created
+2022-12-09 23:57:11 - Connection attempt of "Ben"
+2022-12-09 23:57:11 - FriendList created
+2022-12-09 23:57:41 - Controller created
+2022-12-09 23:57:41 - Connection attempt of "Ben"
+2022-12-09 23:57:41 - Controller created
+2022-12-09 23:57:44 - Controller created
+2022-12-09 23:57:44 - Controller created
+2022-12-09 23:57:47 - Controller created
+2022-12-09 23:57:47 - Controller created
+2022-12-09 23:58:07 - Controller created
+2022-12-09 23:58:07 - Controller created
+2022-12-09 23:58:29 - Controller created
+2022-12-09 23:58:31 - Controller created
+2022-12-09 23:58:33 - Controller created
+2022-12-09 23:58:33 - FriendList created
+2022-12-09 23:58:33 - PendingRequestList created
+2022-12-09 23:58:33 - PendingRequestList created
+2022-12-09 23:58:43 - Controller created
+2022-12-09 23:58:43 - Controller created
+2022-12-09 23:59:57 - Controller created
+2022-12-09 23:59:57 - Controller created
+2022-12-09 23:59:57 - Connection attempt of "Ben"
+2022-12-09 23:59:57 - FriendList created
+2022-12-10 00:00:01 - Controller created
+2022-12-10 00:00:01 - Connection attempt of "Ben"
+2022-12-10 00:00:01 - FriendList created
+2022-12-10 00:00:01 - PendingRequestList created
+2022-12-10 00:00:01 - PendingRequestList created

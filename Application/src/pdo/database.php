@@ -8,9 +8,13 @@ class DatabaseConnection
 
     public function getConnection(): \PDO
     {
+        $file = 'credentials.json';
+        $data = file_get_contents($file);
+        $obj = json_decode($data);
+
         if ($this->database === null) {
             // TODO: Move to config file, this shits is obviously not secure
-            $this->database = new \PDO('mysql:host=localhost;dbname=mapexa2;charset=utf8', 'root', '');
+            $this->database = new \PDO('mysql:host=' . $obj->host . ';dbname=' . $obj->dbname . ';charset=utf8', $obj->username, $obj->password);
         }
 
         return $this->database;

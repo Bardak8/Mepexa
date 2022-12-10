@@ -23,6 +23,8 @@
 
             <?php if (!$is_friend && !$has_pending_request) { ?>
                 <input type="submit" value="Add friend">
+            <?php } else if ($has_pending_request) { ?>
+                <p>pending request...</p>
             <?php } ?>
         
         </form>

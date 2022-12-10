@@ -128,7 +128,7 @@ class Feed {
 
     public function GetsPostsFromUser(int $id_account)
     {
-        $query = "SELECT * FROM posts WHERE id_account = :id_account ORDER BY id_post DESC";
+        $query = "SELECT * FROM posts WHERE id_account = :id_account ORDER BY id_post DESC LIMIT (10 * $page - 1), 10";
         $statement = $this->connection->prepare($query);
 
         if ($statement === false) {

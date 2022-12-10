@@ -28,7 +28,8 @@ try {
     $method = $_SERVER['REQUEST_METHOD'];
     $uri = $_SERVER['REQUEST_URI'];
     $connection = isset($_SESSION['username']);
-    if (!$connection && $uri !== '/'&& $method === 'GET') {
+    
+    if (!$connection && $uri !== '/' && $method === 'GET') {
         header('Location: /');
         exit();
     }
