@@ -31,6 +31,86 @@ class PendingRequest {
     public function GetStatue() : int {
         return $this->statue;
     }
+
+    public static function AcceptRequest($id1, $id2) {
+        new Log('Friend request accepted for ' . $id1 . ' and ' . $id2);
+
+        $db = new DatabaseConnection();
+        $connection = $db->getConnection();
+        $query = "DELETE FROM `has_pending_request` WHERE (`has_pending_request`.`id_account_1` = :id1 AND `has_pending_request`.`id_account_2` = :id2) OR (`has_pending_request`.`id_account_1` = :id2 AND `has_pending_request`.`id_account_2` = :id1)";
+
+        $statement = $connection->prepare($query);
+
+        if ($statement === false) {
+            new Log("Error while preparing the query in PendingRequestList::AcceptRequest for deleting the pending request");
+            return;
+        }
+
+        $statement->execute([
+            'id1' => $id1,
+            'id2' => $id2
+        ]);
+
+        $query = "INSERT INTO `friends` (`id_account_1`, `id_account_2`) VALUES (:id1, :id2)";
+
+        $statement = $connection->prepare($query);
+
+        if ($statement === false) {
+            new Log("Error while preparing the query in PendingRequestList::AcceptRequest for inserting the friend");
+            return;
+        }
+
+        $statement->execute([
+            'id1' => $id1,
+            'id2' => $id2
+        ]);
+    }
+
+    public static function DeclineRequest($id1, $id2) {
+        new Log('Friend request refused for ' . $id1 . ' and ' . $id2);
+
+        $db = new DatabaseConnection();
+        $connection = $db->getConnection();
+
+        $query = "UPDATE `has_pending_request` SET `statue` = '1' WHERE (`has_pending_request`.`id_account_1` = :id1 AND `has_pending_request`.`id_account_2` = :id2) OR (`has_pending_request`.`id_account_1` = :id2 AND `has_pending_request`.`id_account_2` = :id1)";
+
+        $statement = $connection->prepare($query);
+
+        if ($statement === false) {
+            new Log("Error while preparing the query in PendingRequestList::DeclineRequest");
+            return;
+        }
+
+        $statement->execute([
+            'id1' => $id1,
+            'id2' => $id2
+        ]);
+
+        new Log('Friend request refused for ' . $id1 . ' and ' . $id2);
+    }
+
+    public static function NewRequest($id1, $id2) {
+        new Log('New friend request for ' . $id1 . ' and ' . $id2);
+
+        $db = new DatabaseConnection();
+        $connection = $db->getConnection();
+
+        $query = "INSERT INTO `has_pending_request` (`id_account_1`, `id_account_2`, `statue`) VALUES (:id2, :id1, '0')";
+
+        $statement = $connection->prepare($query);
+
+        if ($statement === false) {
+            new Log("Error while preparing the query in PendingRequestList::NewRequest");
+            return;
+        }
+
+        $statement->execute([
+            'id1' => $id1,
+            'id2' => $id2
+        ]);
+
+        new Log('New friend request for ' . $id1 . ' and ' . $id2);
+    }
 }
 
 class PendingRequestList {
@@ -76,3 +156,5 @@ class PendingRequestList {
         return $this->pending_requests;
     }
 }
+
+//UPDATE `has_pending_request` SET `statue` = '1' WHERE `has_pending_request`.`id_account_1` = 3 AND `has_pending_request`.`id_account_2` = 1 OR `has_pending_request`.`id_account_1` = 1 AND `has_pending_request`.`id_account_2` = 3

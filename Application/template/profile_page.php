@@ -4,25 +4,28 @@
 
 <div id="info_account">
     <p id="pseudo"> <?= $account->GetName() ?> </p>
-
     <?php if ($private) { ?>
         <table>
             <tr>
-                <td>Password :</td>
+                <td>Email :</td>
+                <td><?= $account->GetEmail() ?></td>
+            </tr>
+            <tr>
                 <td>
-                    **********
                     <a href="" style="font-size: 10px; color: #efbc32">change password</a>
                 </td>
             </tr>
-            <tr>
-                <td>Email :</td>
-                <td>noupie@gmail.com</td>
-            </tr>
-            <tr>
-                <td>Birthday :</td>
-                <td>01/02/1990</td>
-            </tr>
         </table>
+    <?php } else { ?>
+        <form method="POST">
+            <input type="hidden" name="request_id" value="<?= $account->GetId() ?>">
+            <input type="hidden" name="friend_request" value="new">
+
+            <?php if (!$is_friend && !$has_pending_request) { ?>
+                <input type="submit" value="Add friend">
+            <?php } ?>
+        
+        </form>
     <?php } ?>
 
 </div>
@@ -41,11 +44,20 @@
                         <?= $request->GetSender()->GetName() ?>
                     </a>
                     <div>
-                        <img src="../image/accept.svg" alt="accept" onclick="">
-                        <img src="../image/refuse.svg" alt="refuse" onclick="">
+                        <form method="POST">
+                            <input type="hidden" name="request_id" value="<?= $request->GetSender()->GetId() ?>">
+                            <input type="hidden" name="friend_request" value="accept">
+                            <input type="submit" value="accept">
+                        </form>
+                        <form method="POST">
+                            <input type="hidden" name="request_id" value="<?= $request->GetSender()->GetId() ?>">
+                            <input type="hidden" name="friend_request" value="refuse">
+                            <input type="submit" value="refuse">
+                        </form>
                     </div>
+                    
                 </li>
-            <?php } ?>
+            <?php }  ?>
 
 
 
@@ -70,6 +82,13 @@
                     <a href="/?u=<?= $friend->GetName() ?>">
                         <?= $friend->GetName() ?>
                     </a>
+                    <?php if ($_GET['u'] == $controller->GetAccount()->GetName()) { ?>
+                        <form method="POST">
+                            <input type="hidden" name="request_id" value="<?= $friend->GetId() ?>">
+                            <input type="hidden" name="friend_request" value="delete">
+                            <input type="submit" value="delete">
+                        </form>
+                    <?php } ?>
                 </li>
             <?php } ?>
         </ul>
@@ -129,6 +148,12 @@
             </li>
         </ul>
     </div>
+
+<?php }
+    
+    if (count($feed->GetPosts()) == 0) { ?>
+
+        <div class="post"></div>
 
 <?php } ?>
 

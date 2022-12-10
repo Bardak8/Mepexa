@@ -26,6 +26,46 @@ class Friend {
     public function GetP2() : Account {
         return $this->persona2;
     }
+
+    public static function RemoveFriend($id1, $id2) {
+        new Log('Removing friend for ' . $id1 . ' and ' . $id2);
+
+        $db = new DatabaseConnection();
+        $connection = $db->getConnection();
+        $query = "DELETE FROM `friends` WHERE (`friends`.`id_account_1` = :id1 AND `friends`.`id_account_2` = :id2) OR (`friends`.`id_account_1` = :id2 AND `friends`.`id_account_2` = :id1)";
+
+        $statement = $connection->prepare($query);
+
+        if ($statement === false) {
+            new Log("Error while preparing the query in Friend::RemoveFriend");
+            return;
+        }
+
+        $statement->execute([
+            'id1' => $id1,
+            'id2' => $id2
+        ]);
+    }
+
+    public static function NewFriend($id1, $id2) {
+        new Log('Adding friend for ' . $id1 . ' and ' . $id2);
+
+        $db = new DatabaseConnection();
+        $connection = $db->getConnection();
+        $query = "INSERT INTO `friends` (`id_account_1`, `id_account_2`) VALUES (:id1, :id2)";
+
+        $statement = $connection->prepare($query);
+
+        if ($statement === false) {
+            new Log("Error while preparing the query in Friend::NewFriend");
+            return;
+        }
+
+        $statement->execute([
+            'id1' => $id1,
+            'id2' => $id2
+        ]);
+    }
 }
 
 class FriendList {
@@ -64,5 +104,12 @@ class FriendList {
         return $this->friends;
     }
 
-
+    public function IsFriend(Account $acc) : bool {
+        foreach($this->friends as $friend) {
+            if ($friend->GetId() == $acc->GetId()) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
