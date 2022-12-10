@@ -2799,3 +2799,202 @@
 2022-12-10 00:40:56 - FriendList created
 2022-12-10 00:40:59 - Controller created
 2022-12-10 00:40:59 - Connection attempt of "Ben"
+2022-12-10 00:49:57 - Controller created
+2022-12-10 00:49:57 - Connection attempt of "Ben"
+2022-12-10 00:49:57 - FriendList created
+2022-12-10 00:50:01 - Controller created
+2022-12-10 00:50:01 - Connection attempt of "Ben"
+2022-12-10 00:50:04 - Controller created
+2022-12-10 00:50:04 - Connection attempt of "Ben"
+2022-12-10 00:50:04 - FriendList created
+2022-12-10 00:58:50 - Controller created
+2022-12-10 00:58:50 - Connection attempt of "Ben"
+2022-12-10 00:58:50 - Controller created
+2022-12-10 00:59:12 - Controller created
+2022-12-10 00:59:12 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 00:59:12 - No account found with pseudo: ben@ben.ben in Account::ConnectAccount
+2022-12-10 00:59:12 - Controller created
+2022-12-10 00:59:12 - Connection attempt of "ben@ben.ben"
+2022-12-10 00:59:12 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 00:59:12 - Connection failed
+2022-12-10 01:01:45 - Controller created
+2022-12-10 01:01:45 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:01:45 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:01:45 - Connection failed
+2022-12-10 01:01:46 - Controller created
+2022-12-10 01:01:46 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:01:46 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:01:46 - Connection failed
+2022-12-10 01:01:57 - Controller created
+2022-12-10 01:01:57 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:01:57 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:01:57 - Connection failed
+2022-12-10 01:02:00 - Controller created
+2022-12-10 01:02:00 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:02:00 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:02:00 - Connection failed
+2022-12-10 01:02:01 - Controller created
+2022-12-10 01:02:01 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:02:01 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:02:01 - Connection failed
+2022-12-10 01:02:01 - Controller created
+2022-12-10 01:02:01 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:02:01 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:02:01 - Connection failed
+2022-12-10 01:02:01 - Controller created
+2022-12-10 01:02:01 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:02:01 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:02:01 - Connection failed
+2022-12-10 01:02:15 - Controller created
+2022-12-10 01:02:22 - Controller created
+2022-12-10 01:02:22 - Controller created
+2022-12-10 01:02:22 - Connection attempt of "Ben"
+2022-12-10 01:02:22 - FriendList created
+2022-12-10 01:02:29 - Controller created
+2022-12-10 01:02:29 - Connection attempt of "Ben"
+2022-12-10 01:02:29 - Controller created
+2022-12-10 01:03:31 - Controller created
+2022-12-10 01:03:31 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:03:31 - No account found with pseudo: ben@ben.ben in Account::ConnectAccount
+2022-12-10 01:03:31 - Controller created
+2022-12-10 01:03:31 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:03:31 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:03:31 - Connection failed
+2022-12-10 01:08:59 - Controller created
+2022-12-10 01:08:59 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:08:59 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:08:59 - Connection failed
+2022-12-10 01:09:09 - Controller created
+2022-12-10 01:09:37 - Controller created
+2022-12-10 01:09:37 - No account found with pseudo: aaaa in Account::GetAccountByName
+2022-12-10 01:09:37 - Controller created
+2022-12-10 01:11:05 - Controller created
+2022-12-10 01:11:05 - Controller created
+2022-12-10 01:11:05 - Connection attempt of "Ben"
+2022-12-10 01:11:05 - FriendList created
+2022-12-10 01:11:14 - Controller created
+2022-12-10 01:11:14 - Connection attempt of "Ben"
+2022-12-10 01:11:14 - Controller created
+2022-12-10 01:11:33 - Controller created
+2022-12-10 01:11:33 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:11:33 - No account found with pseudo: ben@ben.ben in Account::ConnectAccount
+2022-12-10 01:11:33 - Controller created
+2022-12-10 01:11:33 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:11:33 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:11:33 - Connection failed
+2022-12-10 01:12:45 - Controller created
+2022-12-10 01:12:45 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:12:45 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:12:45 - Connection failed
+2022-12-10 01:15:19 - Controller created
+2022-12-10 01:15:19 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:15:19 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:15:19 - Connection failed
+2022-12-10 01:15:57 - Controller created
+2022-12-10 01:15:57 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:15:57 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:15:57 - Connection failed
+2022-12-10 01:15:58 - Controller created
+2022-12-10 01:15:58 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:15:58 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:15:58 - Connection failed
+2022-12-10 01:15:59 - Controller created
+2022-12-10 01:15:59 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:15:59 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:15:59 - Connection failed
+2022-12-10 01:15:59 - Controller created
+2022-12-10 01:15:59 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:15:59 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:15:59 - Connection failed
+2022-12-10 01:16:00 - Controller created
+2022-12-10 01:16:00 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:16:00 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:16:00 - Connection failed
+2022-12-10 01:16:00 - Controller created
+2022-12-10 01:16:00 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:16:00 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:16:00 - Connection failed
+2022-12-10 01:16:00 - Controller created
+2022-12-10 01:16:00 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:16:00 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:16:00 - Connection failed
+2022-12-10 01:16:00 - Controller created
+2022-12-10 01:16:00 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:16:00 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:16:00 - Connection failed
+2022-12-10 01:16:01 - Controller created
+2022-12-10 01:16:01 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:16:01 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:16:01 - Connection failed
+2022-12-10 01:16:01 - Controller created
+2022-12-10 01:16:01 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:16:01 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:16:01 - Connection failed
+2022-12-10 01:16:01 - Controller created
+2022-12-10 01:16:01 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:16:01 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:16:01 - Connection failed
+2022-12-10 01:17:01 - Controller created
+2022-12-10 01:17:01 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:17:01 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:17:01 - Connection failed
+2022-12-10 01:17:01 - Controller created
+2022-12-10 01:17:01 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:17:01 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:17:01 - Connection failed
+2022-12-10 01:17:01 - Controller created
+2022-12-10 01:17:01 - Connection attempt of "ben@ben.ben"
+2022-12-10 01:17:01 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:17:01 - Connection failed
+2022-12-10 01:17:17 - Controller created
+2022-12-10 01:17:34 - Controller created
+2022-12-10 01:17:34 - No account found with pseudo: ben@ben.ben in Account::GetAccountByName
+2022-12-10 01:17:34 - No account found with pseudo: ben@ben.ben in Account::ConnectAccount
+2022-12-10 01:17:34 - Controller created
+2022-12-10 01:17:34 - Connection attempt of "Ben"
+2022-12-10 01:17:34 - FriendList created
+2022-12-10 01:22:52 - Controller created
+2022-12-10 01:22:52 - Connection attempt of "Ben"
+2022-12-10 01:22:52 - Controller created
+2022-12-10 01:22:57 - Controller created
+2022-12-10 01:22:57 - Controller created
+2022-12-10 01:22:57 - Connection attempt of "Ben"
+2022-12-10 01:22:57 - FriendList created
+2022-12-10 01:23:17 - Controller created
+2022-12-10 01:23:17 - Connection attempt of "Ben"
+2022-12-10 01:23:17 - Controller created
+2022-12-10 01:23:43 - Controller created
+2022-12-10 01:23:43 - No account found with pseudo: Benr in Account::GetAccountByName
+2022-12-10 01:23:43 - Controller created
+2022-12-10 01:25:24 - Controller created
+2022-12-10 01:26:13 - Controller created
+2022-12-10 01:26:13 - No account found with pseudo: eds in Account::GetAccountByName
+2022-12-10 01:26:13 - Controller created
+2022-12-10 01:26:51 - Controller created
+2022-12-10 01:26:51 - Controller created
+2022-12-10 01:26:51 - Connection attempt of "Ben"
+2022-12-10 01:26:51 - FriendList created
+2022-12-10 01:27:00 - Controller created
+2022-12-10 01:27:00 - Connection attempt of "Ben"
+2022-12-10 01:27:00 - Controller created
+2022-12-10 01:27:16 - Controller created
+2022-12-10 01:27:16 - Wrong password for account: eds in Account::ConnectAccount
+2022-12-10 01:27:24 - Controller created
+2022-12-10 01:54:06 - Controller created
+2022-12-10 01:54:28 - Controller created
+2022-12-10 01:54:28 - Wrong password for account: eds in Account::ConnectAccount
+2022-12-10 01:54:44 - Controller created
+2022-12-10 01:54:44 - No account found with pseudo: aaa in Account::GetAccountByName
+2022-12-10 01:54:44 - Controller created
+2022-12-10 01:54:50 - Controller created
+2022-12-10 01:54:50 - Wrong password for account: aaa in Account::ConnectAccount
+2022-12-10 01:55:28 - Controller created
+2022-12-10 01:55:28 - Wrong password for account: aaa in Account::ConnectAccount
+2022-12-10 01:56:00 - Controller created
+2022-12-10 01:56:00 - Wrong password for account: aaa in Account::ConnectAccount
+2022-12-10 01:56:27 - Controller created
+2022-12-10 01:56:44 - Controller created
+2022-12-10 01:56:44 - No account found with pseudo: benn in Account::GetAccountByName
+2022-12-10 01:56:44 - Controller created
+2022-12-10 01:56:58 - Controller created
+2022-12-10 01:56:58 - Wrong password for account: benn in Account::ConnectAccount
