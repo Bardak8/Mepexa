@@ -11,7 +11,8 @@ use Application\Model\Account\Account;
 use Application\Model\Log\Log;
 use Application\Model\Friend;
 
-class Post {
+class Post
+{
     // Variables
     private ?int $id;
     private int $id_account;
@@ -23,7 +24,8 @@ class Post {
 
 
     // Constructor
-    public function __construct(?int $id, int $id_account, string $author, string $title, string $content, $media_path, ?string $date) {
+    public function __construct(?int $id, int $id_account, string $author, string $title, string $content, $media_path, ?string $date)
+    {
         $this->id = $id;
         $this->id_account = $id_account;
         $this->author = $author;
@@ -33,8 +35,9 @@ class Post {
         $this->date = $date;
     }
 
-    public static function UploadNewPost(int $id_account, string $title, string $content, string $media_path) {
-        new Log("Post::UploadNewPost() of account [" . $id_account ."]");
+    public static function UploadNewPost(int $id_account, string $title, string $content, string $media_path)
+    {
+        new Log("Post::UploadNewPost() of account [" . $id_account . "]");
         // INSERT INTO `posts` (`id_post`, `title`, `content`, `media_path`, `id_account`, `post_date`) 
         // VALUES (NULL, 'ceci est le titre', 'lorem ipsum ', NULL, '', NULL)
         $db = new DatabaseConnection();
@@ -56,34 +59,62 @@ class Post {
 
 
     // Getters
-    public function GetId() {
+    public function GetId()
+    {
         return $this->id;
     }
 
-    public function GetIdAuthor() {
+    public function GetIdAuthor()
+    {
         return $this->id_account;
     }
 
-    public function GetAuthor() {
+    public function GetAuthor()
+    {
         return $this->author;
     }
 
-    public function GetTitle() {
+    public function GetTitle()
+    {
         return $this->title;
     }
 
-    public function GetContent() {
+    public function GetContent()
+    {
         return $this->content;
     }
 
-    public function GetMediaPath() {
+    public function GetMediaPath()
+    {
         return $this->media_path;
     }
 
-    public function GetDate() {
+    public function GetDate()
+    {
         return $this->date;
     }
+
+
+    public static function GetPostById(int $id_post): ?Post
+    {
+
+        $query = "SELECT * FROM posts WHERE id_post = :id_post";
+        $statement = (new DatabaseConnection())->getConnection()->prepare($query);
+
+        $statement->execute([
+            'id_post' => $id_post,
+        ]);
+        $post = $statement->fetch();
+        if ($post) {
+            $author = Account::GetAccountById($post['id_account'])->GetName();
+            return new Post ( $post['id_post'],$post['id_account'], $author , $post['title'], $post['content'], $post['media_path'], $post['post_date']);
+        } else {
+            throw new \Exception("Error while fetching the result");
+            return null;
+        }
+    }
 }
+
 
 
 class Feed {
@@ -174,4 +205,6 @@ class Feed {
     public function GetPosts() : array {
         return $this->posts;
     }
+
+
 }

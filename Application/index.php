@@ -8,6 +8,8 @@ require_once('src/controller/search_page.php');
 require_once('src/model/log.php');
 require_once('src/model/post.php');
 require_once('src/model/account.php');
+require_once('src/controller/post_page.php');
+
 require_once('src/model/friend.php');
 require_once('src/model/pending_request.php');
 
@@ -19,6 +21,8 @@ use Application\Controller\SearchPage\Searching;
 use Application\Model\Post\Post;
 use Application\Model\Log\Log;
 use Application\Model\Account\Account;
+use Application\Controller\Post_Page\Post_Page;
+
 use Application\Model\PendingRequest\PendingRequest;
 use Application\Model\Friend\Friend;
 
@@ -49,16 +53,24 @@ try {
             if ($account != null){
                 throw new \Exception("Account already exists");
             } else {
-                password_hash($password, PASSWORD_DEFAULT);
-                Account::CreateAccount( $_POST['username'], $_POST['email'], $_POST['password']);
+                $password = password_hash($password, PASSWORD_DEFAULT);
+                Account::CreateAccount( $_POST['username'], $_POST['email'], $password);
                 header('Location: /');
             }
         }
     }
-    elseif(isset($_POST['username']) && isset($_POST['password'])) {
-        if(Account::ConnectAccount($_POST['username'], $_POST['password']) !== null){
-            $_SESSION["username"] = $_POST['username'];
+    elseif(isset($_GET['post'])) {
+        $post = Post::GetPostById($_GET['post']);
+        if ($post == null) {
+            throw new \Exception("Post not found");
+        }
+        Post_Page::execute($controller, $post);
+    }
 
+    elseif(isset($_POST['username']) && isset($_POST['password'])) {
+        $acc = Account::ConnectAccount($_POST['username'], $_POST['password']);
+        if($acc !== null){
+            $_SESSION["username"] = $acc->GetName();
             header('Location: /');
         } else {
             throw new \Exception("Account doesn't exist");
@@ -160,8 +172,6 @@ try {
         }
         Searching::execute($controller);
     }
-
-
     // homepage
     else {
         Homepage::execute($controller);

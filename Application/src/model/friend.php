@@ -72,7 +72,10 @@ class FriendList {
     public Account $account;
     private array $friends = [];
 
-    public function __construct(Account $account) {
+    public function __construct(?Account $account) {
+        if($account == null) {
+            return;
+        }
         new Log('FriendList created');
         $this->account = $account;
 

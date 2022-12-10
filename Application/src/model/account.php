@@ -50,6 +50,29 @@ class Account {
         }
     }
 
+    public static function GetAccountBYEmail(string $email) : ?Account {
+        $query = "SELECT * FROM accounts WHERE email = :email";
+        $statement = (new DatabaseConnection())->getConnection()->prepare($query);
+
+        if ($statement === false) {
+            new Log("Error while preparing the query in Account::GetAccountBYEmail");
+            return null;
+        }
+
+        $statement->execute([
+                'email' => $email
+            ]);
+
+        $result = $statement->fetch();
+
+        if ($result) {
+            return new Account($result['id_account'], $result['name'], $result['email'], $result['encrypted_password']);
+        } else {
+            new Log("No account found with email: " . $email . " in Account::GetAccountBYEmail");
+            return null;
+        }
+    }
+
     public static function GetAccountById(int $id_account) : Account {
         $query = "SELECT * FROM accounts WHERE id_account = :id_account";
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
@@ -86,7 +109,6 @@ class Account {
             'encrypted_password' => $encrypted_password
         ]);
 
-        var_dump($result);
         if (!$result) {
             new Log("Error while fetching the result in Account::CreateAccount");
             throw new \Exception("Error while fetching the result");
@@ -98,19 +120,32 @@ class Account {
     }
 
 
-    public static function ConnectAccount(string $name, string $psw) : ?Account {
+    public static function ConnectAccount(string $name, string $psw ) : ?Account {
         $account = Account::GetAccountByName($name);
         if ($account) {
             if ($account->CompareEncryptedPassword($psw)) {
                 return $account;
             } else {
                 new Log("Wrong password for account: " . $name . " in Account::ConnectAccount");
+                throw new \Exception("Wrong password for account: " . $name . " in Account::ConnectAccount");
                 return null;
             }
+
         } else {
             new Log("No account found with pseudo: " . $name . " in Account::ConnectAccount");
-            return null;
+            $account = Account::GetAccountByEmail($name);
+            if ($account) {
+                if ($account->CompareEncryptedPassword($psw)) {
+                    return $account;
+                } else {
+                    new Log("Wrong password for account: " . $name . " in Account::ConnectAccount");
+                    return null;
+                }
+            }
         }
+        throw new \Exception("Wrong password for account: " . $name . " in Account::ConnectAccount");
+        return null;
+
     }
     // Getters
     public function GetId() {
