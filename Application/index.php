@@ -53,8 +53,7 @@ try {
             if ($account != null){
                 throw new \Exception("Account already exists");
             } else {
-                $password = password_hash($password, PASSWORD_DEFAULT);
-                Account::CreateAccount( $_POST['username'], $_POST['email'], $password);
+                Account::CreateAccount( $_POST['username'], $_POST['email'],md5($password));
                 header('Location: /');
             }
         }
@@ -68,7 +67,8 @@ try {
     }
 
     elseif(isset($_POST['username']) && isset($_POST['password'])) {
-        $acc = Account::ConnectAccount($_POST['username'], $_POST['password']);
+        $password = $_POST['password'];
+        $acc = Account::ConnectAccount($_POST['username'],md5($password));
         if($acc !== null){
             $_SESSION["username"] = $acc->GetName();
             header('Location: /');
