@@ -32,6 +32,27 @@ class PendingRequest {
         return $this->statue;
     }
 
+    public static function AbortRequest($id1, $id2) {
+        //DELETE FROM has_pending_request WHERE `has_pending_request`.`id_account_1` = 3 AND `has_pending_request`.`id_account_2` = 2 » ?
+        new Log('Friend request abort for ' . $id1 . ' and ' . $id2);
+
+        $db = new DatabaseConnection();
+        $connection = $db->getConnection();
+        $query = "DELETE FROM `has_pending_request` WHERE (`has_pending_request`.`id_account_1` = :id1 AND `has_pending_request`.`id_account_2` = :id2) OR (`has_pending_request`.`id_account_1` = :id2 AND `has_pending_request`.`id_account_2` = :id1)";
+
+        $statement = $connection->prepare($query);
+
+        if ($statement === false) {
+            new Log("Error while preparing the query in PendingRequestList::AcceptRequest for deleting the pending request");
+            return;
+        }
+
+        $statement->execute([
+            'id1' => $id1,
+            'id2' => $id2
+        ]);
+    }
+
     public static function AcceptRequest($id1, $id2) {
         new Log('Friend request accepted for ' . $id1 . ' and ' . $id2);
 

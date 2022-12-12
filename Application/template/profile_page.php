@@ -69,6 +69,11 @@
                         <?= $request->GetReceiver()->GetName() ?>
                     </a>
                     <p>pending ...</p>
+                    <form method="POST">
+                        <input type="hidden" name="request_id" value="<?= $request->GetReceiver()->GetId() ?>">
+                        <input type="hidden" name="friend_request" value="abort">
+                        <input type="submit" value="abort">
+                    </form>
                 </li>
             <?php } ?>
         </ul>

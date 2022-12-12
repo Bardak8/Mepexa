@@ -1,8 +1,8 @@
-<?php $title = "ERROR"; ?>
+<?php $title = "error"; ?>
 
 <?php ob_start(); ?>
 
-    <link href="../style/error.css" rel="stylesheet" />
+
 
 <h1>Une erreur est survenue : <?= $errorMessage ?></h1>
 <a href="/">Homepage</a>

@@ -5,3 +5,13 @@ body {
     background-size: 100%;
     background-position-y : -3vh;
 }
+
+a {
+    position: absolute;
+    right: 11%;
+    top: 13%;
+    color: #ebdbb2;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+}

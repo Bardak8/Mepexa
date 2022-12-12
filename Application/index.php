@@ -8,6 +8,8 @@ require_once('src/controller/search_page.php');
 require_once('src/model/log.php');
 require_once('src/model/post.php');
 require_once('src/model/account.php');
+require_once('src/controller/post_page.php');
+
 require_once('src/model/friend.php');
 require_once('src/model/pending_request.php');
 
@@ -19,6 +21,8 @@ use Application\Controller\SearchPage\Searching;
 use Application\Model\Post\Post;
 use Application\Model\Log\Log;
 use Application\Model\Account\Account;
+use Application\Controller\Post_Page\Post_Page;
+
 use Application\Model\PendingRequest\PendingRequest;
 use Application\Model\Friend\Friend;
 
@@ -56,6 +60,14 @@ try {
             }
         }
     }
+    elseif(isset($_GET['post'])) {
+        $post = Post::GetPostById($_GET['post']);
+        if ($post == null) {
+            throw new \Exception("Post not found");
+        }
+        Post_Page::execute($controller, $post);
+    }
+
     elseif(isset($_POST['username']) && isset($_POST['password'])) {
         if(Account::ConnectAccount($_POST['username'], $_POST['password']) !== null){
             $_SESSION["username"] = $_POST['username'];
@@ -86,7 +98,6 @@ try {
             new Log("Uploading file for account [" . $controller->GetAccount()->GetId() . "] on server...");
 
             $file = $_FILES['post_media'];
-            var_dump($file);
             
             $file_name = $file['name'];
             $file_size = $file['size'];
@@ -136,7 +147,6 @@ try {
     // profile page
     elseif (isset($_GET['u'])) {
         if (isset($_POST['friend_request'])) {
-            var_dump($_POST);
             echo $controller->GetAccount()->GetId();
             if ($_POST['friend_request'] == 'accept') {
                 PendingRequest::AcceptRequest($_POST['request_id'], $controller->GetAccount()->GetId());
@@ -146,6 +156,8 @@ try {
                 Friend::RemoveFriend($_POST['request_id'], $controller->GetAccount()->GetId());
             } elseif ($_POST['friend_request'] == 'new') {
                 PendingRequest::NewRequest($_POST['request_id'], $controller->GetAccount()->GetId());
+            } elseif ($_POST['friend_request'] == 'abort') {
+                PendingRequest::AbortRequest($_POST['request_id'], $controller->GetAccount()->GetId());
             } else {
                 throw new \Exception("Invalid friend request");
             }
