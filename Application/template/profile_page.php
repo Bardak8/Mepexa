@@ -23,6 +23,8 @@
 
             <?php if (!$is_friend && !$has_pending_request) { ?>
                 <input type="submit" value="Add friend">
+            <?php } else if ($has_pending_request) { ?>
+                <p>pending request...</p>
             <?php } ?>
         
         </form>
@@ -67,6 +69,11 @@
                         <?= $request->GetReceiver()->GetName() ?>
                     </a>
                     <p>pending ...</p>
+                    <form method="POST">
+                        <input type="hidden" name="request_id" value="<?= $request->GetReceiver()->GetId() ?>">
+                        <input type="hidden" name="friend_request" value="abort">
+                        <input type="submit" value="abort">
+                    </form>
                 </li>
             <?php } ?>
         </ul>

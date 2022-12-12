@@ -32,7 +32,8 @@ try {
     $method = $_SERVER['REQUEST_METHOD'];
     $uri = $_SERVER['REQUEST_URI'];
     $connection = isset($_SESSION['username']);
-    if (!$connection && $uri !== '/'&& $method === 'GET') {
+    
+    if (!$connection && $uri !== '/' && $method === 'GET') {
         header('Location: /');
         exit();
     }
@@ -110,7 +111,6 @@ try {
             new Log("Uploading file for account [" . $controller->GetAccount()->GetId() . "] on server...");
 
             $file = $_FILES['post_media'];
-            var_dump($file);
             
             $file_name = $file['name'];
             $file_size = $file['size'];
@@ -160,7 +160,6 @@ try {
     // profile page
     elseif (isset($_GET['u'])) {
         if (isset($_POST['friend_request'])) {
-            var_dump($_POST);
             echo $controller->GetAccount()->GetId();
             if ($_POST['friend_request'] == 'accept') {
                 PendingRequest::AcceptRequest($_POST['request_id'], $controller->GetAccount()->GetId());
@@ -170,6 +169,8 @@ try {
                 Friend::RemoveFriend($_POST['request_id'], $controller->GetAccount()->GetId());
             } elseif ($_POST['friend_request'] == 'new') {
                 PendingRequest::NewRequest($_POST['request_id'], $controller->GetAccount()->GetId());
+            } elseif ($_POST['friend_request'] == 'abort') {
+                PendingRequest::AbortRequest($_POST['request_id'], $controller->GetAccount()->GetId());
             } else {
                 throw new \Exception("Invalid friend request");
             }
