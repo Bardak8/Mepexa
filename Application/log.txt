@@ -395,3 +395,202 @@
 2022-12-10 14:47:05 - Controller created
 2022-12-10 14:47:05 - Connection attempt of "azert"
 2022-12-10 14:47:05 - FriendList created
+2022-12-10 15:32:23 - Controller created
+2022-12-10 15:32:23 - Connection attempt of "azert"
+2022-12-10 15:32:23 - FriendList created
+2022-12-10 15:32:26 - Controller created
+2022-12-10 15:32:26 - Connection attempt of "azert"
+2022-12-10 15:32:26 - FriendList created
+2022-12-10 15:32:28 - Controller created
+2022-12-10 15:32:28 - Connection attempt of "azert"
+2022-12-10 15:32:28 - Controller created
+2022-12-10 15:32:37 - Controller created
+2022-12-10 15:32:37 - Wrong password for account: Ben in Account::ConnectAccount
+2022-12-10 15:32:58 - Controller created
+2022-12-10 15:32:58 - Controller created
+2022-12-10 15:32:58 - Connection attempt of "azert"
+2022-12-10 15:32:58 - FriendList created
+2022-12-10 15:32:59 - Controller created
+2022-12-10 15:32:59 - Connection attempt of "azert"
+2022-12-10 15:33:08 - Controller created
+2022-12-10 15:33:08 - Connection attempt of "azert"
+2022-12-10 15:33:08 - Account [10] is uploading a new post
+2022-12-10 15:33:08 - Uploading file for account [10] on server...
+2022-12-10 15:33:08 - File uploaded for account : 10 on server successfully : u10_6394a6b45eba1.jpg
+2022-12-10 15:33:08 - Post::UploadNewPost() of account [10]
+2022-12-10 15:33:08 - FriendList created
+2022-12-10 15:34:25 - Controller created
+2022-12-10 15:34:25 - Connection attempt of "azert"
+2022-12-10 15:34:25 - Account [10] is uploading a new post
+2022-12-10 15:34:25 - Uploading file for account [10] on server...
+2022-12-10 15:34:25 - File uploaded for account : 10 on server successfully : u10_6394a7015d341.jpg
+2022-12-10 15:34:25 - Post::UploadNewPost() of account [10]
+2022-12-10 15:34:25 - FriendList created
+2022-12-10 15:34:42 - Controller created
+2022-12-10 15:34:42 - Connection attempt of "azert"
+2022-12-10 15:34:42 - Account [10] is uploading a new post
+2022-12-10 15:34:42 - Uploading file for account [10] on server...
+2022-12-10 15:34:42 - File uploaded for account : 10 on server successfully : u10_6394a7127e01d.jpg
+2022-12-10 15:34:42 - Post::UploadNewPost() of account [10]
+2022-12-10 15:34:42 - FriendList created
+2022-12-10 15:34:43 - Controller created
+2022-12-10 15:34:43 - Connection attempt of "azert"
+2022-12-10 15:34:45 - Controller created
+2022-12-10 15:34:45 - Connection attempt of "azert"
+2022-12-10 15:35:12 - Controller created
+2022-12-10 15:35:12 - Connection attempt of "azert"
+2022-12-10 15:56:30 - Controller created
+2022-12-10 15:56:30 - Connection attempt of "azert"
+2022-12-10 15:56:30 - FriendList created
+2022-12-10 15:56:33 - Controller created
+2022-12-10 15:56:33 - Connection attempt of "azert"
+2022-12-10 15:59:43 - Controller created
+2022-12-10 15:59:43 - Connection attempt of "azert"
+2022-12-10 16:00:28 - Controller created
+2022-12-10 16:00:28 - Connection attempt of "azert"
+2022-12-10 16:00:36 - Controller created
+2022-12-10 16:00:36 - Connection attempt of "azert"
+2022-12-12 08:15:40 - Controller created
+2022-12-12 08:15:40 - Connection attempt of "azert"
+2022-12-12 08:15:40 - FriendList created
+2022-12-12 08:15:50 - Controller created
+2022-12-12 08:15:50 - Connection attempt of "azert"
+2022-12-12 08:15:56 - Controller created
+2022-12-12 08:15:56 - Connection attempt of "azert"
+2022-12-12 08:15:57 - Controller created
+2022-12-12 08:15:57 - Connection attempt of "azert"
+2022-12-12 08:16:15 - Controller created
+2022-12-12 08:16:15 - Connection attempt of "azert"
+2022-12-12 08:16:37 - Controller created
+2022-12-12 08:16:37 - Connection attempt of "azert"
+2022-12-12 08:16:38 - Controller created
+2022-12-12 08:16:38 - Connection attempt of "azert"
+2022-12-12 08:16:38 - Controller created
+2022-12-12 08:16:38 - Connection attempt of "azert"
+2022-12-12 08:16:38 - Controller created
+2022-12-12 08:16:38 - Connection attempt of "azert"
+2022-12-12 08:16:40 - Controller created
+2022-12-12 08:16:40 - Connection attempt of "azert"
+2022-12-12 08:16:40 - FriendList created
+2022-12-12 08:16:46 - Controller created
+2022-12-12 08:16:46 - Connection attempt of "azert"
+2022-12-12 08:16:48 - Controller created
+2022-12-12 08:16:48 - Connection attempt of "azert"
+2022-12-12 08:16:48 - FriendList created
+2022-12-12 08:16:49 - Controller created
+2022-12-12 08:16:49 - Connection attempt of "azert"
+2022-12-12 08:16:49 - Controller created
+2022-12-12 08:16:49 - Connection attempt of "azert"
+2022-12-12 08:16:49 - FriendList created
+2022-12-12 08:16:54 - Controller created
+2022-12-12 08:16:54 - Connection attempt of "azert"
+2022-12-12 08:18:11 - Controller created
+2022-12-12 08:18:11 - Connection attempt of "azert"
+2022-12-12 08:18:11 - FriendList created
+2022-12-12 08:18:12 - Controller created
+2022-12-12 08:18:12 - Connection attempt of "azert"
+2022-12-12 08:18:20 - Controller created
+2022-12-12 08:18:20 - Connection attempt of "azert"
+2022-12-12 08:18:20 - FriendList created
+2022-12-12 08:18:21 - Controller created
+2022-12-12 08:18:21 - Connection attempt of "azert"
+2022-12-12 08:20:52 - Controller created
+2022-12-12 08:20:52 - Controller created
+2022-12-12 08:21:02 - Controller created
+2022-12-12 08:21:02 - Controller created
+2022-12-12 08:21:02 - Connection attempt of "azert"
+2022-12-12 08:21:02 - FriendList created
+2022-12-12 08:21:09 - Controller created
+2022-12-12 08:21:09 - Connection attempt of "azert"
+2022-12-12 08:22:22 - Controller created
+2022-12-12 08:22:22 - Connection attempt of "azert"
+2022-12-12 08:22:23 - Controller created
+2022-12-12 08:22:23 - Connection attempt of "azert"
+2022-12-12 08:22:23 - Controller created
+2022-12-12 08:22:23 - Connection attempt of "azert"
+2022-12-12 08:22:31 - Controller created
+2022-12-12 08:22:31 - Connection attempt of "azert"
+2022-12-12 08:22:31 - Controller created
+2022-12-12 08:22:31 - Connection attempt of "azert"
+2022-12-12 08:31:01 - Controller created
+2022-12-12 08:31:01 - Connection attempt of "azert"
+2022-12-12 08:31:03 - Controller created
+2022-12-12 08:31:03 - Connection attempt of "azert"
+2022-12-12 08:31:03 - Controller created
+2022-12-12 08:31:03 - Connection attempt of "azert"
+2022-12-12 08:31:03 - FriendList created
+2022-12-12 08:31:07 - Controller created
+2022-12-12 08:31:07 - Connection attempt of "azert"
+2022-12-12 08:31:07 - FriendList created
+2022-12-12 08:31:18 - Controller created
+2022-12-12 08:31:18 - Connection attempt of "azert"
+2022-12-12 08:31:30 - Controller created
+2022-12-12 08:31:30 - Connection attempt of "azert"
+2022-12-12 08:31:30 - Account [10] is uploading a new post
+2022-12-12 08:31:30 - Uploading file for account [10] on server...
+2022-12-12 08:31:30 - File uploaded for account : 10 on server successfully : u10_6396e6e24ee55.jpg
+2022-12-12 08:31:30 - Post::UploadNewPost() of account [10]
+2022-12-12 08:31:30 - FriendList created
+2022-12-12 08:31:35 - Controller created
+2022-12-12 08:31:35 - Connection attempt of "azert"
+2022-12-12 08:31:36 - Controller created
+2022-12-12 08:31:36 - Connection attempt of "azert"
+2022-12-12 08:31:36 - Controller created
+2022-12-12 08:31:36 - Connection attempt of "azert"
+2022-12-12 08:31:36 - FriendList created
+2022-12-12 08:34:47 - Controller created
+2022-12-12 08:34:47 - Connection attempt of "azert"
+2022-12-12 08:34:47 - FriendList created
+2022-12-12 08:34:48 - Controller created
+2022-12-12 08:34:48 - Connection attempt of "azert"
+2022-12-12 08:36:32 - Controller created
+2022-12-12 08:36:32 - Connection attempt of "azert"
+2022-12-12 08:36:34 - Controller created
+2022-12-12 08:36:34 - Connection attempt of "azert"
+2022-12-12 08:36:34 - Controller created
+2022-12-12 08:36:34 - Connection attempt of "azert"
+2022-12-12 08:36:34 - FriendList created
+2022-12-12 08:36:44 - Controller created
+2022-12-12 08:36:44 - Connection attempt of "azert"
+2022-12-12 08:36:44 - Controller created
+2022-12-12 08:37:27 - Controller created
+2022-12-12 08:37:27 - No account found with pseudo: popo in Account::GetAccountByName
+2022-12-12 08:37:27 - Controller created
+2022-12-12 08:37:34 - Controller created
+2022-12-12 08:37:34 - Controller created
+2022-12-12 08:37:34 - Connection attempt of "popo"
+2022-12-12 08:37:34 - FriendList created
+2022-12-12 08:37:42 - Controller created
+2022-12-12 08:37:42 - Connection attempt of "popo"
+2022-12-12 08:37:43 - Controller created
+2022-12-12 08:37:43 - Connection attempt of "popo"
+2022-12-12 08:37:43 - FriendList created
+2022-12-12 08:37:43 - PendingRequestList created
+2022-12-12 08:37:43 - PendingRequestList created
+2022-12-12 08:37:46 - Controller created
+2022-12-12 08:37:46 - Connection attempt of "popo"
+2022-12-12 08:37:46 - FriendList created
+2022-12-12 08:37:46 - PendingRequestList created
+2022-12-12 08:37:46 - PendingRequestList created
+2022-12-12 08:37:47 - Controller created
+2022-12-12 08:37:47 - Connection attempt of "popo"
+2022-12-12 08:37:47 - FriendList created
+2022-12-12 08:37:47 - PendingRequestList created
+2022-12-12 08:37:47 - PendingRequestList created
+2022-12-12 08:37:47 - Controller created
+2022-12-12 08:37:47 - Connection attempt of "popo"
+2022-12-12 08:37:47 - FriendList created
+2022-12-12 08:37:47 - PendingRequestList created
+2022-12-12 08:37:47 - PendingRequestList created
+2022-12-12 08:37:48 - Controller created
+2022-12-12 08:37:48 - Connection attempt of "popo"
+2022-12-12 08:37:48 - FriendList created
+2022-12-12 08:37:48 - PendingRequestList created
+2022-12-12 08:37:48 - PendingRequestList created
+2022-12-12 08:39:38 - Controller created
+2022-12-12 08:39:38 - Connection attempt of "popo"
+2022-12-12 08:39:38 - FriendList created
+2022-12-12 08:39:38 - PendingRequestList created
+2022-12-12 08:39:38 - PendingRequestList created
+2022-12-12 08:39:39 - Controller created
+2022-12-12 08:39:39 - Connection attempt of "popo"

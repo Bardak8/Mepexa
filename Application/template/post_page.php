@@ -3,8 +3,11 @@ ob_start(); ?>
 <div id="feed">
     <div class="post">
         <ul>
-            <li class="post_upper" onclick="href='/'">
+            <li class="post_upper" onclick="href='/'" >
                 <p>Published by <a href="/?u=<?= $post->GetAuthor() ?>"> <?= $post->GetAuthor() ?> </a> <?= $post->GetDate() ?> </p>
+                <?php if ($post->GetAuthor() == $_SESSION['username']) { ?>
+                <button type="button" onclick="location.href='/?close_post=<?= $post->GetId()?>'"  class="btn-close btn-close-white" aria-label="Close" style="width:100px">aaaaaa  </button>
+                <?php }?>
             </li>
             <li class="post_title" onclick="href='/'">
                 <h2><?= $post->GetTitle() ?></h2>

@@ -113,6 +113,19 @@ class Post
             return null;
         }
     }
+
+    public static function DeletePost(int $id_post)
+    {
+        $query = "DELETE FROM posts WHERE id_post = :id_post";
+        $statement = (new DatabaseConnection())->getConnection()->prepare($query);
+
+        $result = $statement->execute(
+            ['id_post' => $id_post]
+        );
+        if (!$result){
+            throw new \Exception("Error while deleting post");
+        }
+    }
 }
 
 
@@ -182,7 +195,6 @@ class Feed {
     }
 
 
-
     public function GetsPostsFromUser(int $id_account)
     {
         $query = "SELECT * FROM posts WHERE id_account = :id_account ORDER BY id_post DESC";
@@ -201,6 +213,8 @@ class Feed {
             $this->posts[] = new Post($row['id_post'], $row['id_account'], $author, $row['title'], $row['content'], $row['media_path'], $row['post_date']);
         }
     }
+
+
 
     public function GetPosts() : array {
         return $this->posts;
