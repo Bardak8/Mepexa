@@ -16,10 +16,20 @@ class Homepage
         $title = "Мережа";
 
         $feed = new Feed();
+
+        $current_page = 1;
+        if (isset($_GET['page'])) {
+            $current_page = $_GET['page'];
+        }
+
+        $nbPosts = Feed::GetPageNumber();
+        $nbPages = ceil($nbPosts / 10) ;
+
         
         if ($controller->IsConnected()) {
-            $feed->GenerateFeed($controller->GetAccount());
+            $feed->GenerateFeed($controller->GetAccount(), $current_page);
         }
+        var_dump($current_page);
 
 
 

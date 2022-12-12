@@ -113,6 +113,19 @@ class Post
             return null;
         }
     }
+
+    public static function DeletePost(int $id_post)
+    {
+        $query = "DELETE FROM posts WHERE id_post = :id_post";
+        $statement = (new DatabaseConnection())->getConnection()->prepare($query);
+
+        $result = $statement->execute(
+            ['id_post' => $id_post]
+        );
+        if (!$result){
+            throw new \Exception("Error while deleting post");
+        }
+    }
 }
 
 
@@ -128,17 +141,30 @@ class Feed {
 
 
 
-    public function GenerateFeed($account)
+    public function GenerateFeed($account, $current_page)
     {
 
         $friends = new FriendList($account);
-        $query = "SELECT * FROM posts WHERE id_account = " . $account->GetId();
+
+        $query = "SELECT * FROM posts WHERE id_account = " . $account->GetId() ;
+
 
         foreach ($friends -> GetFriends() as $friend) {
 
             $query .= " OR id_account = " . $friend -> GetId();
         }
-        $query .= " ORDER BY id_post DESC";
+
+        $query .= " ORDER BY id_post DESC ";
+
+        if ($current_page > 1) {
+            $query .= " LIMIT " . ($current_page - 1) * 10 . ", 10";
+        } else {
+            $query .= " LIMIT 0, 10";
+        }
+
+        var_dump($query);
+        var_dump($current_page);
+
 
         $statement = $this->connection->prepare($query);
 
@@ -146,16 +172,27 @@ class Feed {
             throw new \Exception("Error while fetching posts");
             return;
         }
+
         $statement->execute();
 
         while (($row = $statement->fetch())) {
+
             $author = Account::GetAccountById($row['id_account'])->GetName();
 
             $this->posts[] = new Post($row['id_post'], $row['id_account'], $author, $row['title'], $row['content'], $row['media_path'], $row['post_date']);
         }
+
     }
 
-
+    public static function GetPageNumber(): int
+    {
+        $query = "SELECT id_post FROM posts";
+        $statement = (new DatabaseConnection())->getConnection()->prepare($query);
+        $statement->execute();
+        $count = $statement->rowCount();
+        var_dump($count);
+        return $count;
+    }
 
 
     public function GetsPostsFromUser(int $id_account)
@@ -176,6 +213,8 @@ class Feed {
             $this->posts[] = new Post($row['id_post'], $row['id_account'], $author, $row['title'], $row['content'], $row['media_path'], $row['post_date']);
         }
     }
+
+
 
     public function GetPosts() : array {
         return $this->posts;

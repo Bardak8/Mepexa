@@ -54,8 +54,7 @@ try {
             if ($account != null){
                 throw new \Exception("Account already exists");
             } else {
-                password_hash($password, PASSWORD_DEFAULT);
-                Account::CreateAccount( $_POST['username'], $_POST['email'], $_POST['password']);
+                Account::CreateAccount( $_POST['username'], $_POST['email'],md5($password));
                 header('Location: /');
             }
         }
@@ -65,23 +64,37 @@ try {
         if ($post == null) {
             throw new \Exception("Post not found");
         }
+
         Post_Page::execute($controller, $post);
     }
 
     elseif(isset($_POST['username']) && isset($_POST['password'])) {
-        if(Account::ConnectAccount($_POST['username'], $_POST['password']) !== null){
-            $_SESSION["username"] = $_POST['username'];
-
+        $password = $_POST['password'];
+        $acc = Account::ConnectAccount($_POST['username'],md5($password));
+        if($acc !== null){
+            $_SESSION["username"] = $acc->GetName();
             header('Location: /');
         } else {
             throw new \Exception("Account doesn't exist");
         }
     }
+
     elseif(isset($_POST['disconnect'])) {
         session_destroy();
         header('Location: /');
     }
 
+    elseif(isset($_GET['close_post'])){
+        $post = Post::GetPostById($_GET['close_post']);
+        if ($post == null) {
+            throw new \Exception("Post not found");
+        }
+        var_dump($post);
+        $post_id = $post->GetId();
+        var_dump($post_id);
+        Post::DeletePost($post_id);
+        header('Location: /');
+    }
     // post upload (to move somewhere else ...)
     elseif (!empty($_POST['post_title']) && isset($_POST['post_content']) ) {
         if ( !$controller->IsConnected()) {

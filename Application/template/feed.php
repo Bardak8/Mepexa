@@ -52,10 +52,21 @@
         </ul>
     </div>
 
+
+
 <?php } ?>
 
+<?php
 
+for ($i = 1; $i <= $nbPages; $i++) {
+    ?>
+    <a href="/?page=<?=$i;?>"><?=$i;?></a>
+    <?php
+}
+?>
 </div>
+
+
 
 <?php 
     $content = ob_get_clean();

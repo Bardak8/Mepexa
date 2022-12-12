@@ -108,21 +108,21 @@
 
         <?php foreach ($feed->GetPosts() as $post) { ?>
     
-    <div class="post">
+    <div class="post" onclick="location.href='/?post=<?= $post->GetId()?> '">
         <ul>
-            <li class="post_upper" onclick="href=''">
+            <li class="post_upper" onclick="location.href='/?post=<?= $post->GetId()?> '">
                 <p>Published by <a href="/?u=<?= $post->GetAuthor() ?>"> <?= $post->GetAuthor() ?> </a> <?= $post->GetDate() ?> </p>
             </li>
-            <li class="post_title" onclick="href=''">
+            <li class="post_title" onclick="location.href='/?post=<?= $post->GetId()?> '">
                 <h2><?= $post->GetTitle() ?></h2>
             </li>
             
             <?php if ($post->GetMediaPath() != null) { ?>
-                <li class="post_content" style="display: flex; justify-content: center;" onclick="location.href=''">
+                <li class="post_content" style="display: flex; justify-content: center;" onclick="location.href='/?post=<?= $post->GetId()?> '">
                     <img class="post_image" src=" uploads/<?= $post->GetMediaPath() ?>" alt="post content">
                 </li>
             <?php } else { ?>
-                <li class="post_content" onclick="href=''">
+                <li class="post_content" onclick="location.href='/?post=<?= $post->GetId()?> '">
                     <p><?= $post->GetContent() ?></p>
                 </li>
             <?php } ?>
