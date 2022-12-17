@@ -63,7 +63,6 @@ try {
         }
     }
     elseif(isset($_POST['disconnect'])) {
-        new Log('zaeeazaezeazeza');
         session_destroy();
         header('Location: /');
     }
