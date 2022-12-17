@@ -1,0 +1,21 @@
+.reaction_button, .reaction_image {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.comment_reactions {
+    display: flex;
+}
+
+.comment_reactions > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5vw;
+}

@@ -1,0 +1,17 @@
+1. ACTION: user react to post 
+
+if (user didn't react yet to post)
+  2. FRONT : increase reaction counter
+  3. FRONT : select reaction icon
+  4. BACK : upload new reaction   OK
+
+else if (user already react with an other reaction)
+  2. FRONT : decrease previous reaction counter
+  3. FRONT : unselect previous reaction icon
+  if (new_reaction != last_reaction)
+    4. FRONT : update new reaction
+    5. BACK : update reaction
+  else
+    4. BACK : DELETE previous reaction
+
+

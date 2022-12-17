@@ -25,30 +25,56 @@ ob_start(); ?>
                     <p><?= $post->GetContent() ?></p>
                 </li>
             <li class="post_footer">
+
                 <ul class="post_reactions">
-                    <li>
-                        <p onclick="heart_vote()">&#10084</p>
-                        <p id="voteHeart">0</p>
-                    </li>
-                    <li>
-                        <p onclick="">&#128077</p>
-                        <p>0</p>
-                    </li>
-                    <li>
-                        <p onclick="">&#128078</p>
-                        <p>0</p>
-                    </li>
-                    <li>
-                        <p onclick="">&#128514</p>
-                        <p>0</p>
-                    </li>
-                    <li>
-                        <p onclick="">&#128546</p>
-                        <p>0</p>
-                    </li>
+                    <form method="POST">
+                        <input type="hidden" name="id_post_reaction" value="<?=$post->GetId()?>">
+                        <input type="hidden" name="reaction_type" value="2">
+                        <button type="submit" class="reaction_button">
+                            <img src="image/love.png" alt="" class="reaction_image">
+                        </button>
+                        <p id="voteHeart"><?= $post_reactions->love ?></p>
+                    </form>
+
+                    <form method="POST">
+                        <input type="hidden" name="id_post_reaction" value="<?=$post->GetId()?>">
+                        <input type="hidden" name="reaction_type" value="5">
+                        <button type="submit" class="reaction_button">
+                            <img src="image/thumb-up.png" alt="" class="reaction_image">
+                        </button>
+                        <p><?= $post_reactions->thumb_up ?></p>
+                    </form>
+
+                    <form method="POST">
+                        <input type="hidden" name="id_post_reaction" value="<?=$post->GetId()?>">
+                        <input type="hidden" name="reaction_type" value="4">
+                        <button type="submit" class="reaction_button">
+                            <img src="image/thumb-down.png" alt="" class="reaction_image">
+                        </button>
+                        <p><?= $post_reactions->thumb_down ?></p>
+                    </form>
+
+                    <form method="POST">
+                        <input type="hidden" name="id_post_reaction" value="<?=$post->GetId()?>">
+                        <input type="hidden" name="reaction_type" value="1">
+                        <button type="submit" class="reaction_button">
+                            <img src="image/laugh.png" alt="" class="reaction_image">
+                        </button>
+                        <p><?= $post_reactions->laugh ?></p>
+                    </form>
+
+                    <form method="POST">
+                        <input type="hidden" name="id_post_reaction" value="<?=$post->GetId()?>">
+                        <input type="hidden" name="reaction_type" value="3">
+                        <button type="submit" class="reaction_button">
+                            <img src="image/cry.png" alt="" class="reaction_image">
+                        </button>
+                        <p><?= $post_reactions->sad ?></p>
+                    </form>
                 </ul>
+
                 <a href="">
-                    0 comments
+                    <?= count($comment_list->comments)  ?> comments
                 </a>
             </li>
         </ul>
@@ -76,6 +102,57 @@ ob_start(); ?>
                                     <div class="comment_text"><?=$c->content ?></div>
                                     <div class="content_footer" id="comment_0">
                                 </div>
+                                <ul class="comment_reactions">
+                                    <form method="POST">
+                                        <input type="hidden" name="id_post_reaction" value="<?=$post->GetId()?>">
+                                        <input type="hidden" name="id_comm_reaction" value="<?=$c->id?>">
+                                        <input type="hidden" name="reaction_type" value="2">
+                                        <button type="submit" class="reaction_button">
+                                            <img src="image/love.png" alt="" class="reaction_image">
+                                        </button>
+                                        <p><?= $c->reaction->love ?></p>
+                                    </form>
+
+                                    <form method="POST">
+                                        <input type="hidden" name="id_post_reaction" value="<?=$post->GetId()?>">
+                                        <input type="hidden" name="id_comm_reaction" value="<?=$c->id?>">
+                                        <input type="hidden" name="reaction_type" value="5">
+                                        <button type="submit" class="reaction_button">
+                                            <img src="image/thumb-up.png" alt="" class="reaction_image">
+                                        </button>
+                                        <p><?= $c->reaction->thumb_up ?></p>
+                                    </form>
+
+                                    <form method="POST">
+                                        <input type="hidden" name="id_post_reaction" value="<?=$post->GetId()?>">
+                                        <input type="hidden" name="id_comm_reaction" value="<?=$c->id?>">
+                                        <input type="hidden" name="reaction_type" value="4">
+                                        <button type="submit" class="reaction_button">
+                                            <img src="image/thumb-down.png" alt="" class="reaction_image">
+                                        </button>
+                                        <p><?= $c->reaction->thumb_down ?></p>
+                                    </form>
+
+                                    <form method="POST">
+                                        <input type="hidden" name="id_post_reaction" value="<?=$post->GetId()?>">
+                                        <input type="hidden" name="id_comm_reaction" value="<?=$c->id?>">
+                                        <input type="hidden" name="reaction_type" value="1">
+                                        <button type="submit" class="reaction_button">
+                                            <img src="image/laugh.png" alt="" class="reaction_image">
+                                        </button>
+                                        <p><?= $c->reaction->laugh ?></p>
+                                    </form>
+
+                                    <form method="POST">
+                                        <input type="hidden" name="id_post_reaction" value="<?=$post->GetId()?>">
+                                        <input type="hidden" name="id_comm_reaction" value="<?=$c->id?>">
+                                        <input type="hidden" name="reaction_type" value="3">
+                                        <button type="submit" class="reaction_button">
+                                            <img src="image/cry.png" alt="" class="reaction_image">
+                                        </button>
+                                        <p><?= $c->reaction->sad ?></p>
+                                    </form>
+                                </ul>
                             </div>
                         </div>
                     </li>

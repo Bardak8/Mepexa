@@ -5,11 +5,13 @@ require_once('src/pdo/database.php');
 require_once('src/model/log.php');
 require_once('src/controller/controller.php');
 require_once('src/model/account.php');
+require_once('src/model/reaction.php');
 
 use Application\Model\Log\Log;
 use Application\Pdo\Database\DatabaseConnection;
 use Application\Controller\Controller\Controller;
 use Application\Model\Account\Account;
+use Application\Model\Reaction\Reaction;
 
 class Comment {
     public int $id;
@@ -17,12 +19,13 @@ class Comment {
     public int $id_author;
     public ?int $id_comment_answer;
     public string $content;
+    public Reaction $reaction;
 
     public ?Account $author;
 
     public Array $answers;
 
-    public function __construct(int $id, int $id_post, int $id_author, ?int $id_comment_answer, string $content, ?Account $author) {
+    public function __construct(int $id, int $id_post, int $id_author, ?int $id_comment_answer, string $content, ?Account $author, Reaction $reaction) {
         $this->id = $id;
         $this->id_post = $id_post; 
         $this->id_author = $id_author;
@@ -30,6 +33,7 @@ class Comment {
         $this->content = $content;
         $this->author = $author; 
         $this->answers = Array();
+        $this->reaction = $reaction;
     }
 
     public static function GetCommentById(int $id_comment) : Comment {
@@ -75,6 +79,29 @@ class Comment {
         header('Location: /?post='.$id_post);
     }
 
+
+    public static function DeleteComment($id_comment) {
+        new Log("Comment::DeleteComment() of comment [" . $id_comment . "]");
+
+        $query = "DELETE FROM comments WHERE id_comment = :id_comment";
+        $statement = (new DatabaseConnection())->getConnection()->prepare($query);
+
+        $result = $statement->execute(
+            ['id_comment' => $id_comment]
+        );
+        if (!$result){
+            throw new \Exception("Error while deleting post");
+        }
+    }
+    public function GetId()
+    {
+        return $this->id;
+    }
+    public function GetIdPost()
+    {
+        return $this->id_post;
+    }
+
 }
 
 
@@ -97,11 +124,11 @@ class CommentList {
 
         while ($row = $statement->fetch()) {
             $author = Account::GetAccountById($row['id_account']);
+            $reaction = Reaction::GetCommentReaction($row['id_post'], $row['id_comment']);
             $new_comment = new Comment($row['id_comment'], $row['id_post'], $row['id_account'], $row['id_comment_Comments'], 
-                                   $row['content'], $author);
+                                   $row['content'], $author, $reaction);
             
             $this->comments[] = $new_comment;
         }
     }
 }
-

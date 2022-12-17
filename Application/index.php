@@ -12,6 +12,7 @@ require_once('src/controller/post_page.php');
 require_once('src/model/friend.php');
 require_once('src/model/pending_request.php');
 require_once('src/model/comment.php');
+require_once('src/model/reaction.php');
 use Application\Model\Comment\Comment;
 use Application\Controller\Homepage\Homepage;
 use Application\Controller\ProfilePage\ProfilePage;
@@ -24,6 +25,7 @@ use Application\Model\Account\Account;
 use Application\Controller\Post_Page\Post_Page;
 use Application\Model\PendingRequest\PendingRequest;
 use Application\Model\Friend\Friend;
+use Application\Model\Reaction\Reaction;
 
 
 try {
@@ -41,6 +43,25 @@ try {
     if ($connection) {
         $controller -> Connect($_SESSION['username']);
     }
+
+    if(isset($_POST['id_post_reaction'])) {
+        if (isset($_POST['id_comm_reaction'])) {
+            Reaction::ReactToPost(
+                $controller->GetAccount()->GetId(),
+                $_GET['post'],
+                $_POST['id_comm_reaction'],
+                $_POST['reaction_type']
+            );
+        } else {
+            Reaction::ReactToPost(
+                $controller->GetAccount()->GetId(),
+                $_GET['post'],
+                NULL,
+                $_POST['reaction_type']
+            );
+        }   
+    }
+
     // new post page
     if (isset($_GET['new'])) {
         NewPost::execute($controller);
@@ -48,6 +69,7 @@ try {
     elseif(isset($_POST['comment_content'])) {
         Comment::CreateComment($_GET['post'], $_POST['comment_content'], $controller->GetAccount()->GetId());
     }
+
     elseif(isset($_POST['username']) &&  isset($_POST['email']) && isset($_POST['password']) && isset($_POST['password_confirm'])) {
         $password = $_POST['password'];
         if ($password != $_POST['password_confirm']){
