@@ -24,8 +24,8 @@ ob_start(); ?>
             <li class="post_footer">
                 <ul class="post_reactions">
                     <li>
-                        <p onclick="">&#10084</p>
-                        <p>0</p>
+                        <p onclick="heart_vote()">&#10084</p>
+                        <p id="voteHeart">0</p>
                     </li>
                     <li>
                         <p onclick="">&#128077</p>
