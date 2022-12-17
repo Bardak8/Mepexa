@@ -9,10 +9,10 @@ require_once('src/model/log.php');
 require_once('src/model/post.php');
 require_once('src/model/account.php');
 require_once('src/controller/post_page.php');
-
 require_once('src/model/friend.php');
 require_once('src/model/pending_request.php');
-
+require_once('src/model/comment.php');
+use Application\Model\Comment\Comment;
 use Application\Controller\Homepage\Homepage;
 use Application\Controller\ProfilePage\ProfilePage;
 use Application\Controller\Controller\Controller;
@@ -22,9 +22,9 @@ use Application\Model\Post\Post;
 use Application\Model\Log\Log;
 use Application\Model\Account\Account;
 use Application\Controller\Post_Page\Post_Page;
-
 use Application\Model\PendingRequest\PendingRequest;
 use Application\Model\Friend\Friend;
+
 
 try {
     session_start();
@@ -44,6 +44,9 @@ try {
     // new post page
     if (isset($_GET['new'])) {
         NewPost::execute($controller);
+    }
+    elseif(isset($_POST['comment_content'])) {
+        Comment::CreateComment($_GET['post'], $_POST['comment_content'], $controller->GetAccount()->GetId());
     }
     elseif(isset($_POST['username']) &&  isset($_POST['email']) && isset($_POST['password']) && isset($_POST['password_confirm'])) {
         $password = $_POST['password'];
@@ -70,7 +73,8 @@ try {
 
     elseif(isset($_POST['username']) && isset($_POST['password'])) {
         $password = $_POST['password'];
-        $acc = Account::ConnectAccount($_POST['username'],md5($password));
+        //$acc = Account::ConnectAccount($_POST['username'],md5($password));
+        $acc = Account::ConnectAccount($_POST['username'], $password);
         if($acc !== null){
             $_SESSION["username"] = $acc->GetName();
             header('Location: /');

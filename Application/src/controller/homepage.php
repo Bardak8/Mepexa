@@ -4,6 +4,9 @@ namespace Application\Controller\Homepage;
 require_once('src/controller/controller.php');
 require_once('src/model/post.php');
 
+require_once('src/model/comment.php');
+use Application\Model\Comment\Comment;
+
 use Application\Model\Post\Feed; 
 use Application\Controller\Controller\Controller;
 use Application\Model\Account\Account;
@@ -29,9 +32,6 @@ class Homepage
         if ($controller->IsConnected()) {
             $feed->GenerateFeed($controller->GetAccount(), $current_page);
         }
-        var_dump($current_page);
-
-
 
         require('template/feed.php');
 

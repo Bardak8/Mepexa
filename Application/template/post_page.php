@@ -1,5 +1,8 @@
 <?php
 ob_start(); ?>
+
+<link href="style/comments.css" rel="stylesheet" />
+
 <div id="feed">
     <div class="post">
         <ul>
@@ -49,6 +52,36 @@ ob_start(); ?>
                 </a>
             </li>
         </ul>
+
+        <div id="comment_section">
+            <h2>Comments :</h2>
+            <form method="post" name="create_comment">
+                <textarea name="comment_content" id="comment_content" rows="5" maxlength="120" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+
+            <ul>
+                <?php foreach($comment_list->comments as $c) { ?>
+                    <li>
+                        <div class="comment">
+                            <div class="header">
+                                <img src="style/image/default.png" alt="author pp">
+                                <a href="/?u=Ben">u/<?=$c->author->GetName() ?></a>
+                            </div>
+                            <div class="footer">
+                                <div class="bar_container">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="comment_text"><?=$c->content ?></div>
+                                    <div class="content_footer" id="comment_0">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                <?php } ?>
+            </ul>
+        </div>
     </div>
 </div>
 
