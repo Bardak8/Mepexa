@@ -23,7 +23,7 @@
                 </li>
             <?php } ?>
             <li class="post_footer">
-            <ul class="post_reactions">
+                <ul class="post_reactions">
                     <form method="POST">
                         <input type="hidden" name="id_post_reaction" value="<?=$post->GetId()?>">
                         <input type="hidden" name="reaction_type" value="2">
