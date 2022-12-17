@@ -62,6 +62,12 @@ try {
             }
         }
     }
+    elseif(isset($_POST['disconnect'])) {
+        new Log('zaeeazaezeazeza');
+        session_destroy();
+        header('Location: /');
+    }
+
     elseif(isset($_GET['post'])) {
         $post = Post::GetPostById($_GET['post']);
         if ($post == null) {
@@ -83,21 +89,24 @@ try {
         }
     }
 
-    elseif(isset($_POST['disconnect'])) {
-        session_destroy();
-        header('Location: /');
-    }
-
     elseif(isset($_GET['close_post'])){
         $post = Post::GetPostById($_GET['close_post']);
         if ($post == null) {
             throw new \Exception("Post not found");
         }
-        var_dump($post);
         $post_id = $post->GetId();
-        var_dump($post_id);
         Post::DeletePost($post_id);
         header('Location: /');
+    }
+
+    elseif(isset($_GET['close_comment'])){
+        $comment = Comment::GetCommentById($_GET['close_comment']);
+        if ($comment == null) {
+            throw new \Exception("Post not found");
+        }
+        $comment_id = $comment->GetId();
+        Comment::DeleteComment($comment_id);
+        header('Location: /?post='.$comment->GetIdPost());
     }
     // post upload (to move somewhere else ...)
     elseif (!empty($_POST['post_title']) && isset($_POST['post_content']) ) {
