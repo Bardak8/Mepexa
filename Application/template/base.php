@@ -8,6 +8,7 @@
         <link href="style/main.css" rel="stylesheet" />
         <link href="style/post.css" rel="stylesheet" />
         <script src="script/main.js"></script>
+        <script src="script/reaction.js"></script>
     </head>
 
     <body>

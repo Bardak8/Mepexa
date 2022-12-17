@@ -9,7 +9,7 @@ ob_start(); ?>
             <li class="post_upper" onclick="href='/'" >
                 <p>Published by <a href="/?u=<?= $post->GetAuthor() ?>"> <?= $post->GetAuthor() ?> </a> <?= $post->GetDate() ?> </p>
                 <?php if ($post->GetAuthor() == $_SESSION['username']) { ?>
-                <button type="button" onclick="location.href='/?close_post=<?= $post->GetId()?>'"  class="btn-close btn-close-white" aria-label="Close" style="width:100px">aaaaaa  </button>
+                <button type="button" onclick="location.href='/?close_post=<?= $post->GetId()?>'"  class="btn-close btn-close-white" aria-label="Close" style="width:100px">Delete </button>
                 <?php }?>
             </li>
             <li class="post_title" onclick="href='/'">
@@ -27,8 +27,8 @@ ob_start(); ?>
             <li class="post_footer">
                 <ul class="post_reactions">
                     <li>
-                        <p onclick="">&#10084</p>
-                        <p>0</p>
+                        <p onclick="heart_vote()">&#10084</p>
+                        <p id="voteHeart">0</p>
                     </li>
                     <li>
                         <p onclick="">&#128077</p>
