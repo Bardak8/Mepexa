@@ -51,14 +51,16 @@ class Comment {
         $result = $statement->fetch();
 
         $author = Account::GetAccountById($result['id_account']);
+        
 
         if ($result['id_comment_Comments'] != NULL) {
 
         }
 
         if ($result) {
+            $reaction = Reaction::GetCommentReaction($result['id_post'], $result['id_comment']);
             return new Comment($result['id_comment'], $result['id_post'], $result['id_account'], $result['id_comment_Comments'], 
-                               $result['content'], $author);
+                               $result['content'], $author, $reaction);
         } else {
             throw new \Exception("Error while fetching the result");
         }
@@ -78,8 +80,11 @@ class Comment {
 
         header('Location: /?post='.$id_post);
     }
+
     public static function DeleteComment($id_comment) {
         new Log("Comment::DeleteComment() of comment [" . $id_comment . "]");
+
+        Reaction::DeleteCommentsReaction($id_comment);
 
         $query = "DELETE FROM comments WHERE id_comment = :id_comment";
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
@@ -87,39 +92,30 @@ class Comment {
         $result = $statement->execute(
             ['id_comment' => $id_comment]
         );
-        if (!$result){
+        if (!$result) {
             throw new \Exception("Error while deleting post");
         }
     }
-    public function GetId()
-    {
-        return $this->id;
-    }
-    public function GetIdPost()
-    {
-        return $this->id_post;
-    }
 
+    public static function DeletePostComments(int $id_post) {
+        new Log("Comment::DeletePostComments() of post [" . $id_post . "]");
 
-    public static function DeleteComment($id_comment) {
-        new Log("Comment::DeleteComment() of comment [" . $id_comment . "]");
-
-        $query = "DELETE FROM comments WHERE id_comment = :id_comment";
+        $query = "DELETE FROM comments WHERE id_post = :id_post";
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
 
         $result = $statement->execute(
-            ['id_comment' => $id_comment]
+            ['id_post' => $id_post]
         );
-        if (!$result){
+        if (!$result) {
             throw new \Exception("Error while deleting post");
         }
     }
-    public function GetId()
-    {
+
+    public function GetId() {
         return $this->id;
     }
-    public function GetIdPost()
-    {
+
+    public function GetIdPost() {
         return $this->id_post;
     }
 

@@ -13,6 +13,7 @@ require_once('src/model/friend.php');
 require_once('src/model/pending_request.php');
 require_once('src/model/comment.php');
 require_once('src/model/reaction.php');
+
 use Application\Model\Comment\Comment;
 use Application\Controller\Homepage\Homepage;
 use Application\Controller\ProfilePage\ProfilePage;
@@ -84,7 +85,8 @@ try {
             }
         }
     }
-    elseif(isset($_POST['disconnect'])) {
+    
+    if(isset($_POST['disconnect'])) {
         session_destroy();
         header('Location: /');
     }

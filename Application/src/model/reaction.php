@@ -169,4 +169,16 @@ class Reaction
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
         $statement->execute(['id_reaction' => $id_reaction]);
     }
+
+    public static function DeletePostReaction(int $id_post) {
+        $query = "DELETE FROM reactions WHERE id_post = :id_post";
+        $statement = (new DatabaseConnection())->getConnection()->prepare($query);
+        $statement->execute(['id_post' => $id_post]);
+    }
+
+    public static function DeleteCommentsReaction(int $id_comment) {
+        $query = "DELETE FROM reactions WHERE id_comment = :id_comment";
+        $statement = (new DatabaseConnection())->getConnection()->prepare($query);
+        $statement->execute(['id_comment' => $id_comment]);
+    }
 }

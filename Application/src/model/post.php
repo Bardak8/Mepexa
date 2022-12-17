@@ -4,12 +4,17 @@ namespace Application\Model\Post;
 require_once('src/pdo/database.php');
 require_once('src/model/account.php');
 require_once('src/model/friend.php');
+require_once('src/model/comment.php');
+require_once('src/model/reaction.php');
 
 use Application\Model\Friend\FriendList;
 use Application\Pdo\Database\DatabaseConnection;
 use Application\Model\Account\Account;
 use Application\Model\Log\Log;
 use Application\Model\Friend;
+use Application\Model\Comment\Comment;
+
+use Application\Model\Reaction\Reaction;
 
 class Post
 {
@@ -116,6 +121,9 @@ class Post
 
     public static function DeletePost(int $id_post)
     {
+        Reaction::DeletePostReaction($id_post);
+        Comment::DeletePostComments($id_post);
+
         $query = "DELETE FROM posts WHERE id_post = :id_post";
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
 
