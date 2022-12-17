@@ -162,8 +162,6 @@ class Feed {
             $query .= " LIMIT 0, 10";
         }
 
-        var_dump($query);
-        var_dump($current_page);
 
 
         $statement = $this->connection->prepare($query);
@@ -190,7 +188,6 @@ class Feed {
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
         $statement->execute();
         $count = $statement->rowCount();
-        var_dump($count);
         return $count;
     }
 

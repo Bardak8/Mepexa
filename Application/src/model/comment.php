@@ -78,6 +78,27 @@ class Comment {
 
         header('Location: /?post='.$id_post);
     }
+    public static function DeleteComment($id_comment) {
+        new Log("Comment::DeleteComment() of comment [" . $id_comment . "]");
+
+        $query = "DELETE FROM comments WHERE id_comment = :id_comment";
+        $statement = (new DatabaseConnection())->getConnection()->prepare($query);
+
+        $result = $statement->execute(
+            ['id_comment' => $id_comment]
+        );
+        if (!$result){
+            throw new \Exception("Error while deleting post");
+        }
+    }
+    public function GetId()
+    {
+        return $this->id;
+    }
+    public function GetIdPost()
+    {
+        return $this->id_post;
+    }
 
 
     public static function DeleteComment($id_comment) {

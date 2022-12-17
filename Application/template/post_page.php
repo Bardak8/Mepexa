@@ -6,22 +6,22 @@ ob_start(); ?>
 <div id="feed">
     <div class="post">
         <ul>
-            <li class="post_upper" onclick="href='/'" >
+            <li class="post_upper" >
                 <p>Published by <a href="/?u=<?= $post->GetAuthor() ?>"> <?= $post->GetAuthor() ?> </a> <?= $post->GetDate() ?> </p>
                 <?php if ($post->GetAuthor() == $_SESSION['username']) { ?>
                 <button type="button" onclick="location.href='/?close_post=<?= $post->GetId()?>'"  class="btn-close btn-close-white" aria-label="Close" style="width:100px">Delete </button>
                 <?php }?>
             </li>
-            <li class="post_title" onclick="href='/'">
+            <li class="post_title" >
                 <h2><?= $post->GetTitle() ?></h2>
             </li>
 
             <?php if ($post->GetMediaPath() != null) { ?>
-                <li class="post_content" style="display: flex; justify-content: center;" onclick="location.href='/'">
+                <li class="post_content" style="display: flex; justify-content: center;" >
                     <img class="post_image" src=" uploads/<?= $post->GetMediaPath() ?>" alt="post content">
                 </li>
             <?php }?>
-                <li class="post_content" onclick="href='/'">
+                <li class="post_content" >
                     <p><?= $post->GetContent() ?></p>
                 </li>
             <li class="post_footer">
@@ -101,6 +101,11 @@ ob_start(); ?>
                                 <div class="content">
                                     <div class="comment_text"><?=$c->content ?></div>
                                     <div class="content_footer" id="comment_0">
+                                        <div class="close_comment" >
+                                        <?php if ($c->author->GetName()  == $_SESSION['username']) { ?>
+                                            <button type="button" onclick="location.href='/?close_comment=<?= $c->GetId()?>'"  class="btn-close btn-close-white" aria-label="Close" style="width:100px">Delete </button>
+                                        <?php }?>
+                                        </div>
                                 </div>
                                 <ul class="comment_reactions">
                                     <form method="POST">
