@@ -73,14 +73,11 @@ ob_start(); ?>
                     </form>
                 </ul>
 
-                <a href="">
-                    <?= count($comment_list->comments)  ?> comments
-                </a>
             </li>
         </ul>
 
         <div id="comment_section">
-            <h2>Comments :</h2>
+            <h2><?= count($comment_list->comments)  ?> Comments :</h2>
             <form method="post" name="create_comment">
                 <textarea name="comment_content" id="comment_content" rows="5" maxlength="120" required></textarea>
                 <input type="submit" value="Submit">

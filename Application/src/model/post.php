@@ -26,6 +26,7 @@ class Post
     private string $content;
     private ?string $media_path;
     private string $date;
+    public Reaction $reaction;
 
 
     // Constructor
@@ -38,6 +39,8 @@ class Post
         $this->content = $content;
         $this->media_path = $media_path;
         $this->date = $date;
+
+        $this->reaction =  Reaction::GetPostsReaction($id);
     }
 
     public static function UploadNewPost(int $id_account, string $title, string $content, string $media_path)
