@@ -17,7 +17,7 @@ class Login {
             $_SESSION["username"] = $acc->GetName();
             header('Location: /');
         } else {
-            throw new \Exception("Account doesn't exist");
+            throw new \Exception("Wrong match email/username and password");
         }
     }
 }
