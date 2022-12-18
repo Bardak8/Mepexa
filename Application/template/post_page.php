@@ -89,7 +89,7 @@ ob_start(); ?>
                         <div class="comment">
                             <div class="header">
                                 <img src="style/image/default.png" alt="author pp">
-                                <a href="/?u=<?= $c->author->GetName() ?>">
+                                <a href="/?u=<?= $c->author->GetName() ?>"></a>
                             </div>
                             <div class="footer">
                                 <div class="bar_container">
