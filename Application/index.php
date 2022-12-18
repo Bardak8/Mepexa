@@ -60,53 +60,53 @@ try {
         Reactions::execute($controller);
     }
 
-    // new post page
-    if (isset($_GET['new'])) {
-        NewPost::execute($controller);
-
-    } elseif (isset($_POST['comment_content'])) {
-       Comments::execute($controller);
-
-    } elseif (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['password_confirm'])) {
-        Signup::execute();
-
-    }
     if (isset($_POST['disconnect'])) {
         session_destroy();
         header('Location: /');
+    }
+    
+    if (isset($_GET['new'])) { // new post page
+        NewPost::execute($controller);
 
-    } elseif (isset($_GET['post'])) {
+    } elseif (isset($_POST['comment_content'])) { // new comment
+       Comments::execute($controller);
+
+    } elseif (isset($_POST['username']) && 
+                isset($_POST['email']) && 
+                isset($_POST['password']) && 
+                isset($_POST['password_confirm'])) { // sign up
+        Signup::execute();
+
+    } elseif (isset($_GET['post'])) {   // post page
         Post_Page::execute($controller);
 
-    } elseif (isset($_POST['username']) && isset($_POST['password'])) {
+    } elseif (isset($_POST['username']) && 
+                isset($_POST['password'])) { // login
         Login::execute();
 
-    } elseif (isset($_GET['close_post'])) {
+    } elseif (isset($_GET['close_post'])) { // delete post
         Close_Post::execute();
 
-    } elseif (isset($_GET['close_comment'])) {
+    } elseif (isset($_GET['close_comment'])) { // delete comment
         Close_Comment::execute();
 
-    }
-    elseif (!empty($_POST['post_title']) && isset($_POST['post_content'])) {
+    } elseif (!empty($_POST['post_title']) && 
+                isset($_POST['post_content'])) { // new post
         Creating_Post::execute($controller);
         Homepage::execute($controller);
 
-    }
-    elseif (isset($_GET['u'])) { // profile page
+    } elseif (isset($_GET['u'])) { // profile page
         Friend_Request::execute($controller);
         $profile_page = new ProfilePage(Account::GetAccountByName($_GET['u']));
         $profile_page->execute($controller);
 
-    } // searching page
-    elseif (isset($_GET['search_terms'])) {
+    } elseif (isset($_GET['search_terms'])) { // searching page 
         if (empty($_GET['search_terms'])) {
             Homepage::execute($controller);
         }
         Searching::execute($controller);
-    } 
-    // homepage
-    else {
+        
+    } else { // homepage
         Homepage::execute($controller);
     }
 
