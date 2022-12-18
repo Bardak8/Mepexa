@@ -79,10 +79,14 @@
 
 <?php
 
-for ($i = 1; $i <= $nbPages; $i++) {
-    ?>
-    <a href="/?page=<?=$i;?>"><?=$i;?></a>
-    <?php
+if ($controller->IsConnected()) {
+
+    for ($i = 1; $i <= $nbPages; $i++) {
+        ?>
+        <a href="/?page=<?=$i;?>"><?=$i;?></a>
+        <?php
+    }
+
 }
 ?>
 </div>
