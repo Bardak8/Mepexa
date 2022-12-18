@@ -15,7 +15,6 @@ class Friend_Request
         new Log("Friend request created");
 
         if (isset($_POST['friend_request'])) {
-            echo $controller->GetAccount()->GetId();
             if ($_POST['friend_request'] == 'accept') {
                 PendingRequest::AcceptRequest($_POST['request_id'], $controller->GetAccount()->GetId());
             } elseif ($_POST['friend_request'] == 'refuse') {

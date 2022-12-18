@@ -170,7 +170,7 @@ class Feed {
 
     public function GenerateFeed($account, $current_page)
     {
-        new Log("Feed::GenerateFeed() of account [" . $account . $current_page . "]");
+        new Log("Feed::GenerateFeed() of account [" . $account->GetName() . $current_page . "]");
 
         $friends = new FriendList($account);
 
