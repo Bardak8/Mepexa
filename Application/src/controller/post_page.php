@@ -14,8 +14,12 @@ use Application\Model\Comment\CommentList;
 
 class Post_Page
 {
-        public static function execute(Controller $controller, Post $post)
-    {
+        public static function execute(Controller $controller) {
+
+        $post = Post::GetPostById($_GET['post']);
+        if ($post == null) {
+            throw new \Exception("Post not found");
+        }
 
         if ( !$controller->IsConnected()) {
             throw new \Exception("You are not connected");
@@ -27,6 +31,7 @@ class Post_Page
         //Reaction::ReactToPost($controller->GetAccount()->GetId(), $post->GetId(), NULL, 1);
 
         $post_reactions = Reaction::GetPostsReaction($post->GetId());
+
 
         require('template/post_page.php');
     }
