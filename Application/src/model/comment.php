@@ -26,6 +26,7 @@ class Comment {
     public Array $answers;
 
     public function __construct(int $id, int $id_post, int $id_author, ?int $id_comment_answer, string $content, ?Account $author, Reaction $reaction) {
+        new Log ("New comment created");
         $this->id = $id;
         $this->id_post = $id_post; 
         $this->id_author = $id_author;
@@ -37,6 +38,7 @@ class Comment {
     }
 
     public static function GetCommentById(int $id_comment) : Comment {
+        new Log("Comment::GetCommentByIdt() of account [" . $id_comment . "]");
         $query = "SELECT * FROM comments WHERE id_comment = :id_comment";
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
 
@@ -67,7 +69,7 @@ class Comment {
     }
 
     public static function CreateComment($id_post, $comment, $id_account) {
-        new Log("Comment::CreateComment() of account [" . $id_account . "]");
+        new Log("Comment::CreateComment() of account [" . $id_post . $comment. $id_account . "]");
         $db = new DatabaseConnection();
         $connection = $db->getConnection();
 
@@ -112,10 +114,12 @@ class Comment {
     }
 
     public function GetId() {
+        new Log("Comment::GetId()");
         return $this->id;
     }
 
     public function GetIdPost() {
+        new Log("Comment::GetIdPost()");
         return $this->id_post;
     }
 

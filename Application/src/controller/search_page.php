@@ -9,11 +9,13 @@ require_once('src/model/pending_request.php');
 
 use Application\Controller\Controller\Controller;
 use Application\Pdo\Database\DatabaseConnection;
+use Application\Model\Log\Log;
 
 class Searching
 {
     public static function execute(Controller $controller)
     {
+        new Log ("Searching page created");
         $search_terms = $_GET['search_terms'];
         $result = Array();
         $title = "Searching page";

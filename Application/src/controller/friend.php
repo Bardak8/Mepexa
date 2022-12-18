@@ -4,15 +4,15 @@
 namespace Application\Controller\Friend;
 
 
-
-
 use Application\Controller\Controller\Controller;
 use Application\Model\Friend\Friend;
 use Application\Model\PendingRequest\PendingRequest;
+use Application\Model\Log\Log;
 
 class Friend_Request
 {
     public static function execute (Controller $controller){
+        new Log("Friend request created");
 
         if (isset($_POST['friend_request'])) {
             echo $controller->GetAccount()->GetId();

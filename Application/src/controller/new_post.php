@@ -4,6 +4,7 @@ namespace Application\Controller\NewPost;
 require_once('src/controller/controller.php');
 
 use Application\Controller\Controller\Controller;
+use Application\Model\Log\Log;
 
 class NewPost
 {
@@ -13,7 +14,7 @@ class NewPost
             throw new \Exception("You are not connected");
             return;
         }
-
+        new Log("New post created");
         $title = "Мережа - New Post";
 
         require('template/new_post.php');

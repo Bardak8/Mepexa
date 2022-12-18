@@ -32,6 +32,7 @@ class Post
     // Constructor
     public function __construct(?int $id, int $id_account, string $author, string $title, string $content, $media_path, ?string $date)
     {
+        new Log("Post created");
         $this->id = $id;
         $this->id_account = $id_account;
         $this->author = $author;
@@ -45,7 +46,7 @@ class Post
 
     public static function UploadNewPost(int $id_account, string $title, string $content, string $media_path)
     {
-        new Log("Post::UploadNewPost() of account [" . $id_account . "]");
+        new Log("Post::UploadNewPost() of account [" . $id_account . $title . $content . $media_path . "]");
         // INSERT INTO `posts` (`id_post`, `title`, `content`, `media_path`, `id_account`, `post_date`) 
         // VALUES (NULL, 'ceci est le titre', 'lorem ipsum ', NULL, '', NULL)
         $db = new DatabaseConnection();
@@ -69,42 +70,50 @@ class Post
     // Getters
     public function GetId()
     {
+        new Log("Post::GetId()");
         return $this->id;
     }
 
     public function GetIdAuthor()
     {
+        new Log("Post::GetIdAuthor()");
         return $this->id_account;
     }
 
     public function GetAuthor()
     {
+        new Log("Post::GetAuthor()");
         return $this->author;
     }
 
     public function GetTitle()
     {
+        new Log("Post::GetTitle()");
         return $this->title;
     }
 
     public function GetContent()
     {
+        new Log("Post::GetContent()");
         return $this->content;
     }
 
     public function GetMediaPath()
     {
+        new Log("Post::GetMediaPath()");
         return $this->media_path;
     }
 
     public function GetDate()
     {
+        new Log("Post::GetDate()");
         return $this->date;
     }
 
 
     public static function GetPostById(int $id_post): ?Post
     {
+        new Log("Post::GetPostById() of post [" . $id_post . "]");
 
         $query = "SELECT * FROM posts WHERE id_post = :id_post";
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
@@ -124,6 +133,7 @@ class Post
 
     public static function DeletePost(int $id_post)
     {
+        new Log("Post::DeletePost() of post [" . $id_post . "]");
         Reaction::DeletePostReaction($id_post);
         Comment::DeletePostComments($id_post);
 
@@ -146,6 +156,7 @@ class Feed {
     private array $posts;
 
     public function __construct() {
+        new Log("Feed created");
         $this->connection = (new DatabaseConnection())->getConnection();
         $this->posts = [];
     }
@@ -154,6 +165,7 @@ class Feed {
 
     public function GenerateFeed($account, $current_page)
     {
+        new Log("Feed::GenerateFeed() of account [" . $account . $current_page . "]");
 
         $friends = new FriendList($account);
 
@@ -195,6 +207,7 @@ class Feed {
 
     public static function GetPageNumber(): int
     {
+        new Log("Feed::GetPageNumber() of feed");
         $query = "SELECT id_post FROM posts";
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
         $statement->execute();
@@ -205,6 +218,7 @@ class Feed {
 
     public function GetsPostsFromUser(int $id_account)
     {
+        new Log("Feed::GetPostsFromUser() of account [" . $id_account . "]");
         $query = "SELECT * FROM posts WHERE id_account = :id_account ORDER BY id_post DESC";
         $statement = $this->connection->prepare($query);
 
@@ -225,6 +239,7 @@ class Feed {
 
 
     public function GetPosts() : array {
+        new Log("Feed::GetPosts()");
         return $this->posts;
     }
 
