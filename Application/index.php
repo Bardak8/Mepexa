@@ -46,7 +46,7 @@ try {
     $uri = $_SERVER['REQUEST_URI'];
     $connection = isset($_SESSION['username']);
 
-    if (!$connection && $uri !== '/' && $method === 'GET') {    // idk max please help me
+    if (!$connection && $uri !== '/' && $method === 'GET') {    // If the user is not connected and he tries to access a page
         header('Location: /');
         exit();
     }
