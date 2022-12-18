@@ -12,6 +12,7 @@ class Creating_Post {
 
         public static function execute(Controller $controller)
         {
+            new Log("Creation post created");
             if (!$controller->IsConnected()) {
                 throw new \Exception("You are not connected");
                 return;

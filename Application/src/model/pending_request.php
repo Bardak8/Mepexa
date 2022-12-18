@@ -15,20 +15,24 @@ class PendingRequest {
     private int $statue;    // 0 = pending, 1 = declined
 
     public function __construct(Account $sender, Account $receiver, int $statue) {
+        new Log ("New pending request created");
         $this->sender = $sender;
         $this->receiver = $receiver;
         $this->statue = $statue;
     }
 
     public function GetSender() : Account {
+        new Log("PendingRequest::GetSender()");
         return $this->sender;
     }
 
     public function GetReceiver() : Account {
+        new Log("PendingRequest::GetReceiver()");
         return $this->receiver;
     }
 
     public function GetStatue() : int {
+        new Log("PendingRequest::GetStatue()");
         return $this->statue;
     }
 
@@ -174,6 +178,7 @@ class PendingRequestList {
     }
 
     public function GetPendingRequests() : array {
+        new Log("PendingRequestList::GetPendingRequests()");
         return $this->pending_requests;
     }
 }

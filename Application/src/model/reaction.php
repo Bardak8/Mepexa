@@ -6,6 +6,7 @@ require_once('src/model/account.php');
 
 use Application\Pdo\Database\DatabaseConnection;
 use Application\Model\Account\Account;
+use Application\Model\Log\Log;
 
 class Reaction
 {
@@ -17,6 +18,7 @@ class Reaction
 
     public function __construct(int $laugh, int $love, int $sad, int $thumb_down, int $thumb_up)
     {
+        new Log("Reaction created");
         $this->laugh = $laugh;
         $this->love = $love;
         $this->sad = $sad;
@@ -25,6 +27,7 @@ class Reaction
     }
 
     public static function GetPostsReaction(int $id_post) : Reaction {
+        new Log("Reaction::GetPostsReaction() of post [" . $id_post . "]");
         $laugh = 0;
         $love = 0;
         $sad = 0;
@@ -49,6 +52,7 @@ class Reaction
     }
 
     public static function GetCommentReaction(int $id_post, int $id_comment) : Reaction {
+        new Log("Reaction::GetCommentReaction() of post [" . $id_post . $id_comment . "]");
         $laugh = 0;
         $love = 0;
         $sad = 0;
@@ -81,6 +85,7 @@ class Reaction
     // 5👍
 
     public static function ReactToPost(int $id_account, int $id_post, ?int $id_comment, int $reaction) {
+        new Log("Reaction::ReactToPost() of  [" . $id_account . $id_post . $id_comment . $reaction . "]");
         $query = "SELECT * FROM reactions WHERE id_post = :id_post AND id_account = :id_account AND id_comment";
 
         $query .= ($id_comment != NULL) ? " = :id_comment" : " IS :id_comment";
@@ -113,6 +118,7 @@ class Reaction
 
 
     public static function NewReaction(int $id_account, int $id_post, ?int $id_comment, int $reaction) {
+        new Log("Reaction::NewReaction() of reaction [" . $id_account . $id_post . $id_comment . $reaction . "]");
         $query = "INSERT INTO reactions (`id_reaction`, `thumb_up`, `thumb_down`, `sad`, `love`, `laugh`, `id_account`, `id_comment`, `id_post`) VALUES (NULL, :up, :down, :sad, :love, :laugh, :id_account, :id_comment, :id_post)";
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
         
@@ -141,6 +147,7 @@ class Reaction
     }
 
     public static function UpdateReaction(int $id_reaction, int $reaction) {
+        new Log("Reaction::UpdateReaction() of reaction [" . $id_reaction . $reaction . "]");
         $laugh = 0;
         $love = 0;
         $sad = 0;
@@ -167,18 +174,21 @@ class Reaction
     }
 
     public static function CancelReaction(int $id_reaction) {
+        new Log("Reaction::CancelReaction() of reaction [" . $id_reaction . "]");
         $query = "DELETE FROM reactions WHERE id_reaction = :id_reaction";
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
         $statement->execute(['id_reaction' => $id_reaction]);
     }
 
     public static function DeletePostReaction(int $id_post) {
+        new Log("Reaction::DeletePostReaction() on post [" . $id_post . "]");
         $query = "DELETE FROM reactions WHERE id_post = :id_post";
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
         $statement->execute(['id_post' => $id_post]);
     }
 
     public static function DeleteCommentsReaction(int $id_comment) {
+        new Log("Reaction::DeleteCommentsReaction() on comment [" . $id_comment . "]");
         $query = "DELETE FROM reactions WHERE id_comment = :id_comment";
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
         $statement->execute(['id_comment' => $id_comment]);

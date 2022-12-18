@@ -23,11 +23,13 @@ class Account {
         $this->name = $name;
         $this->email = $email;
         $this->encrypted_password = $encrypted_password;
+        new Log("New account created");
     }
 
     
     // Main methods
     public static function GetAccountByName(string $pseudo) : ?Account {
+        new Log("Account::GetAccountByName() of account [" . $pseudo . "]");
         $query = "SELECT * FROM accounts WHERE name = :pseudo";
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
 
@@ -51,6 +53,7 @@ class Account {
     }
 
     public static function GetAccountBYEmail(string $email) : ?Account {
+        new Log("Account::GetAccountBYEmail() of account [" . $email . "]");
         $query = "SELECT * FROM accounts WHERE email = :email";
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
 
@@ -74,6 +77,7 @@ class Account {
     }
 
     public static function GetAccountById(int $id_account) : Account {
+        new Log("Account::GetAccountById() of account [" . $id_account . "]");
         $query = "SELECT * FROM accounts WHERE id_account = :id_account";
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
 
@@ -96,6 +100,7 @@ class Account {
 
     public static function CreateAccount(string $name, string $email, string $encrypted_password )
     {
+        new Log("Account::CreateAccount() of account [" . $name . $email . $encrypted_password . "]");
         $query = "INSERT INTO accounts (id_account, name, email, encrypted_password) VALUES (NULL, :name, :email, :encrypted_password)";
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
 
@@ -116,11 +121,13 @@ class Account {
     }
 
     public function CompareEncryptedPassword(string $psw) {
+        new Log("Account::CompareEncryptedPassword() of account [" . $psw . "]");
         return ($this->encrypted_password == $psw);
     }
 
 
     public static function ConnectAccount(string $name, string $psw ) : ?Account {
+        new Log("Account::ConnectAccount() of account [" . $name . $psw . "]");
         $account = Account::GetAccountByName($name);
         if ($account) {
             if ($account->CompareEncryptedPassword($psw)) {
@@ -149,14 +156,17 @@ class Account {
     }
     // Getters
     public function GetId() {
+        new Log("Account::GetId() of account ");
         return $this->id;
     }
 
     public function GetName() {
+        new Log("Account::GetName() of account ");
         return $this->name;
     }
 
     public function GetEmail() {
+        new Log("Account::GetEmail() of account ");
         return $this->email;
     }
 }

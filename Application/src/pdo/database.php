@@ -1,6 +1,8 @@
 <?php
 
-namespace Application\Pdo\Database; 
+namespace Application\Pdo\Database;
+
+use Application\Model\Log\Log;
 
 class DatabaseConnection
 {
@@ -8,6 +10,7 @@ class DatabaseConnection
 
     public function getConnection(): \PDO
     {
+        new Log ("Connection to database");
         $file = 'credentials.json';
         $data = file_get_contents($file);
         $obj = json_decode($data);

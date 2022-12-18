@@ -15,6 +15,7 @@ class Friend {
     private Account $persona2;
 
     public function __construct(Account $persona1, Account $persona2) {
+        new Log ("New friend created");
         $this->persona1 = $persona1;
         $this->persona2 = $persona2;
     }

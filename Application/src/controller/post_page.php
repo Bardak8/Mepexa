@@ -11,11 +11,13 @@ use Application\Model\Post\Post;
 use Application\Model\Reaction\Reaction;
 use Application\Model\Comment\Comment;
 use Application\Model\Comment\CommentList;
+use Application\Model\Log\Log;
 
 class Post_Page
 {
         public static function execute(Controller $controller) {
 
+        new Log("Post page created");
         $post = Post::GetPostById($_GET['post']);
         if ($post == null) {
             throw new \Exception("Post not found");
