@@ -5,15 +5,8 @@
 <div id="info_account">
     <p id="pseudo"> <?= $account->GetName() ?> </p>
     <?php if ($private) { ?>
-        <table>
-            <tr>
-                <td>Email :</td>
-                <td><?= $account->GetEmail() ?></td>
-            </tr>
-            <tr>
+       <p>Email : <?= $account->GetEmail() ?></p>
 
-            </tr>
-        </table>
     <?php } else { ?>
         <form method="POST">
             <input type="hidden" name="request_id" value="<?= $account->GetId() ?>">
@@ -181,7 +174,7 @@
         <?php } else { ?>
 
         <table class="reactions_list">
-                <tr>
+                <tr class ="tab_reaction">
                     <th>
                         <img src="image/love.png" alt="" class="reaction_image">
                         <p><?= $post->reaction->love ?></p>
