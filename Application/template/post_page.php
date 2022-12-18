@@ -9,7 +9,7 @@ ob_start(); ?>
             <li class="post_upper" >
                 <p>Published by <a href="/?u=<?= $post->GetAuthor() ?>"> <?= $post->GetAuthor() ?> </a> <?= $post->GetDate() ?> </p>
                 <?php if ($post->GetAuthor() == $_SESSION['username']) { ?>
-                <button type="button" onclick="location.href='/?close_post=<?= $post->GetId()?>'"  class="btn-close btn-close-white" aria-label="Close" style="width:100px">Delete </button>
+                <button type="button" onclick="location.href='/?close_post=<?= $post->GetId()?>'"  class="btn-close btn-close-white" aria-label="Close" style="width:100px">Delete</button>
                 <?php }?>
             </li>
             <li class="post_title" >

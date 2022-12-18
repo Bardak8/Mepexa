@@ -44,6 +44,7 @@ p, a {
 #connexion-zone {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 #profile_picture {
@@ -51,6 +52,10 @@ p, a {
     width: 2vw;
     margin-right: 1vw;
     border-radius: 50%;
+}
+
+.logo_redir {
+    cursor: pointer;
 }
 
 
@@ -182,6 +187,10 @@ body {
     display: none;
 }
 
+#signup {
+    width: 100%;
+}
+
 
 
 /*-----------------------*/
@@ -212,6 +221,7 @@ body {
 #search_form > #search_submit {
     width: 10%;
     transition: 0.25s ease;
+    cursor: pointer;
 }
 
 #search_form > #search_submit:hover {

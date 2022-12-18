@@ -1,5 +1,5 @@
 <div id="header">
-    <h1 onclick="location.href='/'">
+    <h1 class="logo_redir" onclick="location.href='/'">
         Мережа
     </h1>
 

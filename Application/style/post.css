@@ -110,3 +110,8 @@
 .post_footer > .post_reactions > form >*:first-child:hover{
     outline: 1px solid #665c54
 }
+
+.reaction_image {
+    cursor: pointer;
+}
+

@@ -90,3 +90,27 @@
 #friends_menu > #request_list > li img:hover {
     cursor: pointer;
 }
+
+.button-css {
+    border: 2px solid #FABD2F;
+    color: #FABD2F;
+    background-color: Transparent;
+    cursor: pointer;
+}
+
+input[value="abort"], [value="delete"], [value="accept"], [value="refuse"] {
+    border: 2px solid #ebdbb2;
+    color: #ebdbb2;
+    background-color: Transparent;
+    cursor: pointer;
+    width: 7vw;
+}
+
+
+input[value="accept"], [value="Add friend"] {
+    border: 2px solid #FABD2F;
+    color: #FABD2F;
+    background-color: Transparent;
+    cursor: pointer;
+    width: 7vw;
+}

@@ -11,9 +11,7 @@
                 <td><?= $account->GetEmail() ?></td>
             </tr>
             <tr>
-                <td>
-                    <a href="" style="font-size: 10px; color: #efbc32">change password</a>
-                </td>
+
             </tr>
         </table>
     <?php } else { ?>
@@ -69,6 +67,7 @@
                         <?= $request->GetReceiver()->GetName() ?>
                     </a>
                     <p>pending ...</p>
+                    <form method="POST">
                     <form method="POST">
                         <input type="hidden" name="request_id" value="<?= $request->GetReceiver()->GetId() ?>">
                         <input type="hidden" name="friend_request" value="abort">

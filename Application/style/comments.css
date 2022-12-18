@@ -96,3 +96,26 @@ textarea {
     cursor: pointer;
 }
 
+#feed > div > ul > li.post_upper > button {
+    width: 100px;
+    border: 2px solid #ebdbb2;
+    color: #ebdbb2;
+    background-color: Transparent;
+    cursor: pointer;
+}
+
+input[value="Submit"] {
+    border: 2px solid #ebdbb2;;
+    color: #ebdbb2;
+    background-color: Transparent;
+    cursor: pointer;
+    width: 7vw;
+}
+
+#comment_0 > div > button {
+    border: 2px solid #ebdbb2;;
+    color: #ebdbb2;
+    background-color: Transparent;
+    cursor: pointer;
+    width: 7vw;
+}
