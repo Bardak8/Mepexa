@@ -70,4 +70,12 @@ class ProfilePage
 
         require('template/profile_page.php');
     }
+
+
+    public static function profile_page_new() {
+
+        $profile_page = new ProfilePage(Account::GetAccountByName($_GET['u']));
+
+        return $profile_page;
+    }
 }

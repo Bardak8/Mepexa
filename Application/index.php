@@ -36,7 +36,6 @@ use Application\Controller\ProfilePage\ProfilePage;
 use Application\Controller\Controller\Controller;
 use Application\Controller\NewPost\NewPost;
 use Application\Controller\SearchPage\Searching;
-use Application\Model\Account\Account;
 use Application\Controller\Post_Page\Post_Page;
 
 
@@ -97,7 +96,7 @@ try {
 
     } elseif (isset($_GET['u'])) { // profile page
         Friend_Request::execute($controller);
-        $profile_page = new ProfilePage(Account::GetAccountByName($_GET['u']));
+        $profile_page = ProfilePage::profile_page_new();
         $profile_page->execute($controller);
 
     } elseif (isset($_GET['search_terms'])) { // searching page 
