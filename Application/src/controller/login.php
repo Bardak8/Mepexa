@@ -12,8 +12,7 @@ class Login {
     {
         new Log ("Login attempt");
         $password = $_POST['password'];
-        //$acc = Account::ConnectAccount($_POST['username'], md5($password));
-        $acc = Account::ConnectAccount($_POST['username'], $password);
+        $acc = Account::ConnectAccount($_POST['username'], md5($password));
         if ($acc !== null) {
             $_SESSION["username"] = $acc->GetName();
             header('Location: /');
