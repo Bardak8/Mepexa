@@ -105,8 +105,8 @@ textarea {
 }
 
 input[value="Submit"] {
-    border: 2px solid #ebdbb2;;
-    color: #ebdbb2;
+    border: 2px solid #FABD2F;
+    color: #FABD2F;
     background-color: Transparent;
     cursor: pointer;
     width: 7vw;
