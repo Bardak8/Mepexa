@@ -62,7 +62,7 @@
                 <table>
                     <tr>
                         <td>
-                            <label for="username">Username / Email</label>
+                            <label for="username">Username</label>
                         </td>
                         <td>
                             <input type="text" name="username" id="username" required>
@@ -109,7 +109,7 @@
                 <table>
                     <tr>
                         <td>
-                            <label for="username">Username</label>
+                            <label for="username">Username / Email</label>
                         </td>
                         <td>
                             <input type="text" name="username" id="username" required>
