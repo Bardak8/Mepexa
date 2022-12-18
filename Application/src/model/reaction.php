@@ -2,8 +2,10 @@
 namespace Application\Model\Reaction;
 
 require_once('src/pdo/database.php');
+require_once('src/model/account.php');
 
 use Application\Pdo\Database\DatabaseConnection;
+use Application\Model\Account\Account;
 
 class Reaction
 {
@@ -180,5 +182,44 @@ class Reaction
         $query = "DELETE FROM reactions WHERE id_comment = :id_comment";
         $statement = (new DatabaseConnection())->getConnection()->prepare($query);
         $statement->execute(['id_comment' => $id_comment]);
+    }
+}
+
+
+class ReactionList {
+    public Array $laugh = [];       // 1
+    public Array $love  = [];        // 2
+    public Array $sad  = [];         // 3
+    public Array $thumb_down  = [];  // 4
+    public Array $thumb_up  = [];    // 5
+
+    public function __construct($id_post) {        
+        $query = "SELECT * FROM reactions WHERE id_post = :id_post AND id_comment IS NULL";
+        $statement = (new DatabaseConnection())->getConnection()->prepare($query);
+        $statement->execute([
+            'id_post' => $id_post
+        ]);
+
+    
+        while ($row = $statement->fetch()) {
+            $account = Account::GetAccountById($row['id_account']);
+            
+            if ($row['laugh'] == 1) {
+                $this->laugh[] = $account;
+            }
+            else if ($row['thumb_up'] == 1) {
+                $this->thumb_up[] = $account;
+            }
+            else if ($row['thumb_down'] == 1) {
+                $this->thumb_down[] = $account;
+            }
+            else if ($row['love'] == 1) {
+                $this->love[] = $account;
+            }
+            else if ($row['sad'] == 1) {
+                $this->sad[] = $account;
+            }
+    
+        }
     }
 }

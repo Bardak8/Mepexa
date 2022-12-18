@@ -15,6 +15,7 @@ use Application\Model\Friend;
 use Application\Model\Comment\Comment;
 
 use Application\Model\Reaction\Reaction;
+use Application\Model\Reaction\ReactionList;
 
 class Post
 {
@@ -27,6 +28,7 @@ class Post
     private ?string $media_path;
     private string $date;
     public Reaction $reaction;
+    public ReactionList $reaction_list;
 
 
     // Constructor
@@ -41,6 +43,9 @@ class Post
         $this->date = $date;
 
         $this->reaction =  Reaction::GetPostsReaction($id);
+        $this->reaction_list = new ReactionList($id);
+
+        
     }
 
     public static function UploadNewPost(int $id_account, string $title, string $content, string $media_path)

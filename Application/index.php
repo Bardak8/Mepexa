@@ -47,20 +47,20 @@ try {
     $uri = $_SERVER['REQUEST_URI'];
     $connection = isset($_SESSION['username']);
 
-    if (!$connection && $uri !== '/' && $method === 'GET') {
+    if (!$connection && $uri !== '/' && $method === 'GET') {    // idk max please help me
         header('Location: /');
         exit();
     }
 
-    if ($connection) {
+    if ($connection) { // get controller account
         $controller->Connect($_SESSION['username']);
     }
 
-    if (isset($_POST['id_post_reaction'])) {
+    if (isset($_POST['id_post_reaction'])) { // reaction to post/comments
         Reactions::execute($controller);
     }
 
-    if (isset($_POST['disconnect'])) {
+    if (isset($_POST['disconnect'])) { // disconnect
         session_destroy();
         header('Location: /');
     }
@@ -105,7 +105,7 @@ try {
             Homepage::execute($controller);
         }
         Searching::execute($controller);
-        
+
     } else { // homepage
         Homepage::execute($controller);
     }

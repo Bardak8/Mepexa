@@ -114,3 +114,40 @@ input[value="accept"], [value="Add friend"] {
     cursor: pointer;
     width: 7vw;
 }
+
+.reactions_list {
+    table-layout:fixed;
+    width: 50vw;
+    height: 10vh;
+}
+
+th, td {
+    width: 10vw;
+    height: 5vh;
+    overflow-y: scroll
+}
+
+.reactions_list tr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reactions_list th {
+    border: 1px solid #ebdbb2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    height: 5vh;
+}
+
+.reactions_list td {
+    border: 1px solid #ebdbb2;
+}
+
+.reactions_list td > * {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

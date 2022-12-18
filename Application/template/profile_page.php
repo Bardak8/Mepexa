@@ -126,6 +126,9 @@
                 </li>
             <?php } ?>
             <li class="post_footer">
+
+            <?php if (!$private) { ?>
+
             <ul class="post_reactions">
                     <form method="POST">
                         <input type="hidden" name="id_post_reaction" value="<?=$post->GetId()?>">
@@ -174,6 +177,71 @@
                 </ul>
             </li>
         </ul>
+        
+        <?php } else { ?>
+
+        <table class="reactions_list">
+                <tr>
+                    <th>
+                        <img src="image/love.png" alt="" class="reaction_image">
+                        <p><?= $post->reaction->love ?></p>
+                    </th>
+
+                    <th>
+                        <img src="image/thumb-up.png" alt="" class="reaction_image">
+                        <p><?= $post->reaction->thumb_up ?></p>
+                    </th>
+
+                    <th>
+                        <img src="image/thumb-down.png" alt="" class="reaction_image">
+                        <p><?= $post->reaction->thumb_down ?></p>
+                    </th>
+
+                    <th>
+                        <img src="image/laugh.png" alt="" class="reaction_image">
+                        <p><?= $post->reaction->laugh ?></p>
+                    </th>
+
+                    <th>
+                        <img src="image/cry.png" alt="" class="reaction_image">
+                        <p><?= $post->reaction->sad ?></p>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <?php foreach($post->reaction_list->love as $acc) { ?>
+                            <a href="/?u=<?= $acc->GetName() ?>"> <?= $acc->GetName() ?> </a>
+                        <?php } ?>
+                    </td>
+
+                    <td>
+                        <?php foreach($post->reaction_list->thumb_up as $acc) { ?>
+                            <a href="/?u=<?= $acc->GetName() ?>"> <?= $acc->GetName() ?> </a>
+                        <?php } ?>
+                    </td>
+
+                    <td>
+                        <?php foreach($post->reaction_list->thumb_down as $acc) { ?>
+                            <a href="/?u=<?= $acc->GetName() ?>"> <?= $acc->GetName() ?> </a>
+                        <?php } ?>
+                    </td>
+
+                    <td>
+                        <?php foreach($post->reaction_list->laugh as $acc) { ?>
+                            <a href="/?u=<?= $acc->GetName() ?>"> <?= $acc->GetName() ?> </a>
+                        <?php } ?>
+                    </td>
+
+                    <td>
+                        <?php foreach($post->reaction_list->sad as $acc) { ?>
+                            <a href="/?u=<?= $acc->GetName() ?>"> <?= $acc->GetName() ?> </a>
+                        <?php } ?>
+                    </td>
+                </tr>
+        </table>
+
+        <?php } ?>
     </div>
 
 <?php }
