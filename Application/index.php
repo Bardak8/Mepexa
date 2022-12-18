@@ -20,16 +20,17 @@ require_once('src/controller/close_post.php');
 require_once('src/controller/friend.php');
 require_once('src/controller/creating_post.php');
 require_once('src/controller/reaction.php');
+require_once('src/controller/comment.php');
 
 
 use Application\Controller\Account\Signup\Signup;
 use Application\Controller\Close_Comment\Close_Comment;
 use Application\Controller\Close_Post\Close_Post;
+use Application\Controller\Comment\Comments;
 use Application\Controller\Creating_Post\Creating_Post;
 use Application\Controller\Friend\Friend_Request;
 use Application\Controller\Login\Login;
 use Application\Controller\Reaction\Reactions;
-use Application\Model\Comment\Comment;
 use Application\Controller\Homepage\Homepage;
 use Application\Controller\ProfilePage\ProfilePage;
 use Application\Controller\Controller\Controller;
@@ -64,7 +65,7 @@ try {
         NewPost::execute($controller);
 
     } elseif (isset($_POST['comment_content'])) {
-        Comment::CreateComment($_GET['post'], $_POST['comment_content'], $controller->GetAccount()->GetId());
+       Comments::execute($controller);
 
     } elseif (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['password_confirm'])) {
         Signup::execute();
