@@ -1,0 +1,7 @@
+    Laurie JEHAM
+    Maxime OBRY
+    Benjamin BORELLO
+
+    Repo GitHub : https://github.com/MaxYnovobry/Mepexa
+
+    Mysqldump : Misc/mysqldump.sql
