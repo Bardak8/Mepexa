@@ -8,7 +8,6 @@
         <link href="style/main.css" rel="stylesheet" />
         <link href="style/post.css" rel="stylesheet" />
         <link href="style/reaction.css" rel="stylesheet" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="script/main.js"></script>
         <script src="script/reaction.js"></script>
         
